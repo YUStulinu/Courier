@@ -1,0 +1,80 @@
+{"id": "t01", "text": "set a timer for ten minutes", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 600}}}]}
+{"id": "t02", "text": "start a five minute timer for the pasta", "expect": [{"tool": "set_timer", "args": {"label": "pasta", "_result": {"seconds": 300}}}]}
+{"id": "t03", "text": "timer for an hour and a half", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 5400}}}]}
+{"id": "t04", "text": "set a timer for 90 seconds", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 90}}}]}
+{"id": "t05", "text": "how much time is left on my timer", "expect": [{"tool": "list_timers", "args": {}}]}
+{"id": "t06", "text": "cancel the timer", "expect": [{"tool": "cancel_timer", "args": {}}]}
+{"id": "t07", "text": "stop the pasta timer", "expect": [{"tool": "cancel_timer", "args": {"label": "pasta"}}]}
+{"id": "t08", "text": "set a three minute tea timer", "expect": [{"tool": "set_timer", "args": {"label": "tea", "_result": {"seconds": 180}}}]}
+{"id": "t09", "text": "remind me to call my mother at six pm", "expect": [{"tool": "add_reminder", "args": {"text": "call mother", "time": "18:00"}}]}
+{"id": "t10", "text": "remind me in twenty minutes to check the oven", "expect": [{"tool": "add_reminder", "args": {"text": "check oven", "_result": {"in_seconds": 1200}}}]}
+{"id": "t11", "text": "remind me tomorrow at eight to water the plants", "expect": [{"tool": "add_reminder", "args": {"text": "water plants", "time": "08:00", "date": "2026-10-30"}}]}
+{"id": "t12", "text": "remind me to take out the trash on friday at seven in the evening", "expect": [{"tool": "add_reminder", "args": {"text": "trash", "time": "19:00", "date": "2026-10-30"}}]}
+{"id": "t13", "text": "what reminders do I have", "expect": [{"tool": "list_reminders", "args": {}}]}
+{"id": "t14", "text": "delete the reminder about the plants", "expect": [{"tool": "delete_reminder", "args": {"text": "plants"}}]}
+{"id": "t15", "text": "remind me to buy milk", "expect": [{"tool": null}, {"tool": "add_reminder", "args": {"text": "buy milk", "time": {"absent": true}, "after": {"absent": true}}}]}
+{"id": "t16", "text": "what's on my calendar today", "expect": [{"tool": "calendar_events", "args": {"date": {"date": "2026-10-29", "optional": true}}}]}
+{"id": "t17", "text": "what do I have tomorrow", "expect": [{"tool": "calendar_events", "args": {"date": "2026-10-30"}}]}
+{"id": "t18", "text": "what's my schedule for the next week", "expect": [{"tool": "calendar_events", "args": {"days": {"min": 5, "max": 8}}}]}
+{"id": "t19", "text": "do I have anything on monday", "expect": [{"tool": "calendar_events", "args": {"date": "2026-11-02"}}]}
+{"id": "t20", "text": "add a meeting with Anna on Friday at 3 pm", "expect": [{"tool": "add_event", "args": {"title": "anna", "date": "2026-10-30", "time": "15:00"}}]}
+{"id": "t21", "text": "put a dentist appointment on November 12 at 10:30", "expect": [{"tool": "add_event", "args": {"title": "dentist", "date": "2026-11-12", "time": "10:30"}}]}
+{"id": "t22", "text": "schedule lunch with Mark tomorrow at noon for an hour", "expect": [{"tool": "add_event", "args": {"title": "lunch mark", "date": "2026-10-30", "time": "12:00", "duration_minutes": {"optional": 60}}}]}
+{"id": "t23", "text": "find my notes about the boiler", "expect": [{"tool": "search_files", "args": {"query": "boiler"}}]}
+{"id": "t24", "text": "search my documents for the tax return", "expect": [{"tool": "search_files", "args": {"query": "tax return"}}]}
+{"id": "t25", "text": "where are the photos from the beach", "expect": [{"tool": "search_files", "args": {"query": "beach"}}]}
+{"id": "t26", "text": "find the invoice from march", "expect": [{"tool": "search_files", "args": {"query": "invoice march"}}]}
+{"id": "t27", "text": "turn the volume up", "expect": [{"tool": "volume", "args": {"action": "up"}}]}
+{"id": "t28", "text": "make it a lot quieter", "expect": [{"tool": "volume", "args": {"action": "down"}}]}
+{"id": "t29", "text": "mute the sound", "expect": [{"tool": "volume", "args": {"action": "mute"}}]}
+{"id": "t30", "text": "open notepad", "expect": [{"tool": "open_app", "args": {"name": "notepad"}}]}
+{"id": "t31", "text": "launch the calculator", "expect": [{"tool": "open_app", "args": {"name": "calculator"}}]}
+{"id": "t32", "text": "open the browser", "expect": [{"tool": "open_app", "args": {"name": "browser"}}]}
+{"id": "t33", "text": "lock my computer", "expect": [{"tool": "lock_screen", "args": {}}]}
+{"id": "t34", "text": "unmute", "expect": [{"tool": "volume", "args": {"action": "unmute"}}]}
+{"id": "t35", "text": "play some jazz", "expect": [{"tool": "play_music", "args": {"query": "jazz"}}]}
+{"id": "t36", "text": "play Kind of Blue by Miles Davis", "expect": [{"tool": "play_music", "args": {"query": "kind blue miles davis"}}]}
+{"id": "t37", "text": "play some music", "expect": [{"tool": "play_music", "args": {"query": {"generic": true}}}]}
+{"id": "t38", "text": "pause the music", "expect": [{"tool": "music_control", "args": {"action": "pause"}}]}
+{"id": "t39", "text": "next song", "expect": [{"tool": "music_control", "args": {"action": "next"}}]}
+{"id": "t40", "text": "what song is this", "expect": [{"tool": "music_control", "args": {"action": "status"}}]}
+{"id": "t41", "text": "resume the music", "expect": [{"tool": "music_control", "args": {"action": "resume"}}]}
+{"id": "t42", "text": "stop the music", "expect": [{"tool": "music_control", "args": {"action": "stop"}}]}
+{"id": "t43", "text": "go back to the previous track", "expect": [{"tool": "music_control", "args": {"action": "previous"}}]}
+{"id": "t44", "text": "what's the weather like", "expect": [{"tool": "get_weather", "args": {"place": {"absent_or": "bucharest"}, "date": {"date": "2026-10-29", "optional": true}}}]}
+{"id": "t45", "text": "will it rain tomorrow", "expect": [{"tool": "get_weather", "args": {"date": "2026-10-30"}}]}
+{"id": "t46", "text": "what's the weather in Rome on saturday", "expect": [{"tool": "get_weather", "args": {"place": "rome", "date": "2026-10-31"}}]}
+{"id": "t47", "text": "how cold is it outside", "expect": [{"tool": "get_weather", "args": {"date": {"date": "2026-10-29", "optional": true}}}]}
+{"id": "t48", "text": "roll a die", "expect": [{"tool": "roll_dice", "args": {"count": {"optional": 1}}}]}
+{"id": "t49", "text": "roll two dice", "expect": [{"tool": "roll_dice", "args": {"count": 2}}]}
+{"id": "t50", "text": "flip a coin", "expect": [{"tool": "flip_coin", "args": {}}]}
+{"id": "t51", "text": "roll a twenty sided die", "expect": [{"tool": "roll_dice", "args": {"sides": 20}}]}
+{"id": "t52", "text": "what's the capital of Portugal", "expect": []}
+{"id": "t53", "text": "tell me a joke", "expect": []}
+{"id": "t54", "text": "how many days are in a leap year", "expect": []}
+{"id": "t55", "text": "thank you", "expect": []}
+{"id": "t56", "text": "good morning", "expect": []}
+{"id": "t57", "text": "what time is it", "expect": []}
+{"id": "t58", "text": "what's today's date", "expect": []}
+{"id": "t59", "text": "how do I boil an egg", "expect": []}
+{"id": "t60", "text": "who wrote Hamlet", "expect": []}
+{"id": "t61", "text": "what's fifteen percent of eighty", "expect": []}
+{"id": "t62", "text": "never mind", "expect": []}
+{"id": "t63", "text": "what can you do", "expect": []}
+{"id": "t64", "text": "set an alarm for seven tomorrow morning", "expect": [{"tool": "add_reminder", "args": {"time": "07:00", "date": "2026-10-30"}}]}
+{"id": "t65", "text": "wake me up in forty five minutes", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 2700}}}, {"tool": "add_reminder", "args": {"_result": {"in_seconds": 2700}}}]}
+{"id": "t66", "text": "is the timer still running", "expect": [{"tool": "list_timers", "args": {}}]}
+{"id": "t67", "text": "play the Beatles", "expect": [{"tool": "play_music", "args": {"query": "beatles"}}]}
+{"id": "t68", "text": "turn it up a bit", "expect": [{"tool": "volume", "args": {"action": "up"}}]}
+{"id": "t69", "text": "do I need an umbrella today", "expect": [{"tool": "get_weather", "args": {"date": {"date": "2026-10-29", "optional": true}}}]}
+{"id": "t70", "text": "what's on friday", "expect": [{"tool": "calendar_events", "args": {"date": "2026-10-30"}}]}
+{"id": "t71", "text": "cancel all my timers", "expect": [{"tool": "cancel_timer", "args": {"all": true}}]}
+{"id": "t72", "text": "remind me at 9:15 to join the standup", "expect": [{"tool": "add_reminder", "args": {"text": "standup", "time": "09:15"}}]}
+{"id": "t73", "text": "set a timer for two hours", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 7200}}}]}
+{"id": "t74", "text": "what's the weather in London", "expect": [{"tool": "get_weather", "args": {"place": "london"}}]}
+{"id": "t75", "text": "find the presentation about the budget", "expect": [{"tool": "search_files", "args": {"query": "budget"}}]}
+{"id": "t76", "text": "skip this song", "expect": [{"tool": "music_control", "args": {"action": "next"}}]}
+{"id": "t77", "text": "how are you", "expect": []}
+{"id": "t78", "text": "flip a coin for me, heads or tails", "expect": [{"tool": "flip_coin", "args": {}}]}
+{"id": "t79", "text": "what's the weather going to be like on sunday", "expect": [{"tool": "get_weather", "args": {"date": "2026-11-01"}}]}
+{"id": "t80", "text": "remove the reminder to call my mother", "expect": [{"tool": "delete_reminder", "args": {"text": "mother"}}]}

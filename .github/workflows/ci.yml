@@ -1,0 +1,142 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  engine:
+    # The C++ engine on the CPU: features, speech detection, the voice read back by Whisper (base.en),
+    # the wake word on a voice it never trained on, and a small language model (Qwen2.5-0.5B) calling a
+    # tool under the grammar.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/cache@v5
+        with:
+          path: third_party/downloads
+          key: downloads-${{ matrix.os }}-${{ hashFiles('scripts/fetch-deps.sh') }}
+      - name: Dependencies
+        run: bash scripts/fetch-deps.sh --ci
+      - name: Build
+        run: |
+          cmake -S engine -B engine/build -DCMAKE_BUILD_TYPE=Release
+          cmake --build engine/build --config Release --parallel 4
+      - name: Tests
+        env:
+          COURIER_TEST_LLM: ${{ github.workspace }}/third_party/models/qwen2.5-0.5b-instruct-q4_k_m.gguf
+        run: ctest --test-dir engine/build -C Release --output-on-failure
+      - uses: actions/upload-artifact@v6
+        with:
+          name: engine-${{ matrix.os }}
+          path: |
+            engine/build/Release/*.dll
+            engine/build/*.so*
+
+  courier:
+    # The orchestrator: dialog, endpointing, prompts, grounding, resampling, the Lua host and every
+    # shipped plugin's own tests. Then the whole assistant on a spoken request, in real time, on the CPU.
+    needs: engine
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v5
+      - name: ALSA headers (cpal)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
+      - uses: actions/cache@v5
+        with:
+          path: |
+            ~/.cargo/registry
+            courier/target
+          key: cargo-${{ matrix.os }}-${{ hashFiles('courier/Cargo.lock') }}
+      - name: Format, lint, test
+        working-directory: courier
+        run: |
+          cargo fmt --check
+          cargo clippy --all-targets -- -D warnings
+          cargo test
+          cargo build --release
+      - uses: actions/cache@v5
+        with:
+          path: third_party/downloads
+          key: downloads-${{ matrix.os }}-${{ hashFiles('scripts/fetch-deps.sh') }}
+      - name: Models
+        run: bash scripts/fetch-deps.sh --ci
+      - uses: actions/download-artifact@v6
+        with:
+          name: engine-${{ matrix.os }}
+          path: engine/build
+      - name: Plugins
+        run: courier/target/release/courier plugins --test
+      - name: "End to end: \"Hey Courier, flip a coin\" (woken at the phrase's end)"
+        run: |
+          cat > ci.toml <<'EOF'
+          [models]
+          llm = "third_party/models/qwen2.5-0.5b-instruct-q4_k_m.gguf"
+          whisper = "third_party/models/ggml-base.en-q5_1.bin"
+          gpu_layers = 0
+          [assistant]
+          network = false
+          data_dir = "ci-data"
+          EOF
+          bin=courier/target/release/courier
+          if [ -f engine/build/Release/courier_engine.dll ]; then export COURIER_ENGINE=$PWD/engine/build/Release/courier_engine.dll; else export COURIER_ENGINE=$PWD/engine/build/libcourier_engine.so; fi
+          "$bin" --config ci.toml say "Hey [[kˈʊɹiɚ]], flip a coin." --out request.wav
+          "$bin" --config ci.toml sim request.wav --json timeline.json --tail 25 --wake-at 0.75
+          python - <<'PY'
+          import json
+          marks = json.load(open("timeline.json", encoding="utf-8"))
+          kinds = [m["what"] for m in marks]
+          assert "wake_given" in kinds, kinds
+          assert "heard" in kinds, kinds
+          tools = [m["data"]["name"] for m in marks if m["what"] == "tool"]
+          said = [m["data"]["text"] for m in marks if m["what"] == "say"]
+          print("tools:", tools, "said:", said)
+          assert said, "nothing was said"
+          PY
+
+  wakeword:
+    # The wake word side: audio helpers, training windows, and PyTorch, ONNX and the engine's streaming
+    # detector giving the same scores.
+    needs: engine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - uses: actions/cache@v5
+        with:
+          path: third_party/downloads
+          key: downloads-ubuntu-latest-${{ hashFiles('scripts/fetch-deps.sh') }}
+      - name: Models
+        run: bash scripts/fetch-deps.sh --ci
+      - uses: actions/download-artifact@v6
+        with:
+          name: engine-ubuntu-latest
+          path: engine/build
+      - name: Tests
+        working-directory: wakeword
+        env:
+          COURIER_ENGINE: ${{ github.workspace }}/engine/build/libcourier_engine.so
+        run: |
+          pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install onnx==1.23.2 onnxscript==0.7.2 onnxruntime==1.31.1 numpy==2.5.4 soundfile==0.14.0 pytest==9.0.2
+          python -m pytest -q
+
+# The evaluations (they need the 3B and 7B models, the training voices and LibriSpeech) run locally:
+# see README.md, "Results".

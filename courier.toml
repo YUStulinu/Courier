@@ -1,0 +1,21 @@
+# Courier's settings. Paths are relative to this file. Every key has a default; see
+# courier/src/config.rs for all of them.
+
+[models]
+llm = "models/Qwen2.5-3B-Instruct-Q4_K_M.gguf"
+whisper = "third_party/models/ggml-small.en-q5_1.bin"
+voice = "third_party/models/en_US-ljspeech-medium.onnx"
+wake = "models/wake/hey_courier.onnx"
+gpu_layers = 99
+
+[assistant]
+place = "Bucharest, Romania"
+# The weather plugin is the only one that uses the network.
+network = true
+
+# [plugins.music]
+# dir = "D:/Music"
+# [plugins.files]
+# roots = ["D:/Work", "C:/Users/me/Documents"]
+# [plugins.calendar]
+# file = "C:/Users/me/calendar.ics"

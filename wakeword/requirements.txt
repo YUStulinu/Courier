@@ -1,0 +1,10 @@
+# PyTorch with CUDA: pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu128 --extra-index-url https://pypi.org/simple
+torch==2.11.0
+onnx==1.23.2
+onnxscript==0.7.2
+onnxruntime==1.31.1
+numpy==2.5.4
+soundfile==0.14.0
+sounddevice==0.5.3
+matplotlib==3.11.0
+pytest==9.0.2

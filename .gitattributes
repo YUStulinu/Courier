@@ -1,0 +1,10 @@
+* text=auto
+*.sh text eol=lf
+*.cmd text eol=crlf
+*.lua text eol=lf
+*.jsonl text eol=lf
+*.json text eol=lf
+*.png binary
+*.onnx binary
+*.pt binary
+*.wav binary

@@ -1,0 +1,40 @@
+{"id": "h01", "text": "could you count down fifteen minutes for me", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 900}}}]}
+{"id": "h02", "text": "egg timer, four minutes", "expect": [{"tool": "set_timer", "args": {"_result": {"seconds": 240}}}]}
+{"id": "h03", "text": "give me a twenty minute timer for the laundry", "expect": [{"tool": "set_timer", "args": {"label": "laundry", "_result": {"seconds": 1200}}}]}
+{"id": "h04", "text": "how long until my timer goes off", "expect": [{"tool": "list_timers", "args": {}}]}
+{"id": "h05", "text": "get rid of the laundry timer", "expect": [{"tool": "cancel_timer", "args": {"label": "laundry"}}]}
+{"id": "h06", "text": "don't let me forget to pay the rent on monday at nine", "expect": [{"tool": "add_reminder", "args": {"text": "pay rent", "time": "09:00", "date": "2026-11-02"}}]}
+{"id": "h07", "text": "in two hours remind me to take my medicine", "expect": [{"tool": "add_reminder", "args": {"text": "medicine", "_result": {"in_seconds": 7200}}}]}
+{"id": "h08", "text": "ping me at half past four to leave for the station", "expect": [{"tool": "add_reminder", "args": {"text": "leave station", "time": "16:30"}}]}
+{"id": "h09", "text": "which reminders are coming up", "expect": [{"tool": "list_reminders", "args": {}}]}
+{"id": "h10", "text": "forget the reminder about the rent", "expect": [{"tool": "delete_reminder", "args": {"text": "rent"}}]}
+{"id": "h11", "text": "am I free on wednesday", "expect": [{"tool": "calendar_events", "args": {"date": "2026-11-04"}}]}
+{"id": "h12", "text": "what does my day look like", "expect": [{"tool": "calendar_events", "args": {"date": {"date": "2026-10-29", "optional": true}}}]}
+{"id": "h13", "text": "book a call with the bank on tuesday at eleven", "expect": [{"tool": "add_event", "args": {"title": "bank", "date": "2026-11-03", "time": "11:00"}}]}
+{"id": "h14", "text": "add my sister's birthday on december 2", "expect": [{"tool": "add_event", "args": {"title": "sister birthday", "date": "2026-12-02"}}]}
+{"id": "h15", "text": "look for the contract with the landlord", "expect": [{"tool": "search_files", "args": {"query": "contract landlord"}}]}
+{"id": "h16", "text": "I need the spreadsheet with last year's expenses", "expect": [{"tool": "search_files", "args": {"query": "expense"}}]}
+{"id": "h17", "text": "show me pictures of the dog", "expect": [{"tool": "search_files", "args": {"query": "dog"}}]}
+{"id": "h18", "text": "louder please", "expect": [{"tool": "volume", "args": {"action": "up"}}]}
+{"id": "h19", "text": "turn the sound down a little", "expect": [{"tool": "volume", "args": {"action": "down"}}]}
+{"id": "h20", "text": "silence", "expect": [{"tool": "volume", "args": {"action": "mute"}}]}
+{"id": "h21", "text": "bring up the file explorer", "expect": [{"tool": "open_app", "args": {"name": "explorer"}}]}
+{"id": "h22", "text": "start visual studio code", "expect": [{"tool": "open_app", "args": {"name": "code"}}]}
+{"id": "h23", "text": "I'm stepping away, lock the screen", "expect": [{"tool": "lock_screen", "args": {}}]}
+{"id": "h24", "text": "put on some classical music", "expect": [{"tool": "play_music", "args": {"query": "classical"}}]}
+{"id": "h25", "text": "I want to hear Daft Punk", "expect": [{"tool": "play_music", "args": {"query": "daft punk"}}]}
+{"id": "h26", "text": "hold the music", "expect": [{"tool": "music_control", "args": {"action": "pause"}}]}
+{"id": "h27", "text": "carry on playing", "expect": [{"tool": "music_control", "args": {"action": "resume"}}]}
+{"id": "h28", "text": "play the one before", "expect": [{"tool": "music_control", "args": {"action": "previous"}}]}
+{"id": "h29", "text": "what's the forecast for the weekend", "expect": [{"tool": "get_weather", "args": {"date": {"date": "2026-10-31", "optional": true}}}]}
+{"id": "h30", "text": "is it warm in Barcelona right now", "expect": [{"tool": "get_weather", "args": {"place": "barcelona"}}]}
+{"id": "h31", "text": "will I need a coat tomorrow", "expect": [{"tool": "get_weather", "args": {"date": "2026-10-30"}}]}
+{"id": "h32", "text": "pick heads or tails", "expect": [{"tool": "flip_coin", "args": {}}]}
+{"id": "h33", "text": "roll three six sided dice", "expect": [{"tool": "roll_dice", "args": {"count": 3}}]}
+{"id": "h34", "text": "what is the boiling point of water", "expect": []}
+{"id": "h35", "text": "how many minutes are there in a day", "expect": []}
+{"id": "h36", "text": "say something nice", "expect": []}
+{"id": "h37", "text": "what year did the first moon landing happen", "expect": []}
+{"id": "h38", "text": "ok thanks that's all", "expect": []}
+{"id": "h39", "text": "translate good morning into Spanish", "expect": []}
+{"id": "h40", "text": "how far is it from Paris to Berlin", "expect": []}

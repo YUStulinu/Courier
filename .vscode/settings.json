@@ -1,0 +1,14 @@
+{
+  "rust-analyzer.linkedProjects": ["courier/Cargo.toml"],
+  "cmake.sourceDirectory": "${workspaceFolder}/engine",
+  "cmake.buildDirectory": "${workspaceFolder}/engine/build",
+  "C_Cpp.default.cppStandard": "c++17",
+  "python.defaultInterpreterPath": "${workspaceFolder}/wakeword/.venv/Scripts/python.exe",
+  "python.testing.pytestEnabled": true,
+  "python.testing.cwd": "${workspaceFolder}/wakeword",
+  "Lua.workspace.library": ["${workspaceFolder}/plugins/lib"],
+  "Lua.diagnostics.globals": ["courier"],
+  "Lua.runtime.version": "Lua 5.4",
+  "files.exclude": { "engine/build*": true, "courier/target": true, "wakeword/.venv": true },
+  "search.exclude": { "third_party": true, "wakeword/data": true, "engine/build*": true, "courier/target": true }
+}

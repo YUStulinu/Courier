@@ -1,0 +1,30 @@
+{"id": "p01", "text": "Remind me to | call my sister at six.", "pause_ms": 700, "speaker": 75}
+{"id": "p02", "text": "Set a timer for | twenty minutes.", "pause_ms": 700, "speaker": 47}
+{"id": "p03", "text": "What's the weather like in | Rome tomorrow?", "pause_ms": 900, "speaker": 80}
+{"id": "p04", "text": "Play some music by | Miles Davis.", "pause_ms": 600, "speaker": 77}
+{"id": "p05", "text": "Add a meeting with | Anna on Friday at three.", "pause_ms": 600, "speaker": 107}
+{"id": "p06", "text": "Find my notes about the | boiler repair.", "pause_ms": 900, "speaker": 33}
+{"id": "p07", "text": "Can you remind me to | water the plants tomorrow morning?", "pause_ms": 700, "speaker": 24}
+{"id": "p08", "text": "Turn the volume | down a little.", "pause_ms": 900, "speaker": 69}
+{"id": "p09", "text": "Open the | calculator.", "pause_ms": 900, "speaker": 50}
+{"id": "p10", "text": "What do I have on my calendar for | next Monday?", "pause_ms": 700, "speaker": 29}
+{"id": "p11", "text": "Remind me in | half an hour to check the oven.", "pause_ms": 700, "speaker": 66}
+{"id": "p12", "text": "Set a timer for the pasta, | ten minutes.", "pause_ms": 900, "speaker": 94}
+{"id": "p13", "text": "Search my documents for | the tax return.", "pause_ms": 600, "speaker": 85}
+{"id": "p14", "text": "I'd like to hear | some jazz.", "pause_ms": 600, "speaker": 20}
+{"id": "p15", "text": "What's on my schedule | for tomorrow?", "pause_ms": 600, "speaker": 38}
+{"id": "n01", "text": "Set a timer for five minutes.", "speaker": 99}
+{"id": "n02", "text": "What's the weather like today?", "speaker": 3}
+{"id": "n03", "text": "Pause the music.", "speaker": 105}
+{"id": "n04", "text": "Remind me to call Anna at seven.", "speaker": 34}
+{"id": "n05", "text": "Lock the computer.", "speaker": 60}
+{"id": "n06", "text": "What time is it?", "speaker": 76}
+{"id": "n07", "text": "Play the Beatles.", "speaker": 92}
+{"id": "n08", "text": "Flip a coin.", "speaker": 49}
+{"id": "n09", "text": "What's on my calendar tomorrow?", "speaker": 91}
+{"id": "n10", "text": "Turn the volume up.", "speaker": 100}
+{"id": "n11", "text": "How many days are in a leap year?", "speaker": 54}
+{"id": "n12", "text": "Open notepad.", "speaker": 50}
+{"id": "n13", "text": "Next song.", "speaker": 93}
+{"id": "n14", "text": "Cancel the timer.", "speaker": 102}
+{"id": "n15", "text": "Tell me a joke.", "speaker": 73}

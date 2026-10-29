@@ -1,0 +1,741 @@
+{
+  "summary": {
+    "speculation": true,
+    "wake": "detector",
+    "requests": 20,
+    "woke": 0.05,
+    "tool_ok": 0.25,
+    "wake_delay_ms_median": 125.9375,
+    "endpoint_ms_median": 239.6875,
+    "first_audio_ms_median": 1560.0660999999964,
+    "first_audio_ms_p90": 1560.0660999999964,
+    "under_1s": 0.0,
+    "speculation_kept": 1,
+    "speculation_dropped": 0
+  },
+  "requests": [
+    {
+      "id": "l01",
+      "text": "Set a timer for ten minutes.",
+      "expected_tool": "set_timer",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l02",
+      "text": "What's the weather like tomorrow?",
+      "expected_tool": "get_weather",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l03",
+      "text": "Remind me to call my mother at six.",
+      "expected_tool": "add_reminder",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l04",
+      "text": "Play some jazz.",
+      "expected_tool": "play_music",
+      "tool": "play_music",
+      "tool_ok": true,
+      "woke": true,
+      "wake_after_phrase_ms": 125.9375,
+      "heard": "Play some jazz.",
+      "endpoint_after_speech_ms": 239.6875,
+      "first_audio_after_speech_ms": 1560.0660999999964,
+      "said": "I couldn't find any jazz music in your music folder. You might want to add some."
+    },
+    {
+      "id": "l05",
+      "text": "What's on my calendar today?",
+      "expected_tool": "calendar_events",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l06",
+      "text": "Turn the volume down.",
+      "expected_tool": "volume",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l07",
+      "text": "Flip a coin.",
+      "expected_tool": "flip_coin",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l08",
+      "text": "What's the capital of Portugal?",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l09",
+      "text": "Open the calculator.",
+      "expected_tool": "open_app",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l10",
+      "text": "Find my notes about the boiler.",
+      "expected_tool": "search_files",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l11",
+      "text": "How many days are in a leap year?",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l12",
+      "text": "Pause the music.",
+      "expected_tool": "music_control",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l13",
+      "text": "Roll two dice.",
+      "expected_tool": "roll_dice",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l14",
+      "text": "Tell me a joke.",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l15",
+      "text": "Cancel the timer.",
+      "expected_tool": "cancel_timer",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l16",
+      "text": "What reminders do I have?",
+      "expected_tool": "list_reminders",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l17",
+      "text": "Add lunch with Mark tomorrow at noon.",
+      "expected_tool": "add_event",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l18",
+      "text": "Good morning!",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l19",
+      "text": "Set a timer for an hour and a half.",
+      "expected_tool": "set_timer",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    },
+    {
+      "id": "l20",
+      "text": "Will it rain on Saturday?",
+      "expected_tool": "get_weather",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": null,
+      "endpoint_after_speech_ms": null,
+      "first_audio_after_speech_ms": null,
+      "said": ""
+    }
+  ],
+  "timeline": [
+    {
+      "ms": 0.0344,
+      "what": "ready",
+      "data": {
+        "info": "wake threshold 0.89, 18 tools, GPU"
+      }
+    },
+    {
+      "ms": 48263.9456,
+      "what": "wake_detected",
+      "data": {
+        "ms_audio": 48222.0
+      }
+    },
+    {
+      "ms": 48263.9638,
+      "what": "wake"
+    },
+    {
+      "ms": 48263.9681,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 49725.560000000005,
+      "what": "transcript",
+      "data": {
+        "job": 2,
+        "text": "Play some jazz.",
+        "ms": 260.4847
+      }
+    },
+    {
+      "ms": 49727.1357,
+      "what": "speculating",
+      "data": {
+        "text": "Play some jazz."
+      }
+    },
+    {
+      "ms": 49741.1587,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 49280.0,
+        "confirmed_ms": 49728.0
+      }
+    },
+    {
+      "ms": 49741.1859,
+      "what": "heard",
+      "data": {
+        "text": "Play some jazz."
+      }
+    },
+    {
+      "ms": 49741.186499999996,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 49798.2806,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 49828.3469,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 49858.098900000005,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 49881.684499999996,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 49901.1408,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 49929.0716,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 49958.3566,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "play"
+      }
+    },
+    {
+      "ms": 49986.0429,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "_music"
+      }
+    },
+    {
+      "ms": 50011.0489,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 50030.661100000005,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 50055.459800000004,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 50082.6001,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 50107.9994,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 50130.956900000005,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "query"
+      }
+    },
+    {
+      "ms": 50155.1299,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 50177.6573,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 50201.4919,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "j"
+      }
+    },
+    {
+      "ms": 50225.1209,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "azz"
+      }
+    },
+    {
+      "ms": 50250.5389,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 50250.6288,
+      "what": "generated",
+      "data": {
+        "turn": 3,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"play_music\", \"arguments\": {\"query\": \"jazz\"}}\n",
+        "prompt_tokens": 2043,
+        "reused_tokens": 1991,
+        "generated": 19,
+        "ms_prompt": 34.1842,
+        "ms_first": 70.6428,
+        "ms": 522.9272
+      }
+    },
+    {
+      "ms": 50250.6838,
+      "what": "tool",
+      "data": {
+        "name": "play_music",
+        "arguments": {
+          "query": "jazz"
+        }
+      }
+    },
+    {
+      "ms": 50251.278999999995,
+      "what": "result",
+      "data": {
+        "value": {
+          "error": "the music folder is empty or not set ([plugins.music] dir)"
+        }
+      }
+    },
+    {
+      "ms": 50317.7208,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "I"
+      }
+    },
+    {
+      "ms": 50345.598600000005,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " couldn"
+      }
+    },
+    {
+      "ms": 50371.0289,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "'t"
+      }
+    },
+    {
+      "ms": 50395.899900000004,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " find"
+      }
+    },
+    {
+      "ms": 50425.4508,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " any"
+      }
+    },
+    {
+      "ms": 50448.58,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " jazz"
+      }
+    },
+    {
+      "ms": 50471.8602,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " music"
+      }
+    },
+    {
+      "ms": 50500.0887,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " in"
+      }
+    },
+    {
+      "ms": 50525.1123,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " your"
+      }
+    },
+    {
+      "ms": 50541.612700000005,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " music"
+      }
+    },
+    {
+      "ms": 50559.219900000004,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " folder"
+      }
+    },
+    {
+      "ms": 50584.85309999999,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "."
+      }
+    },
+    {
+      "ms": 50599.871100000004,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " You"
+      }
+    },
+    {
+      "ms": 50620.0575,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " might"
+      }
+    },
+    {
+      "ms": 50639.051999999996,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " want"
+      }
+    },
+    {
+      "ms": 50658.9289,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " to"
+      }
+    },
+    {
+      "ms": 50682.9472,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " add"
+      }
+    },
+    {
+      "ms": 50704.3365,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": " some"
+      }
+    },
+    {
+      "ms": 50724.1752,
+      "what": "piece",
+      "data": {
+        "turn": 3,
+        "text": "."
+      }
+    },
+    {
+      "ms": 50744.73239999999,
+      "what": "generated",
+      "data": {
+        "turn": 3,
+        "stop": "end",
+        "text": "I couldn't find any jazz music in your music folder. You might want to add some.",
+        "prompt_tokens": 2100,
+        "reused_tokens": 2061,
+        "generated": 19,
+        "ms_prompt": 32.8389,
+        "ms_first": 65.9802,
+        "ms": 491.2861
+      }
+    },
+    {
+      "ms": 51048.3786,
+      "what": "first_audio",
+      "data": {
+        "turn": 3
+      }
+    },
+    {
+      "ms": 51048.3822,
+      "what": "say",
+      "data": {
+        "text": "I couldn't find any jazz music in your music folder.",
+        "seconds": 3.4017233560090703
+      }
+    },
+    {
+      "ms": 51272.269100000005,
+      "what": "say",
+      "data": {
+        "text": "You might want to add some.",
+        "seconds": 1.6718367346938776
+      }
+    },
+    {
+      "ms": 54451.2363,
+      "what": "said",
+      "data": {
+        "text": "You might want to add some."
+      }
+    },
+    {
+      "ms": 56133.0144,
+      "what": "said",
+      "data": {
+        "text": "You might want to add some."
+      }
+    },
+    {
+      "ms": 56133.034100000004,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 61144.2219,
+      "what": "asleep"
+    }
+  ]
+}

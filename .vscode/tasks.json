@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "fetch dependencies", "type": "shell", "command": "bash scripts/fetch-deps.sh --llm", "problemMatcher": [] },
+    { "label": "build engine (CPU)", "type": "shell", "command": "cmake -S engine -B engine/build && cmake --build engine/build --config Release", "group": "build", "problemMatcher": ["$msCompile", "$gcc"] },
+    { "label": "build engine (CUDA, Windows)", "type": "shell", "command": "scripts\build-cuda.cmd", "group": "build", "problemMatcher": ["$msCompile"] },
+    { "label": "build courier", "type": "shell", "command": "cargo build --release", "options": { "cwd": "${workspaceFolder}/courier" }, "group": "build", "problemMatcher": ["$rustc"] },
+    { "label": "run", "type": "shell", "command": "courier/target/release/courier run", "isBackground": true, "problemMatcher": [] },
+    { "label": "chat (typed)", "type": "shell", "command": "courier/target/release/courier chat", "problemMatcher": [] },
+    { "label": "engine tests", "type": "shell", "command": "ctest --test-dir engine/build -C Release --output-on-failure", "group": "test", "problemMatcher": [] },
+    { "label": "Rust tests", "type": "shell", "command": "cargo test", "options": { "cwd": "${workspaceFolder}/courier" }, "group": "test", "problemMatcher": ["$rustc"] },
+    { "label": "plugin tests", "type": "shell", "command": "courier/target/release/courier plugins --test", "group": "test", "problemMatcher": [] },
+    { "label": "Python tests", "type": "shell", "command": ".venv/Scripts/python -m pytest -q", "options": { "cwd": "${workspaceFolder}/wakeword" }, "group": "test", "problemMatcher": [] }
+  ]
+}

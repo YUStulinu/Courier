@@ -1,0 +1,6498 @@
+{
+  "summary": {
+    "speculation": true,
+    "wake": "given at the end of each wake phrase",
+    "requests": 20,
+    "woke": 0.05,
+    "tool_ok": 0.85,
+    "wake_delay_ms_median": 92.0,
+    "endpoint_ms_median": 312.0625,
+    "first_audio_ms_median": 1010.8500000000058,
+    "first_audio_ms_p90": 1645.7229999999981,
+    "under_1s": 0.5,
+    "speculation_kept": 20,
+    "speculation_dropped": 0
+  },
+  "requests": [
+    {
+      "id": "l01",
+      "text": "Set a timer for ten minutes.",
+      "expected_tool": "set_timer",
+      "tool": "set_timer",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Set a timer for 10 minutes.",
+      "endpoint_after_speech_ms": 243.25,
+      "first_audio_after_speech_ms": 691.5099,
+      "said": "Timer set for 10 minutes."
+    },
+    {
+      "id": "l02",
+      "text": "What's the weather like tomorrow?",
+      "expected_tool": "get_weather",
+      "tool": "get_weather",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "What's the weather like tomorrow?",
+      "endpoint_after_speech_ms": 359.25,
+      "first_audio_after_speech_ms": 1155.4220999999998,
+      "said": "It seems there's an issue with the network. Could you please check your internet connection and try again?"
+    },
+    {
+      "id": "l03",
+      "text": "Remind me to call my mother at six.",
+      "expected_tool": "add_reminder",
+      "tool": "add_reminder",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Remind me to call my mother at six.",
+      "endpoint_after_speech_ms": 242.0,
+      "first_audio_after_speech_ms": 964.3977999999988,
+      "said": "I'll remind you to call mother tomorrow at 6 PM."
+    },
+    {
+      "id": "l04",
+      "text": "Play some jazz.",
+      "expected_tool": "play_music",
+      "tool": "play_music",
+      "tool_ok": true,
+      "woke": true,
+      "wake_after_phrase_ms": 92.0,
+      "heard": "Play some jazz.",
+      "endpoint_after_speech_ms": 218.0,
+      "first_audio_after_speech_ms": 1212.1757999999973,
+      "said": "It seems there's no music set up or the folder is empty. Could you please add some music or set a folder for me to play?"
+    },
+    {
+      "id": "l05",
+      "text": "What's on my calendar today?",
+      "expected_tool": "calendar_events",
+      "tool": "calendar_events",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "What's on my calendar today?",
+      "endpoint_after_speech_ms": 312.0,
+      "first_audio_after_speech_ms": 535.5430000000051,
+      "said": "Nothing in your calendar today."
+    },
+    {
+      "id": "l06",
+      "text": "Turn the volume down.",
+      "expected_tool": "volume",
+      "tool": "volume",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Turn the volume down.",
+      "endpoint_after_speech_ms": 284.625,
+      "first_audio_after_speech_ms": 507.63799999999173,
+      "said": "Quieter."
+    },
+    {
+      "id": "l07",
+      "text": "Flip a coin.",
+      "expected_tool": "flip_coin",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Flip a coin.",
+      "endpoint_after_speech_ms": 328.6875,
+      "first_audio_after_speech_ms": 422.79120000000694,
+      "said": "Flip a coin."
+    },
+    {
+      "id": "l08",
+      "text": "What's the capital of Portugal?",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "What's the capital of Portugal?",
+      "endpoint_after_speech_ms": 269.5,
+      "first_audio_after_speech_ms": 428.34809999998834,
+      "said": "The capital of Portugal is Lisbon."
+    },
+    {
+      "id": "l09",
+      "text": "Open the calculator.",
+      "expected_tool": "open_app",
+      "tool": "open_app",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Open the calculator.",
+      "endpoint_after_speech_ms": 239.4375,
+      "first_audio_after_speech_ms": 1010.8500000000058,
+      "said": "Opening Calculator."
+    },
+    {
+      "id": "l10",
+      "text": "Find my notes about the boiler.",
+      "expected_tool": "search_files",
+      "tool": "search_files",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Find my note about the boiler.",
+      "endpoint_after_speech_ms": 374.75,
+      "first_audio_after_speech_ms": 5450.861700000009,
+      "said": "I found no files about note about the boiler."
+    },
+    {
+      "id": "l11",
+      "text": "How many days are in a leap year?",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "How many days are in a leap here?",
+      "endpoint_after_speech_ms": 317.25,
+      "first_audio_after_speech_ms": 830.4892999999865,
+      "said": "A leap year has 366 days."
+    },
+    {
+      "id": "l12",
+      "text": "Pause the music.",
+      "expected_tool": "music_control",
+      "tool": "music_control",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Pause the music. P",
+      "endpoint_after_speech_ms": 975.4375,
+      "first_audio_after_speech_ms": 1015.2153000000108,
+      "said": "Done."
+    },
+    {
+      "id": "l13",
+      "text": "Roll two dice.",
+      "expected_tool": "roll_dice",
+      "tool": null,
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Roll two dice.",
+      "endpoint_after_speech_ms": 310.1875,
+      "first_audio_after_speech_ms": 1234.9187000000093,
+      "said": "Dice rolled: 4 and 3."
+    },
+    {
+      "id": "l14",
+      "text": "Tell me a joke.",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Tell me a joke.",
+      "endpoint_after_speech_ms": 237.1875,
+      "first_audio_after_speech_ms": 575.1223000000173,
+      "said": "Why was the math book sad? Because it had too many problems."
+    },
+    {
+      "id": "l15",
+      "text": "Cancel the timer.",
+      "expected_tool": "cancel_timer",
+      "tool": "cancel_timer",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Cancel the timer.",
+      "endpoint_after_speech_ms": 351.1875,
+      "first_audio_after_speech_ms": 869.0252000000037,
+      "said": "Timer cancelled."
+    },
+    {
+      "id": "l16",
+      "text": "What reminders do I have?",
+      "expected_tool": "list_reminders",
+      "tool": "list_reminders",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "What reminders do I have? What reminders do I",
+      "endpoint_after_speech_ms": 1335.6875,
+      "first_audio_after_speech_ms": 1622.160600000003,
+      "said": "One reminder: call mother tomorrow at 6 PM."
+    },
+    {
+      "id": "l17",
+      "text": "Add lunch with Mark tomorrow at noon.",
+      "expected_tool": "add_event",
+      "tool": "add_reminder",
+      "tool_ok": false,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Add lunch with Mike tomorrow afternoon. Add lunch",
+      "endpoint_after_speech_ms": 940.0625,
+      "first_audio_after_speech_ms": 2229.6765000000014,
+      "said": "When should I remind you to have lunch with Mike tomorrow afternoon?"
+    },
+    {
+      "id": "l18",
+      "text": "Good morning!",
+      "expected_tool": null,
+      "tool": null,
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Good morning.",
+      "endpoint_after_speech_ms": 312.0625,
+      "first_audio_after_speech_ms": 512.0746999999974,
+      "said": "Good morning! How can I assist you today?"
+    },
+    {
+      "id": "l19",
+      "text": "Set a timer for an hour and a half.",
+      "expected_tool": "set_timer",
+      "tool": "set_timer",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Set a timer for an hour and a half.",
+      "endpoint_after_speech_ms": 273.8125,
+      "first_audio_after_speech_ms": 1466.4713000000338,
+      "said": "Timer set for 1 hour and 30 minutes."
+    },
+    {
+      "id": "l20",
+      "text": "Will it rain on Saturday?",
+      "expected_tool": "get_weather",
+      "tool": "get_weather",
+      "tool_ok": true,
+      "woke": false,
+      "wake_after_phrase_ms": null,
+      "heard": "Will it rain on Saturday?",
+      "endpoint_after_speech_ms": 350.5,
+      "first_audio_after_speech_ms": 1645.7229999999981,
+      "said": "It seems there's an issue with the network. Could you please check your internet connection and try again?"
+    }
+  ],
+  "timeline": [
+    {
+      "ms": 0.0314,
+      "what": "ready",
+      "data": {
+        "info": "wake threshold 0.89, 18 tools, GPU"
+      }
+    },
+    {
+      "ms": 3360.2181,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 3370.75
+      }
+    },
+    {
+      "ms": 3360.2300999999998,
+      "what": "wake"
+    },
+    {
+      "ms": 3360.2336,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 3629.1886,
+      "what": "transcript",
+      "data": {
+        "job": 2,
+        "text": "you",
+        "ms": 128.0677
+      }
+    },
+    {
+      "ms": 5356.8053,
+      "what": "transcript",
+      "data": {
+        "job": 3,
+        "text": "Set a timer for 10 minutes.",
+        "ms": 115.8828
+      }
+    },
+    {
+      "ms": 5357.098,
+      "what": "speculating",
+      "data": {
+        "text": "Set a timer for 10 minutes."
+      }
+    },
+    {
+      "ms": 5429.6168,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 5452.8421,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 5463.7089000000005,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 5120.0,
+        "confirmed_ms": 5504.0
+      }
+    },
+    {
+      "ms": 5463.721,
+      "what": "heard",
+      "data": {
+        "text": "Set a timer for 10 minutes."
+      }
+    },
+    {
+      "ms": 5463.721500000001,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 5476.2182,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 5494.374699999999,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 5514.909000000001,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 5532.587,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 5551.034,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "set"
+      }
+    },
+    {
+      "ms": 5567.4617,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "_timer"
+      }
+    },
+    {
+      "ms": 5582.7719,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 5600.7858,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 5616.6662,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 5633.1352,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 5650.7131,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 5666.3917,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "duration"
+      }
+    },
+    {
+      "ms": 5683.269700000001,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 5704.1079,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 5718.7936,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "1"
+      }
+    },
+    {
+      "ms": 5737.7453000000005,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "0"
+      }
+    },
+    {
+      "ms": 5756.611000000001,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": " minutes"
+      }
+    },
+    {
+      "ms": 5776.7767,
+      "what": "piece",
+      "data": {
+        "turn": 4,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 5776.9116,
+      "what": "generated",
+      "data": {
+        "turn": 4,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"duration\": \"10 minutes\"}}\n",
+        "prompt_tokens": 2048,
+        "reused_tokens": 1991,
+        "generated": 20,
+        "ms_prompt": 19.8018,
+        "ms_first": 72.0288,
+        "ms": 419.158
+      }
+    },
+    {
+      "ms": 5777.0199,
+      "what": "tool",
+      "data": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "10 minutes"
+        }
+      }
+    },
+    {
+      "ms": 5778.1861,
+      "what": "result",
+      "data": {
+        "value": {
+          "ends": "21:51",
+          "id": "timer:1",
+          "seconds": 600,
+          "say": "Timer set for 10 minutes.",
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 5952.2599,
+      "what": "first_audio",
+      "data": {
+        "turn": 4
+      }
+    },
+    {
+      "ms": 5952.2617,
+      "what": "say",
+      "data": {
+        "text": "Timer set for 10 minutes.",
+        "seconds": 1.8459863945578232
+      }
+    },
+    {
+      "ms": 7800.2243,
+      "what": "said",
+      "data": {
+        "text": "Timer set for 10 minutes."
+      }
+    },
+    {
+      "ms": 7800.2382,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 12781.004700000001,
+      "what": "asleep"
+    },
+    {
+      "ms": 18161.128399999998,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 18170.75
+      }
+    },
+    {
+      "ms": 18161.1296,
+      "what": "wake"
+    },
+    {
+      "ms": 18161.130400000002,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 18362.212,
+      "what": "transcript",
+      "data": {
+        "job": 5,
+        "text": "you",
+        "ms": 41.233
+      }
+    },
+    {
+      "ms": 20402.9816,
+      "what": "transcript",
+      "data": {
+        "job": 6,
+        "text": "What's the weather like tomorrow?",
+        "ms": 182.164
+      }
+    },
+    {
+      "ms": 20403.2657,
+      "what": "speculating",
+      "data": {
+        "text": "What's the weather like tomorrow?"
+      }
+    },
+    {
+      "ms": 20440.9782,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 20096.0,
+        "confirmed_ms": 20480.0
+      }
+    },
+    {
+      "ms": 20440.98,
+      "what": "heard",
+      "data": {
+        "text": "What's the weather like tomorrow?"
+      }
+    },
+    {
+      "ms": 20440.9804,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 20471.525,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 20490.588,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 20510.4769,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 20527.129800000002,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 20544.9259,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 20560.913800000002,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 20577.1194,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "get"
+      }
+    },
+    {
+      "ms": 20596.127500000002,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "_weather"
+      }
+    },
+    {
+      "ms": 20612.6113,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 20628.7963,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 20643.4343,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 20659.6579,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 20675.9008,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 20692.888899999998,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "place"
+      }
+    },
+    {
+      "ms": 20709.38,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 20725.3833,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 20742.957300000002,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "B"
+      }
+    },
+    {
+      "ms": 20754.7639,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "uch"
+      }
+    },
+    {
+      "ms": 20770.5189,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "arest"
+      }
+    },
+    {
+      "ms": 20785.8951,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 20801.6261,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 20818.2487,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "date"
+      }
+    },
+    {
+      "ms": 20835.1555,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 20852.0302,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 20867.9122,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "tom"
+      }
+    },
+    {
+      "ms": 20884.4733,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "orrow"
+      }
+    },
+    {
+      "ms": 20898.9759,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 20899.0374,
+      "what": "generated",
+      "data": {
+        "turn": 7,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"get_weather\", \"arguments\": {\"place\": \"Bucharest\", \"date\": \"tomorrow\"}}\n",
+        "prompt_tokens": 2155,
+        "reused_tokens": 2067,
+        "generated": 27,
+        "ms_prompt": 18.0795,
+        "ms_first": 67.8983,
+        "ms": 495.3619
+      }
+    },
+    {
+      "ms": 20899.078400000002,
+      "what": "tool",
+      "data": {
+        "name": "get_weather",
+        "arguments": {
+          "place": "Bucharest",
+          "date": "tomorrow"
+        }
+      }
+    },
+    {
+      "ms": 20899.1849,
+      "what": "result",
+      "data": {
+        "value": {
+          "error": "the network is off (network = false in courier.toml)"
+        }
+      }
+    },
+    {
+      "ms": 20941.6476,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "It"
+      }
+    },
+    {
+      "ms": 20958.4532,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " seems"
+      }
+    },
+    {
+      "ms": 20975.159200000002,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " there"
+      }
+    },
+    {
+      "ms": 20991.5013,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "'s"
+      }
+    },
+    {
+      "ms": 21007.4601,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " an"
+      }
+    },
+    {
+      "ms": 21023.7425,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " issue"
+      }
+    },
+    {
+      "ms": 21040.285499999998,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " with"
+      }
+    },
+    {
+      "ms": 21056.6721,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " the"
+      }
+    },
+    {
+      "ms": 21073.001399999997,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " network"
+      }
+    },
+    {
+      "ms": 21089.4178,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "."
+      }
+    },
+    {
+      "ms": 21105.409600000003,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " Could"
+      }
+    },
+    {
+      "ms": 21121.3738,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " you"
+      }
+    },
+    {
+      "ms": 21138.2807,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " please"
+      }
+    },
+    {
+      "ms": 21153.9976,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " check"
+      }
+    },
+    {
+      "ms": 21170.2935,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " your"
+      }
+    },
+    {
+      "ms": 21187.2597,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " internet"
+      }
+    },
+    {
+      "ms": 21203.641900000002,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " connection"
+      }
+    },
+    {
+      "ms": 21218.8711,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " and"
+      }
+    },
+    {
+      "ms": 21234.1361,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " try"
+      }
+    },
+    {
+      "ms": 21250.5992,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": " again"
+      }
+    },
+    {
+      "ms": 21266.8452,
+      "what": "piece",
+      "data": {
+        "turn": 7,
+        "text": "?"
+      }
+    },
+    {
+      "ms": 21276.1721,
+      "what": "first_audio",
+      "data": {
+        "turn": 7
+      }
+    },
+    {
+      "ms": 21276.1736,
+      "what": "say",
+      "data": {
+        "text": "It seems there's an issue with the network.",
+        "seconds": 2.6006349206349206
+      }
+    },
+    {
+      "ms": 21281.8988,
+      "what": "generated",
+      "data": {
+        "turn": 7,
+        "stop": "end",
+        "text": "It seems there's an issue with the network. Could you please check your internet connection and try again?",
+        "prompt_tokens": 2219,
+        "reused_tokens": 2181,
+        "generated": 21,
+        "ms_prompt": 17.2891,
+        "ms_first": 42.1269,
+        "ms": 382.334
+      }
+    },
+    {
+      "ms": 21507.3934,
+      "what": "say",
+      "data": {
+        "text": "Could you please check your internet connection and try again?",
+        "seconds": 3.657142857142857
+      }
+    },
+    {
+      "ms": 23885.107500000002,
+      "what": "said",
+      "data": {
+        "text": "Could you please check your internet connection and try again?"
+      }
+    },
+    {
+      "ms": 27542.6587,
+      "what": "said",
+      "data": {
+        "text": "Could you please check your internet connection and try again?"
+      }
+    },
+    {
+      "ms": 27542.660099999997,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 32940.9136,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 32945.0625
+      }
+    },
+    {
+      "ms": 32940.9149,
+      "what": "wake"
+    },
+    {
+      "ms": 32940.9158,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 33122.8872,
+      "what": "transcript",
+      "data": {
+        "job": 8,
+        "text": "you",
+        "ms": 41.9451
+      }
+    },
+    {
+      "ms": 35246.6269,
+      "what": "transcript",
+      "data": {
+        "job": 9,
+        "text": "Remind me to call my mother at six.",
+        "ms": 125.6012
+      }
+    },
+    {
+      "ms": 35246.8897,
+      "what": "speculating",
+      "data": {
+        "text": "Remind me to call my mother at six."
+      }
+    },
+    {
+      "ms": 35291.2815,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 35311.1155,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 35335.0663,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 35340.7252,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 35008.0,
+        "confirmed_ms": 35392.0
+      }
+    },
+    {
+      "ms": 35340.727399999996,
+      "what": "heard",
+      "data": {
+        "text": "Remind me to call my mother at six."
+      }
+    },
+    {
+      "ms": 35340.7277,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 35355.5921,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 35375.2577,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 35393.7872,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 35414.8946,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "add"
+      }
+    },
+    {
+      "ms": 35433.6927,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "_rem"
+      }
+    },
+    {
+      "ms": 35452.4802,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "inder"
+      }
+    },
+    {
+      "ms": 35473.038799999995,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 35492.635800000004,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 35511.0991,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 35529.5482,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 35548.354600000006,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 35568.6699,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "text"
+      }
+    },
+    {
+      "ms": 35587.8706,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 35606.5503,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 35626.7558,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "call"
+      }
+    },
+    {
+      "ms": 35645.9621,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " mother"
+      }
+    },
+    {
+      "ms": 35664.853,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 35685.1656,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 35703.932199999996,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "time"
+      }
+    },
+    {
+      "ms": 35722.5556,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 35741.2051,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 35760.8195,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "1"
+      }
+    },
+    {
+      "ms": 35782.0071,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "8"
+      }
+    },
+    {
+      "ms": 35801.3249,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": ":"
+      }
+    },
+    {
+      "ms": 35821.184799999995,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "0"
+      }
+    },
+    {
+      "ms": 35839.716799999995,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "0"
+      }
+    },
+    {
+      "ms": 35860.014200000005,
+      "what": "piece",
+      "data": {
+        "turn": 10,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 35860.0619,
+      "what": "generated",
+      "data": {
+        "turn": 10,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"add_reminder\", \"arguments\": {\"text\": \"call mother\", \"time\": \"18:00\"}}\n",
+        "prompt_tokens": 2260,
+        "reused_tokens": 2240,
+        "generated": 30,
+        "ms_prompt": 18.1873,
+        "ms_first": 44.0106,
+        "ms": 612.7674
+      }
+    },
+    {
+      "ms": 35860.089,
+      "what": "tool",
+      "data": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "call mother",
+          "time": "18:00"
+        }
+      }
+    },
+    {
+      "ms": 35863.013600000006,
+      "what": "result",
+      "data": {
+        "value": {
+          "id": "reminder:2",
+          "say": "I'll remind you to call mother tomorrow at 6 PM.",
+          "at": "2026-10-30 18:00",
+          "in_seconds": 73093,
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 36114.3978,
+      "what": "first_audio",
+      "data": {
+        "turn": 10
+      }
+    },
+    {
+      "ms": 36114.3992,
+      "what": "say",
+      "data": {
+        "text": "I'll remind you to call mother tomorrow at 6 PM.",
+        "seconds": 3.877732426303855
+      }
+    },
+    {
+      "ms": 40000.748,
+      "what": "said",
+      "data": {
+        "text": "I'll remind you to call mother tomorrow at 6 PM."
+      }
+    },
+    {
+      "ms": 40000.749599999996,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 45020.7301,
+      "what": "asleep"
+    },
+    {
+      "ms": 47961.1062,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 47970.0
+      }
+    },
+    {
+      "ms": 47961.107599999996,
+      "what": "wake"
+    },
+    {
+      "ms": 47961.108799999995,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 48103.1436,
+      "what": "wake_detected",
+      "data": {
+        "ms_audio": 48062.0,
+        "ignored": true
+      }
+    },
+    {
+      "ms": 48123.9923,
+      "what": "transcript",
+      "data": {
+        "job": 11,
+        "text": "You",
+        "ms": 43.0719
+      }
+    },
+    {
+      "ms": 49323.090299999996,
+      "what": "transcript",
+      "data": {
+        "job": 12,
+        "text": "Play some jazz.",
+        "ms": 62.2209
+      }
+    },
+    {
+      "ms": 49323.3559,
+      "what": "speculating",
+      "data": {
+        "text": "Play some jazz."
+      }
+    },
+    {
+      "ms": 49500.7802,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 49184.0,
+        "confirmed_ms": 49568.0
+      }
+    },
+    {
+      "ms": 49500.7826,
+      "what": "heard",
+      "data": {
+        "text": "Play some jazz."
+      }
+    },
+    {
+      "ms": 49500.7832,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 49645.597700000006,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 49662.1683,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 49678.5122,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 49691.894499999995,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 49705.5315,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 49719.897699999994,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 49733.629,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "play"
+      }
+    },
+    {
+      "ms": 49747.052500000005,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "_music"
+      }
+    },
+    {
+      "ms": 49761.44639999999,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 49775.1886,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 49789.0715,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 49803.7234,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 49817.2232,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 49830.300299999995,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "query"
+      }
+    },
+    {
+      "ms": 49844.821299999996,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 49858.2346,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 49872.2298,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "j"
+      }
+    },
+    {
+      "ms": 49889.9238,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "azz"
+      }
+    },
+    {
+      "ms": 49906.0675,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 49906.124599999996,
+      "what": "generated",
+      "data": {
+        "turn": 13,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"play_music\", \"arguments\": {\"query\": \"jazz\"}}\n",
+        "prompt_tokens": 2398,
+        "reused_tokens": 2013,
+        "generated": 19,
+        "ms_prompt": 44.0906,
+        "ms_first": 321.8708,
+        "ms": 582.3556
+      }
+    },
+    {
+      "ms": 49906.1452,
+      "what": "tool",
+      "data": {
+        "name": "play_music",
+        "arguments": {
+          "query": "jazz"
+        }
+      }
+    },
+    {
+      "ms": 49906.7605,
+      "what": "result",
+      "data": {
+        "value": {
+          "error": "the music folder is empty or not set ([plugins.music] dir)"
+        }
+      }
+    },
+    {
+      "ms": 49957.0686,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "It"
+      }
+    },
+    {
+      "ms": 49976.8145,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " seems"
+      }
+    },
+    {
+      "ms": 49997.0726,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " there"
+      }
+    },
+    {
+      "ms": 50014.545,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "'s"
+      }
+    },
+    {
+      "ms": 50033.234899999996,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " no"
+      }
+    },
+    {
+      "ms": 50051.274900000004,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " music"
+      }
+    },
+    {
+      "ms": 50067.9362,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " set"
+      }
+    },
+    {
+      "ms": 50085.16620000001,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " up"
+      }
+    },
+    {
+      "ms": 50105.1561,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " or"
+      }
+    },
+    {
+      "ms": 50123.676400000004,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " the"
+      }
+    },
+    {
+      "ms": 50140.8141,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " folder"
+      }
+    },
+    {
+      "ms": 50158.0528,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " is"
+      }
+    },
+    {
+      "ms": 50175.428,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " empty"
+      }
+    },
+    {
+      "ms": 50192.928100000005,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "."
+      }
+    },
+    {
+      "ms": 50210.2604,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " Could"
+      }
+    },
+    {
+      "ms": 50228.444500000005,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " you"
+      }
+    },
+    {
+      "ms": 50246.2564,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " please"
+      }
+    },
+    {
+      "ms": 50262.8536,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " add"
+      }
+    },
+    {
+      "ms": 50280.797999999995,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " some"
+      }
+    },
+    {
+      "ms": 50298.1939,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " music"
+      }
+    },
+    {
+      "ms": 50316.0728,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " or"
+      }
+    },
+    {
+      "ms": 50335.6514,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " set"
+      }
+    },
+    {
+      "ms": 50351.7896,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " a"
+      }
+    },
+    {
+      "ms": 50371.261,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " folder"
+      }
+    },
+    {
+      "ms": 50388.651699999995,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " for"
+      }
+    },
+    {
+      "ms": 50407.13740000001,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " me"
+      }
+    },
+    {
+      "ms": 50426.2352,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " to"
+      }
+    },
+    {
+      "ms": 50447.4887,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": " play"
+      }
+    },
+    {
+      "ms": 50463.875700000004,
+      "what": "piece",
+      "data": {
+        "turn": 13,
+        "text": "?"
+      }
+    },
+    {
+      "ms": 50483.341799999995,
+      "what": "generated",
+      "data": {
+        "turn": 13,
+        "stop": "end",
+        "text": "It seems there's no music set up or the folder is empty. Could you please add some music or set a folder for me to play?",
+        "prompt_tokens": 2455,
+        "reused_tokens": 2416,
+        "generated": 29,
+        "ms_prompt": 18.2902,
+        "ms_first": 49.9099,
+        "ms": 576.1522
+      }
+    },
+    {
+      "ms": 50562.1758,
+      "what": "first_audio",
+      "data": {
+        "turn": 13
+      }
+    },
+    {
+      "ms": 50562.1773,
+      "what": "say",
+      "data": {
+        "text": "It seems there's no music set up or the folder is empty.",
+        "seconds": 4.005442176870749
+      }
+    },
+    {
+      "ms": 50907.0575,
+      "what": "say",
+      "data": {
+        "text": "Could you please add some music or set a folder for me to play?",
+        "seconds": 4.191201814058957
+      }
+    },
+    {
+      "ms": 54568.3289,
+      "what": "said",
+      "data": {
+        "text": "Could you please add some music or set a folder for me to play?"
+      }
+    },
+    {
+      "ms": 58768.6877,
+      "what": "said",
+      "data": {
+        "text": "Could you please add some music or set a folder for me to play?"
+      }
+    },
+    {
+      "ms": 58768.6919,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 62262.7601,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 62280.0
+      }
+    },
+    {
+      "ms": 62262.7609,
+      "what": "wake"
+    },
+    {
+      "ms": 62262.7618,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 62425.9107,
+      "what": "transcript",
+      "data": {
+        "job": 14,
+        "text": "You",
+        "ms": 45.0095
+      }
+    },
+    {
+      "ms": 64296.398199999996,
+      "what": "transcript",
+      "data": {
+        "job": 15,
+        "text": "What's on my calendar today?",
+        "ms": 75.6261
+      }
+    },
+    {
+      "ms": 64296.6548,
+      "what": "speculating",
+      "data": {
+        "text": "What's on my calendar today?"
+      }
+    },
+    {
+      "ms": 64336.000799999994,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 64353.91989999999,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 64372.40319999999,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 64387.9337,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 64402.6137,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 64417.0151,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 64433.638900000005,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "calendar"
+      }
+    },
+    {
+      "ms": 64441.310099999995,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 64128.0,
+        "confirmed_ms": 64512.0
+      }
+    },
+    {
+      "ms": 64441.31160000001,
+      "what": "heard",
+      "data": {
+        "text": "What's on my calendar today?"
+      }
+    },
+    {
+      "ms": 64441.3119,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 64451.1409,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "_events"
+      }
+    },
+    {
+      "ms": 64470.89029999999,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 64484.9942,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 64502.9698,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 64517.16190000001,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 64534.4848,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 64547.619600000005,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "date"
+      }
+    },
+    {
+      "ms": 64561.6677,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 64576.01959999999,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 64591.6995,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "today"
+      }
+    },
+    {
+      "ms": 64605.6837,
+      "what": "piece",
+      "data": {
+        "turn": 16,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 64605.720199999996,
+      "what": "generated",
+      "data": {
+        "turn": 16,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"calendar_events\", \"arguments\": {\"date\": \"today\"}}\n",
+        "prompt_tokens": 2501,
+        "reused_tokens": 2484,
+        "generated": 18,
+        "ms_prompt": 18.3737,
+        "ms_first": 39.0088,
+        "ms": 308.7043
+      }
+    },
+    {
+      "ms": 64605.744,
+      "what": "tool",
+      "data": {
+        "name": "calendar_events",
+        "arguments": {
+          "date": "today"
+        }
+      }
+    },
+    {
+      "ms": 64605.9372,
+      "what": "result",
+      "data": {
+        "value": {
+          "events": {},
+          "say": "Nothing in your calendar today."
+        }
+      }
+    },
+    {
+      "ms": 64735.543000000005,
+      "what": "first_audio",
+      "data": {
+        "turn": 16
+      }
+    },
+    {
+      "ms": 64735.5443,
+      "what": "say",
+      "data": {
+        "text": "Nothing in your calendar today.",
+        "seconds": 1.6950566893424037
+      }
+    },
+    {
+      "ms": 66454.6716,
+      "what": "said",
+      "data": {
+        "text": "Nothing in your calendar today."
+      }
+    },
+    {
+      "ms": 66454.67480000001,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 71441.28379999999,
+      "what": "asleep"
+    },
+    {
+      "ms": 77280.4799,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 77300.0
+      }
+    },
+    {
+      "ms": 77280.4811,
+      "what": "wake"
+    },
+    {
+      "ms": 77280.49059999999,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 77516.9421,
+      "what": "transcript",
+      "data": {
+        "job": 17,
+        "text": "You",
+        "ms": 96.042
+      }
+    },
+    {
+      "ms": 79160.8921,
+      "what": "transcript",
+      "data": {
+        "job": 18,
+        "text": "Turn the volume down.",
+        "ms": 59.9796
+      }
+    },
+    {
+      "ms": 79161.29530000001,
+      "what": "speculating",
+      "data": {
+        "text": "Turn the volume down."
+      }
+    },
+    {
+      "ms": 79216.8391,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 79231.7917,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 79247.5172,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 79262.6133,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 79274.9059,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 79287.1596,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 79299.5908,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "volume"
+      }
+    },
+    {
+      "ms": 79311.9626,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 79321.0141,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 78976.0,
+        "confirmed_ms": 79360.0
+      }
+    },
+    {
+      "ms": 79321.0157,
+      "what": "heard",
+      "data": {
+        "text": "Turn the volume down."
+      }
+    },
+    {
+      "ms": 79321.016,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 79324.1182,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 79336.76789999999,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 79350.8171,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 79366.0177,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 79377.91219999999,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "action"
+      }
+    },
+    {
+      "ms": 79392.52620000001,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 79405.12359999999,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 79417.68000000001,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "down"
+      }
+    },
+    {
+      "ms": 79432.28510000001,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 79444.0159,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 79455.8735,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "steps"
+      }
+    },
+    {
+      "ms": 79469.68789999999,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 79483.28820000001,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": " "
+      }
+    },
+    {
+      "ms": 79494.6635,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "1"
+      }
+    },
+    {
+      "ms": 79508.2507,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "0"
+      }
+    },
+    {
+      "ms": 79522.12819999999,
+      "what": "piece",
+      "data": {
+        "turn": 19,
+        "text": "}}\n"
+      }
+    },
+    {
+      "ms": 79522.1762,
+      "what": "generated",
+      "data": {
+        "turn": 19,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"volume\", \"arguments\": {\"action\": \"down\", \"steps\": 10}}\n",
+        "prompt_tokens": 2574,
+        "reused_tokens": 2518,
+        "generated": 24,
+        "ms_prompt": 16.742,
+        "ms_first": 54.8024,
+        "ms": 360.1101
+      }
+    },
+    {
+      "ms": 79522.2902,
+      "what": "tool",
+      "data": {
+        "name": "volume",
+        "arguments": {
+          "action": "down",
+          "steps": 10
+        }
+      }
+    },
+    {
+      "ms": 79525.6435,
+      "what": "result",
+      "data": {
+        "value": {
+          "say": "Quieter.",
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 79583.01299999999,
+      "what": "first_audio",
+      "data": {
+        "turn": 19
+      }
+    },
+    {
+      "ms": 79583.015,
+      "what": "say",
+      "data": {
+        "text": "Quieter.",
+        "seconds": 0.5804988662131519
+      }
+    },
+    {
+      "ms": 80167.0975,
+      "what": "said",
+      "data": {
+        "text": "Quieter."
+      }
+    },
+    {
+      "ms": 80167.1005,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 85181.1008,
+      "what": "asleep"
+    },
+    {
+      "ms": 91901.2895,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 91911.3125
+      }
+    },
+    {
+      "ms": 91901.2913,
+      "what": "wake"
+    },
+    {
+      "ms": 91901.2925,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 92081.41519999999,
+      "what": "transcript",
+      "data": {
+        "job": 20,
+        "text": "you",
+        "ms": 57.0044
+      }
+    },
+    {
+      "ms": 93082.78300000001,
+      "what": "transcript",
+      "data": {
+        "job": 21,
+        "text": "Flip a coin.",
+        "ms": 97.9581
+      }
+    },
+    {
+      "ms": 93083.27160000001,
+      "what": "speculating",
+      "data": {
+        "text": "Flip a coin."
+      }
+    },
+    {
+      "ms": 93158.18430000001,
+      "what": "piece",
+      "data": {
+        "turn": 22,
+        "text": "Flip"
+      }
+    },
+    {
+      "ms": 93178.8955,
+      "what": "piece",
+      "data": {
+        "turn": 22,
+        "text": " a"
+      }
+    },
+    {
+      "ms": 93200.6688,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 92896.0,
+        "confirmed_ms": 93280.0
+      }
+    },
+    {
+      "ms": 93200.67050000001,
+      "what": "heard",
+      "data": {
+        "text": "Flip a coin."
+      }
+    },
+    {
+      "ms": 93200.67079999999,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 93206.512,
+      "what": "piece",
+      "data": {
+        "turn": 22,
+        "text": " coin"
+      }
+    },
+    {
+      "ms": 93224.75450000001,
+      "what": "piece",
+      "data": {
+        "turn": 22,
+        "text": "."
+      }
+    },
+    {
+      "ms": 93244.7032,
+      "what": "generated",
+      "data": {
+        "turn": 22,
+        "stop": "end",
+        "text": "Flip a coin.",
+        "prompt_tokens": 2646,
+        "reused_tokens": 2597,
+        "generated": 4,
+        "ms_prompt": 26.6105,
+        "ms_first": 74.3188,
+        "ms": 160.7982
+      }
+    },
+    {
+      "ms": 93374.1037,
+      "what": "first_audio",
+      "data": {
+        "turn": 22
+      }
+    },
+    {
+      "ms": 93374.1073,
+      "what": "say",
+      "data": {
+        "text": "Flip a coin.",
+        "seconds": 0.9752380952380952
+      }
+    },
+    {
+      "ms": 94373.2151,
+      "what": "said",
+      "data": {
+        "text": "Flip a coin."
+      }
+    },
+    {
+      "ms": 94373.21889999999,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 99383.83880000001,
+      "what": "asleep"
+    },
+    {
+      "ms": 105943.1929,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 105949.75
+      }
+    },
+    {
+      "ms": 105943.1948,
+      "what": "wake"
+    },
+    {
+      "ms": 105943.1959,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 106096.87359999999,
+      "what": "transcript",
+      "data": {
+        "job": 23,
+        "text": "you",
+        "ms": 36.1088
+      }
+    },
+    {
+      "ms": 108025.29239999999,
+      "what": "transcript",
+      "data": {
+        "job": 24,
+        "text": "What's the capital of Portugal?",
+        "ms": 104.3965
+      }
+    },
+    {
+      "ms": 108025.6535,
+      "what": "speculating",
+      "data": {
+        "text": "What's the capital of Portugal?"
+      }
+    },
+    {
+      "ms": 108066.4669,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": "The"
+      }
+    },
+    {
+      "ms": 108084.0992,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": " capital"
+      }
+    },
+    {
+      "ms": 108104.5101,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": " of"
+      }
+    },
+    {
+      "ms": 108125.4708,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": " Portugal"
+      }
+    },
+    {
+      "ms": 108140.9261,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 107808.0,
+        "confirmed_ms": 108192.0
+      }
+    },
+    {
+      "ms": 108140.9279,
+      "what": "heard",
+      "data": {
+        "text": "What's the capital of Portugal?"
+      }
+    },
+    {
+      "ms": 108140.9283,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 108147.7479,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": " is"
+      }
+    },
+    {
+      "ms": 108167.0414,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": " Lisbon"
+      }
+    },
+    {
+      "ms": 108189.40310000001,
+      "what": "piece",
+      "data": {
+        "turn": 25,
+        "text": "."
+      }
+    },
+    {
+      "ms": 108212.0629,
+      "what": "generated",
+      "data": {
+        "turn": 25,
+        "stop": "end",
+        "text": "The capital of Portugal is Lisbon.",
+        "prompt_tokens": 2667,
+        "reused_tokens": 2650,
+        "generated": 7,
+        "ms_prompt": 19.0143,
+        "ms_first": 40.2837,
+        "ms": 185.8005
+      }
+    },
+    {
+      "ms": 108350.84809999999,
+      "what": "first_audio",
+      "data": {
+        "turn": 25
+      }
+    },
+    {
+      "ms": 108350.8495,
+      "what": "say",
+      "data": {
+        "text": "The capital of Portugal is Lisbon.",
+        "seconds": 2.182675736961451
+      }
+    },
+    {
+      "ms": 110545.5426,
+      "what": "said",
+      "data": {
+        "text": "The capital of Portugal is Lisbon."
+      }
+    },
+    {
+      "ms": 110545.5468,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 115580.946,
+      "what": "asleep"
+    },
+    {
+      "ms": 120940.68729999999,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 120944.1875
+      }
+    },
+    {
+      "ms": 120940.68950000001,
+      "what": "wake"
+    },
+    {
+      "ms": 120940.6907,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 121176.4182,
+      "what": "transcript",
+      "data": {
+        "job": 26,
+        "text": "You",
+        "ms": 95.6629
+      }
+    },
+    {
+      "ms": 122975.6753,
+      "what": "transcript",
+      "data": {
+        "job": 27,
+        "text": "Open the calculator.",
+        "ms": 72.2221
+      }
+    },
+    {
+      "ms": 122976.2355,
+      "what": "speculating",
+      "data": {
+        "text": "Open the calculator."
+      }
+    },
+    {
+      "ms": 123120.9321,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 122784.0,
+        "confirmed_ms": 123168.0
+      }
+    },
+    {
+      "ms": 123120.93400000001,
+      "what": "heard",
+      "data": {
+        "text": "Open the calculator."
+      }
+    },
+    {
+      "ms": 123120.9344,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 123485.8486,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 123504.2974,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 123526.48689999999,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 123544.3842,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 123565.7231,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 123584.9705,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 123607.79049999999,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "open"
+      }
+    },
+    {
+      "ms": 123625.1462,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "_app"
+      }
+    },
+    {
+      "ms": 123645.4271,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 123659.9516,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 123677.1905,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 123691.4657,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 123710.289,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 123726.6401,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 123743.9524,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 123761.5889,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 123778.8074,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "calculator"
+      }
+    },
+    {
+      "ms": 123799.2289,
+      "what": "piece",
+      "data": {
+        "turn": 28,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 123799.2818,
+      "what": "generated",
+      "data": {
+        "turn": 28,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"open_app\", \"arguments\": {\"name\": \"calculator\"}}\n",
+        "prompt_tokens": 2688,
+        "reused_tokens": 2013,
+        "generated": 18,
+        "ms_prompt": 412.9904,
+        "ms_first": 508.9197,
+        "ms": 822.3055
+      }
+    },
+    {
+      "ms": 123799.3117,
+      "what": "tool",
+      "data": {
+        "name": "open_app",
+        "arguments": {
+          "name": "calculator"
+        }
+      }
+    },
+    {
+      "ms": 123812.5331,
+      "what": "result",
+      "data": {
+        "value": {
+          "say": "Opening Calculator.",
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 123939.4125,
+      "what": "first_audio",
+      "data": {
+        "turn": 28
+      }
+    },
+    {
+      "ms": 123939.4149,
+      "what": "say",
+      "data": {
+        "text": "Opening Calculator.",
+        "seconds": 1.2887074829931973
+      }
+    },
+    {
+      "ms": 125247.4782,
+      "what": "said",
+      "data": {
+        "text": "Opening Calculator."
+      }
+    },
+    {
+      "ms": 125247.4825,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 130263.45850000001,
+      "what": "asleep"
+    },
+    {
+      "ms": 135783.6242,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 135799.3125
+      }
+    },
+    {
+      "ms": 135783.62569999998,
+      "what": "wake"
+    },
+    {
+      "ms": 135783.6266,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 135959.9174,
+      "what": "transcript",
+      "data": {
+        "job": 29,
+        "text": "you",
+        "ms": 39.1652
+      }
+    },
+    {
+      "ms": 138058.2281,
+      "what": "transcript",
+      "data": {
+        "job": 30,
+        "text": "Find my note about the boiler.",
+        "ms": 274.4049
+      }
+    },
+    {
+      "ms": 138058.8515,
+      "what": "speculating",
+      "data": {
+        "text": "Find my note about the boiler."
+      }
+    },
+    {
+      "ms": 138061.4717,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 137664.0,
+        "confirmed_ms": 138112.0
+      }
+    },
+    {
+      "ms": 138061.4761,
+      "what": "heard",
+      "data": {
+        "text": "Find my note about the boiler."
+      }
+    },
+    {
+      "ms": 138061.47699999998,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 138126.7475,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 138147.5334,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 138171.3158,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 138187.68209999998,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 138207.7694,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 138225.2364,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 138241.5581,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "search"
+      }
+    },
+    {
+      "ms": 138258.9974,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "_files"
+      }
+    },
+    {
+      "ms": 138275.0715,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 138292.4357,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 138312.3826,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 138330.4617,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 138348.9026,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 138368.3684,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "query"
+      }
+    },
+    {
+      "ms": 138387.4609,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 138405.54320000001,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 138425.2486,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "note"
+      }
+    },
+    {
+      "ms": 138441.59410000002,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " about"
+      }
+    },
+    {
+      "ms": 138458.8655,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " the"
+      }
+    },
+    {
+      "ms": 138475.22420000003,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": " boiler"
+      }
+    },
+    {
+      "ms": 138490.6166,
+      "what": "piece",
+      "data": {
+        "turn": 31,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 138490.6736,
+      "what": "generated",
+      "data": {
+        "turn": 31,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"search_files\", \"arguments\": {\"query\": \"note about the boiler\"}}\n",
+        "prompt_tokens": 2757,
+        "reused_tokens": 2705,
+        "generated": 21,
+        "ms_prompt": 29.0972,
+        "ms_first": 67.4622,
+        "ms": 431.3454
+      }
+    },
+    {
+      "ms": 138490.7093,
+      "what": "tool",
+      "data": {
+        "name": "search_files",
+        "arguments": {
+          "query": "note about the boiler"
+        }
+      }
+    },
+    {
+      "ms": 142897.8542,
+      "what": "result",
+      "data": {
+        "value": {
+          "say": "I found no files about note about the boiler.",
+          "files": {}
+        }
+      }
+    },
+    {
+      "ms": 143188.1117,
+      "what": "first_audio",
+      "data": {
+        "turn": 31
+      }
+    },
+    {
+      "ms": 143188.1155,
+      "what": "say",
+      "data": {
+        "text": "I found no files about note about the boiler.",
+        "seconds": 2.786394557823129
+      }
+    },
+    {
+      "ms": 146001.2102,
+      "what": "said",
+      "data": {
+        "text": "I found no files about note about the boiler."
+      }
+    },
+    {
+      "ms": 146001.21229999998,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 150522.1396,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 150538.3125
+      }
+    },
+    {
+      "ms": 150522.1421,
+      "what": "wake"
+    },
+    {
+      "ms": 150522.1448,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 150687.8433,
+      "what": "transcript",
+      "data": {
+        "job": 32,
+        "text": "You",
+        "ms": 46.4999
+      }
+    },
+    {
+      "ms": 152360.73909999998,
+      "what": "transcript",
+      "data": {
+        "job": 33,
+        "text": "How many days are in a leap here?",
+        "ms": 176.2471
+      }
+    },
+    {
+      "ms": 152361.3974,
+      "what": "speculating",
+      "data": {
+        "text": "How many days are in a leap here?"
+      }
+    },
+    {
+      "ms": 152401.4635,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 152096.0,
+        "confirmed_ms": 152480.0
+      }
+    },
+    {
+      "ms": 152401.4663,
+      "what": "heard",
+      "data": {
+        "text": "How many days are in a leap here?"
+      }
+    },
+    {
+      "ms": 152401.467,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 152455.64390000002,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": "A"
+      }
+    },
+    {
+      "ms": 152482.2067,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": " leap"
+      }
+    },
+    {
+      "ms": 152508.2663,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": " year"
+      }
+    },
+    {
+      "ms": 152528.37840000002,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": " has"
+      }
+    },
+    {
+      "ms": 152549.9923,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": " "
+      }
+    },
+    {
+      "ms": 152569.0277,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": "3"
+      }
+    },
+    {
+      "ms": 152589.2075,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": "6"
+      }
+    },
+    {
+      "ms": 152607.9355,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": "6"
+      }
+    },
+    {
+      "ms": 152629.6933,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": " days"
+      }
+    },
+    {
+      "ms": 152650.13590000002,
+      "what": "piece",
+      "data": {
+        "turn": 34,
+        "text": "."
+      }
+    },
+    {
+      "ms": 152671.3891,
+      "what": "generated",
+      "data": {
+        "turn": 34,
+        "stop": "end",
+        "text": "A leap year has 366 days.",
+        "prompt_tokens": 2845,
+        "reused_tokens": 2777,
+        "generated": 10,
+        "ms_prompt": 25.7405,
+        "ms_first": 93.3324,
+        "ms": 309.0426
+      }
+    },
+    {
+      "ms": 152993.2393,
+      "what": "first_audio",
+      "data": {
+        "turn": 34
+      }
+    },
+    {
+      "ms": 152993.2433,
+      "what": "say",
+      "data": {
+        "text": "A leap year has 366 days.",
+        "seconds": 2.9257142857142857
+      }
+    },
+    {
+      "ms": 155920.7267,
+      "what": "said",
+      "data": {
+        "text": "A leap year has 366 days."
+      }
+    },
+    {
+      "ms": 155920.7292,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 160940.8803,
+      "what": "asleep"
+    },
+    {
+      "ms": 165101.2292,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 165102.75
+      }
+    },
+    {
+      "ms": 165101.231,
+      "what": "wake"
+    },
+    {
+      "ms": 165101.2326,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 165290.937,
+      "what": "transcript",
+      "data": {
+        "job": 35,
+        "text": "you",
+        "ms": 48.491
+      }
+    },
+    {
+      "ms": 166713.22879999998,
+      "what": "transcript",
+      "data": {
+        "job": 36,
+        "text": "Pause the music. P",
+        "ms": 192.2315
+      }
+    },
+    {
+      "ms": 166713.68279999998,
+      "what": "speculating",
+      "data": {
+        "text": "Pause the music. P"
+      }
+    },
+    {
+      "ms": 166753.7139,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 166772.32369999998,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 166793.2707,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 166808.6812,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 166826.3763,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 166842.2769,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 166860.89680000002,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "music"
+      }
+    },
+    {
+      "ms": 166877.3854,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "_control"
+      }
+    },
+    {
+      "ms": 166894.2356,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 166911.0802,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 166926.7772,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 166943.46730000002,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 166960.0033,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 166976.2547,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "action"
+      }
+    },
+    {
+      "ms": 166994.0813,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 167009.8745,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 167027.3499,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "pause"
+      }
+    },
+    {
+      "ms": 167042.7638,
+      "what": "piece",
+      "data": {
+        "turn": 37,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 167042.8113,
+      "what": "generated",
+      "data": {
+        "turn": 37,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"music_control\", \"arguments\": {\"action\": \"pause\"}}\n",
+        "prompt_tokens": 2870,
+        "reused_tokens": 2855,
+        "generated": 18,
+        "ms_prompt": 21.1812,
+        "ms_first": 39.5044,
+        "ms": 328.5785
+      }
+    },
+    {
+      "ms": 167383.9297,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 166400.0,
+        "confirmed_ms": 167424.0
+      }
+    },
+    {
+      "ms": 167383.9328,
+      "what": "heard",
+      "data": {
+        "text": "Pause the music. P"
+      }
+    },
+    {
+      "ms": 167383.9333,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 167383.9584,
+      "what": "tool",
+      "data": {
+        "name": "music_control",
+        "arguments": {
+          "action": "pause"
+        }
+      }
+    },
+    {
+      "ms": 167384.8972,
+      "what": "result",
+      "data": {
+        "value": {
+          "say": "Done.",
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 167463.7778,
+      "what": "first_audio",
+      "data": {
+        "turn": 37
+      }
+    },
+    {
+      "ms": 167463.7793,
+      "what": "say",
+      "data": {
+        "text": "Done.",
+        "seconds": 0.603718820861678
+      }
+    },
+    {
+      "ms": 168081.062,
+      "what": "said",
+      "data": {
+        "text": "Done."
+      }
+    },
+    {
+      "ms": 168081.0656,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 173100.74779999998,
+      "what": "asleep"
+    },
+    {
+      "ms": 179360.593,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 179377.375
+      }
+    },
+    {
+      "ms": 179360.59449999998,
+      "what": "wake"
+    },
+    {
+      "ms": 179360.5961,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 179549.3176,
+      "what": "transcript",
+      "data": {
+        "job": 38,
+        "text": "You",
+        "ms": 48.2737
+      }
+    },
+    {
+      "ms": 181132.4687,
+      "what": "transcript",
+      "data": {
+        "job": 39,
+        "text": "Roll two dice.",
+        "ms": 91.8196
+      }
+    },
+    {
+      "ms": 181133.3977,
+      "what": "speculating",
+      "data": {
+        "text": "Roll two dice."
+      }
+    },
+    {
+      "ms": 181260.49670000002,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 180928.0,
+        "confirmed_ms": 181312.0
+      }
+    },
+    {
+      "ms": 181260.4983,
+      "what": "heard",
+      "data": {
+        "text": "Roll two dice."
+      }
+    },
+    {
+      "ms": 181260.4986,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 181865.3413,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": "Dice"
+      }
+    },
+    {
+      "ms": 181883.4045,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": " rolled"
+      }
+    },
+    {
+      "ms": 181908.45719999998,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": ":"
+      }
+    },
+    {
+      "ms": 181929.7761,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": " "
+      }
+    },
+    {
+      "ms": 181951.6091,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": "4"
+      }
+    },
+    {
+      "ms": 181972.8633,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": " and"
+      }
+    },
+    {
+      "ms": 181993.15780000002,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": " "
+      }
+    },
+    {
+      "ms": 182011.8522,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": "3"
+      }
+    },
+    {
+      "ms": 182033.12170000002,
+      "what": "piece",
+      "data": {
+        "turn": 40,
+        "text": "."
+      }
+    },
+    {
+      "ms": 182054.6407,
+      "what": "generated",
+      "data": {
+        "turn": 40,
+        "stop": "end",
+        "text": "Dice rolled: 4 and 3.",
+        "prompt_tokens": 2934,
+        "reused_tokens": 2013,
+        "generated": 9,
+        "ms_prompt": 453.9789,
+        "ms_first": 731.1405,
+        "ms": 920.4146
+      }
+    },
+    {
+      "ms": 182236.7312,
+      "what": "first_audio",
+      "data": {
+        "turn": 40
+      }
+    },
+    {
+      "ms": 182236.73260000002,
+      "what": "say",
+      "data": {
+        "text": "Dice rolled: 4 and 3.",
+        "seconds": 2.089795918367347
+      }
+    },
+    {
+      "ms": 184343.42250000002,
+      "what": "said",
+      "data": {
+        "text": "Dice rolled: 4 and 3."
+      }
+    },
+    {
+      "ms": 184343.4468,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 189360.65769999998,
+      "what": "asleep"
+    },
+    {
+      "ms": 193944.60799999998,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 193957.0625
+      }
+    },
+    {
+      "ms": 193944.6092,
+      "what": "wake"
+    },
+    {
+      "ms": 193944.61000000002,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 194111.3507,
+      "what": "transcript",
+      "data": {
+        "job": 41,
+        "text": "You",
+        "ms": 49.3796
+      }
+    },
+    {
+      "ms": 195298.6465,
+      "what": "transcript",
+      "data": {
+        "job": 42,
+        "text": "Tell me a joke.",
+        "ms": 177.9401
+      }
+    },
+    {
+      "ms": 195299.0197,
+      "what": "speculating",
+      "data": {
+        "text": "Tell me a joke."
+      }
+    },
+    {
+      "ms": 195341.1226,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 195040.0,
+        "confirmed_ms": 195424.0
+      }
+    },
+    {
+      "ms": 195341.1245,
+      "what": "heard",
+      "data": {
+        "text": "Tell me a joke."
+      }
+    },
+    {
+      "ms": 195341.12490000002,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 195347.7028,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": "Why"
+      }
+    },
+    {
+      "ms": 195373.08200000002,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " was"
+      }
+    },
+    {
+      "ms": 195405.99539999999,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " the"
+      }
+    },
+    {
+      "ms": 195427.01059999998,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " math"
+      }
+    },
+    {
+      "ms": 195447.9599,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " book"
+      }
+    },
+    {
+      "ms": 195469.3167,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " sad"
+      }
+    },
+    {
+      "ms": 195490.71670000002,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": "?"
+      }
+    },
+    {
+      "ms": 195513.4261,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " Because"
+      }
+    },
+    {
+      "ms": 195536.3308,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " it"
+      }
+    },
+    {
+      "ms": 195562.2221,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " had"
+      }
+    },
+    {
+      "ms": 195588.9509,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " too"
+      }
+    },
+    {
+      "ms": 195608.17,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " many"
+      }
+    },
+    {
+      "ms": 195633.9496,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": " problems"
+      }
+    },
+    {
+      "ms": 195654.6181,
+      "what": "piece",
+      "data": {
+        "turn": 43,
+        "text": "."
+      }
+    },
+    {
+      "ms": 195675.42979999998,
+      "what": "generated",
+      "data": {
+        "turn": 43,
+        "stop": "end",
+        "text": "Why was the math book sad? Because it had too many problems.",
+        "prompt_tokens": 2958,
+        "reused_tokens": 2943,
+        "generated": 14,
+        "ms_prompt": 20.8176,
+        "ms_first": 48.155,
+        "ms": 375.836
+      }
+    },
+    {
+      "ms": 195761.93480000002,
+      "what": "first_audio",
+      "data": {
+        "turn": 43
+      }
+    },
+    {
+      "ms": 195761.9371,
+      "what": "say",
+      "data": {
+        "text": "Why was the math book sad?",
+        "seconds": 2.078185941043084
+      }
+    },
+    {
+      "ms": 195983.20620000002,
+      "what": "say",
+      "data": {
+        "text": "Because it had too many problems.",
+        "seconds": 2.426485260770975
+      }
+    },
+    {
+      "ms": 197840.8575,
+      "what": "said",
+      "data": {
+        "text": "Because it had too many problems."
+      }
+    },
+    {
+      "ms": 200297.161,
+      "what": "said",
+      "data": {
+        "text": "Because it had too many problems."
+      }
+    },
+    {
+      "ms": 200297.1846,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 205302.5429,
+      "what": "asleep"
+    },
+    {
+      "ms": 208121.1178,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 208126.8125
+      }
+    },
+    {
+      "ms": 208121.11959999998,
+      "what": "wake"
+    },
+    {
+      "ms": 208121.1205,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 208283.9769,
+      "what": "transcript",
+      "data": {
+        "job": 44,
+        "text": "You",
+        "ms": 42.8795
+      }
+    },
+    {
+      "ms": 209662.5888,
+      "what": "transcript",
+      "data": {
+        "job": 45,
+        "text": "Cancel the timer.",
+        "ms": 198.7813
+      }
+    },
+    {
+      "ms": 209663.23320000002,
+      "what": "speculating",
+      "data": {
+        "text": "Cancel the timer."
+      }
+    },
+    {
+      "ms": 209681.1436,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 209344.0,
+        "confirmed_ms": 209728.0
+      }
+    },
+    {
+      "ms": 209681.1457,
+      "what": "heard",
+      "data": {
+        "text": "Cancel the timer."
+      }
+    },
+    {
+      "ms": 209681.146,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 209705.9625,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 209731.8307,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 209756.4946,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 209776.9638,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 209795.9633,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 209814.5042,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 209836.2493,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "cancel"
+      }
+    },
+    {
+      "ms": 209856.56230000002,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "_timer"
+      }
+    },
+    {
+      "ms": 209876.1649,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 209894.5918,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 209917.5511,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 209937.608,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 209957.4168,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 209977.0121,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "all"
+      }
+    },
+    {
+      "ms": 209995.1597,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 210015.90959999998,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": " false"
+      }
+    },
+    {
+      "ms": 210035.0113,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": ","
+      }
+    },
+    {
+      "ms": 210052.9064,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 210073.5624,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "label"
+      }
+    },
+    {
+      "ms": 210094.4719,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 210115.1506,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": " \"\""
+      }
+    },
+    {
+      "ms": 210134.3139,
+      "what": "piece",
+      "data": {
+        "turn": 46,
+        "text": "}}\n"
+      }
+    },
+    {
+      "ms": 210134.3631,
+      "what": "generated",
+      "data": {
+        "turn": 46,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"cancel_timer\", \"arguments\": {\"all\": false, \"label\": \"\"}}\n",
+        "prompt_tokens": 2986,
+        "reused_tokens": 2972,
+        "generated": 22,
+        "ms_prompt": 27.2061,
+        "ms_first": 41.8928,
+        "ms": 470.2575
+      }
+    },
+    {
+      "ms": 210134.3912,
+      "what": "tool",
+      "data": {
+        "name": "cancel_timer",
+        "arguments": {
+          "all": false,
+          "label": ""
+        }
+      }
+    },
+    {
+      "ms": 210135.0366,
+      "what": "result",
+      "data": {
+        "value": {
+          "say": "Timer cancelled.",
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 210245.8377,
+      "what": "first_audio",
+      "data": {
+        "turn": 46
+      }
+    },
+    {
+      "ms": 210245.8394,
+      "what": "say",
+      "data": {
+        "text": "Timer cancelled.",
+        "seconds": 1.0100680272108844
+      }
+    },
+    {
+      "ms": 211280.8103,
+      "what": "said",
+      "data": {
+        "text": "Timer cancelled."
+      }
+    },
+    {
+      "ms": 211280.8119,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 216301.35139999999,
+      "what": "asleep"
+    },
+    {
+      "ms": 222183.3317,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 222194.3125
+      }
+    },
+    {
+      "ms": 222183.3341,
+      "what": "wake"
+    },
+    {
+      "ms": 222183.3357,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 222367.5976,
+      "what": "transcript",
+      "data": {
+        "job": 47,
+        "text": "You",
+        "ms": 45.995
+      }
+    },
+    {
+      "ms": 223872.25660000002,
+      "what": "transcript",
+      "data": {
+        "job": 48,
+        "text": "What reminders do I have? What reminders do I",
+        "ms": 231.2949
+      }
+    },
+    {
+      "ms": 223872.7139,
+      "what": "speculating",
+      "data": {
+        "text": "What reminders do I have? What reminders do I"
+      }
+    },
+    {
+      "ms": 223955.2557,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 223977.9781,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 224007.3185,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 224031.5545,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 224056.63150000002,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 224082.2383,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 224104.6671,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "list"
+      }
+    },
+    {
+      "ms": 224125.0627,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "_rem"
+      }
+    },
+    {
+      "ms": 224143.937,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "inders"
+      }
+    },
+    {
+      "ms": 224163.36609999998,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 224183.2904,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 224207.72460000002,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 224229.4533,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 224252.71240000002,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": " {}"
+      }
+    },
+    {
+      "ms": 224273.3315,
+      "what": "piece",
+      "data": {
+        "turn": 49,
+        "text": "}\n"
+      }
+    },
+    {
+      "ms": 224273.3915,
+      "what": "generated",
+      "data": {
+        "turn": 49,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"list_reminders\", \"arguments\": {}}\n",
+        "prompt_tokens": 3062,
+        "reused_tokens": 3007,
+        "generated": 15,
+        "ms_prompt": 32.9233,
+        "ms_first": 81.854,
+        "ms": 399.951
+      }
+    },
+    {
+      "ms": 224760.8644,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 223520.0,
+        "confirmed_ms": 224800.0
+      }
+    },
+    {
+      "ms": 224760.86659999998,
+      "what": "heard",
+      "data": {
+        "text": "What reminders do I have? What reminders do I"
+      }
+    },
+    {
+      "ms": 224760.8669,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 224760.88450000001,
+      "what": "tool",
+      "data": {
+        "name": "list_reminders",
+        "arguments": {}
+      }
+    },
+    {
+      "ms": 224761.25890000002,
+      "what": "result",
+      "data": {
+        "value": {
+          "say": "One reminder: call mother tomorrow at 6 PM.",
+          "reminders": [
+            {
+              "kind": "reminder",
+              "id": "reminder:2",
+              "at": 1793376000,
+              "text": "Reminder: call mother."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ms": 225086.4731,
+      "what": "first_audio",
+      "data": {
+        "turn": 49
+      }
+    },
+    {
+      "ms": 225086.4771,
+      "what": "say",
+      "data": {
+        "text": "One reminder: call mother tomorrow at 6 PM.",
+        "seconds": 3.5526530612244898
+      }
+    },
+    {
+      "ms": 228662.95669999998,
+      "what": "said",
+      "data": {
+        "text": "One reminder: call mother tomorrow at 6 PM."
+      }
+    },
+    {
+      "ms": 228662.95969999998,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 233681.19999999998,
+      "what": "asleep"
+    },
+    {
+      "ms": 236460.7311,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 236474.375
+      }
+    },
+    {
+      "ms": 236460.733,
+      "what": "wake"
+    },
+    {
+      "ms": 236460.734,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 236673.1054,
+      "what": "transcript",
+      "data": {
+        "job": 50,
+        "text": "You",
+        "ms": 72.3413
+      }
+    },
+    {
+      "ms": 239241.6087,
+      "what": "transcript",
+      "data": {
+        "job": 51,
+        "text": "Add lunch with Mike tomorrow afternoon. Add lunch",
+        "ms": 300.4204
+      }
+    },
+    {
+      "ms": 239242.0631,
+      "what": "speculating",
+      "data": {
+        "text": "Add lunch with Mike tomorrow afternoon. Add lunch"
+      }
+    },
+    {
+      "ms": 239801.095,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 238816.0,
+        "confirmed_ms": 239840.0
+      }
+    },
+    {
+      "ms": 239801.0964,
+      "what": "heard",
+      "data": {
+        "text": "Add lunch with Mike tomorrow afternoon. Add lunch"
+      }
+    },
+    {
+      "ms": 239801.0967,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 240003.5809,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 240024.3447,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 240043.92680000002,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 240062.5613,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 240081.87290000002,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 240100.1739,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 240117.202,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "add"
+      }
+    },
+    {
+      "ms": 240134.9547,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "_rem"
+      }
+    },
+    {
+      "ms": 240152.354,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "inder"
+      }
+    },
+    {
+      "ms": 240170.0178,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 240186.5655,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 240204.4468,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 240221.0765,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 240238.8065,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 240281.8384,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "text"
+      }
+    },
+    {
+      "ms": 240299.66210000002,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 240316.0213,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 240332.6556,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "l"
+      }
+    },
+    {
+      "ms": 240351.7985,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "unch"
+      }
+    },
+    {
+      "ms": 240369.5373,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " with"
+      }
+    },
+    {
+      "ms": 240387.2585,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " Mike"
+      }
+    },
+    {
+      "ms": 240403.98669999998,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 240422.4503,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 240437.51359999998,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "date"
+      }
+    },
+    {
+      "ms": 240454.2346,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 240470.7763,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 240487.3573,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "tom"
+      }
+    },
+    {
+      "ms": 240504.14359999998,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "orrow"
+      }
+    },
+    {
+      "ms": 240520.55279999998,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 240520.7867,
+      "what": "generated",
+      "data": {
+        "turn": 52,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"add_reminder\", \"arguments\": {\"text\": \"lunch with Mike\", \"date\": \"tomorrow\"}}\n",
+        "prompt_tokens": 3185,
+        "reused_tokens": 2013,
+        "generated": 29,
+        "ms_prompt": 670.1871,
+        "ms_first": 760.8905,
+        "ms": 1277.8713
+      }
+    },
+    {
+      "ms": 240520.8147,
+      "what": "tool",
+      "data": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "lunch with Mike",
+          "date": "tomorrow"
+        }
+      }
+    },
+    {
+      "ms": 240520.88069999998,
+      "what": "result",
+      "data": {
+        "value": {
+          "error": "when should I remind you? Ask the user for a time"
+        }
+      }
+    },
+    {
+      "ms": 240569.5031,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "When"
+      }
+    },
+    {
+      "ms": 240589.4168,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " should"
+      }
+    },
+    {
+      "ms": 240614.0841,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " I"
+      }
+    },
+    {
+      "ms": 240633.7047,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " remind"
+      }
+    },
+    {
+      "ms": 240651.8254,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " you"
+      }
+    },
+    {
+      "ms": 240669.5942,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " to"
+      }
+    },
+    {
+      "ms": 240687.0979,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " have"
+      }
+    },
+    {
+      "ms": 240704.13640000002,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " lunch"
+      }
+    },
+    {
+      "ms": 240721.044,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " with"
+      }
+    },
+    {
+      "ms": 240738.0358,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " Mike"
+      }
+    },
+    {
+      "ms": 240754.59649999999,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " tomorrow"
+      }
+    },
+    {
+      "ms": 240772.25519999999,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": " afternoon"
+      }
+    },
+    {
+      "ms": 240790.277,
+      "what": "piece",
+      "data": {
+        "turn": 52,
+        "text": "?"
+      }
+    },
+    {
+      "ms": 240807.3972,
+      "what": "generated",
+      "data": {
+        "turn": 52,
+        "stop": "end",
+        "text": "When should I remind you to have lunch with Mike tomorrow afternoon?",
+        "prompt_tokens": 3250,
+        "reused_tokens": 3213,
+        "generated": 13,
+        "ms_prompt": 26.1623,
+        "ms_first": 48.2043,
+        "ms": 286.0521
+      }
+    },
+    {
+      "ms": 241129.614,
+      "what": "first_audio",
+      "data": {
+        "turn": 52
+      }
+    },
+    {
+      "ms": 241129.6165,
+      "what": "say",
+      "data": {
+        "text": "When should I remind you to have lunch with Mike tomorrow afternoon?",
+        "seconds": 3.657142857142857
+      }
+    },
+    {
+      "ms": 244800.5444,
+      "what": "said",
+      "data": {
+        "text": "When should I remind you to have lunch with Mike tomorrow afternoon?"
+      }
+    },
+    {
+      "ms": 244800.5462,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 249821.29570000002,
+      "what": "asleep"
+    },
+    {
+      "ms": 251762.1231,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 251769.9375
+      }
+    },
+    {
+      "ms": 251762.1252,
+      "what": "wake"
+    },
+    {
+      "ms": 251762.12670000002,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 251999.27779999998,
+      "what": "transcript",
+      "data": {
+        "job": 53,
+        "text": "You",
+        "ms": 97.0686
+      }
+    },
+    {
+      "ms": 253051.7371,
+      "what": "transcript",
+      "data": {
+        "job": 54,
+        "text": "Good morning.",
+        "ms": 129.4248
+      }
+    },
+    {
+      "ms": 253053.4092,
+      "what": "speculating",
+      "data": {
+        "text": "Good morning."
+      }
+    },
+    {
+      "ms": 253143.7106,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 252800.0,
+        "confirmed_ms": 253184.0
+      }
+    },
+    {
+      "ms": 253143.7145,
+      "what": "heard",
+      "data": {
+        "text": "Good morning."
+      }
+    },
+    {
+      "ms": 253143.7151,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 253143.8743,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": "Good"
+      }
+    },
+    {
+      "ms": 253188.77029999997,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " morning"
+      }
+    },
+    {
+      "ms": 253237.9113,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": "!"
+      }
+    },
+    {
+      "ms": 253279.3695,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " How"
+      }
+    },
+    {
+      "ms": 253325.7938,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " can"
+      }
+    },
+    {
+      "ms": 253366.0409,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " I"
+      }
+    },
+    {
+      "ms": 253384.0122,
+      "what": "first_audio",
+      "data": {
+        "turn": 55
+      }
+    },
+    {
+      "ms": 253384.0161,
+      "what": "say",
+      "data": {
+        "text": "Good morning!",
+        "seconds": 0.8243083900226758
+      }
+    },
+    {
+      "ms": 253414.5825,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " assist"
+      }
+    },
+    {
+      "ms": 253474.7966,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " you"
+      }
+    },
+    {
+      "ms": 253525.64979999998,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": " today"
+      }
+    },
+    {
+      "ms": 253570.78340000001,
+      "what": "piece",
+      "data": {
+        "turn": 55,
+        "text": "?"
+      }
+    },
+    {
+      "ms": 253624.3295,
+      "what": "generated",
+      "data": {
+        "turn": 55,
+        "stop": "end",
+        "text": "Good morning! How can I assist you today?",
+        "prompt_tokens": 3276,
+        "reused_tokens": 3263,
+        "generated": 10,
+        "ms_prompt": 37.6028,
+        "ms_first": 89.7264,
+        "ms": 568.2565
+      }
+    },
+    {
+      "ms": 253858.4826,
+      "what": "say",
+      "data": {
+        "text": "How can I assist you today?",
+        "seconds": 1.9040362811791383
+      }
+    },
+    {
+      "ms": 254238.6891,
+      "what": "said",
+      "data": {
+        "text": "How can I assist you today?"
+      }
+    },
+    {
+      "ms": 256125.31350000002,
+      "what": "said",
+      "data": {
+        "text": "How can I assist you today?"
+      }
+    },
+    {
+      "ms": 256125.3168,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 261143.6594,
+      "what": "asleep"
+    },
+    {
+      "ms": 265820.9035,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 265823.9375
+      }
+    },
+    {
+      "ms": 265820.90499999997,
+      "what": "wake"
+    },
+    {
+      "ms": 265820.90599999996,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 266004.5236,
+      "what": "transcript",
+      "data": {
+        "job": 56,
+        "text": "You",
+        "ms": 61.2028
+      }
+    },
+    {
+      "ms": 268331.489,
+      "what": "transcript",
+      "data": {
+        "job": 57,
+        "text": "Set a timer for an hour and a half.",
+        "ms": 249.49
+      }
+    },
+    {
+      "ms": 268332.0663,
+      "what": "speculating",
+      "data": {
+        "text": "Set a timer for an hour and a half."
+      }
+    },
+    {
+      "ms": 268344.50179999997,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 267968.0,
+        "confirmed_ms": 268384.0
+      }
+    },
+    {
+      "ms": 268344.5047,
+      "what": "heard",
+      "data": {
+        "text": "Set a timer for an hour and a half."
+      }
+    },
+    {
+      "ms": 268344.5055,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 268405.6075,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 268448.3497,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 268498.1864,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 268536.8584,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 268585.4104,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 268614.9917,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 268659.3297,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "set"
+      }
+    },
+    {
+      "ms": 268703.2585,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "_timer"
+      }
+    },
+    {
+      "ms": 268750.19529999996,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 268792.614,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 268837.8919,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 268871.8125,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 268905.1553,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 268939.24429999996,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "duration"
+      }
+    },
+    {
+      "ms": 268987.60140000004,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 269033.7872,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 269076.8387,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "an"
+      }
+    },
+    {
+      "ms": 269117.97969999997,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " hour"
+      }
+    },
+    {
+      "ms": 269146.8197,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " and"
+      }
+    },
+    {
+      "ms": 269186.16079999995,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " a"
+      }
+    },
+    {
+      "ms": 269233.4674,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": " half"
+      }
+    },
+    {
+      "ms": 269283.63560000004,
+      "what": "piece",
+      "data": {
+        "turn": 58,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 269283.6892,
+      "what": "generated",
+      "data": {
+        "turn": 58,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"set_timer\", \"arguments\": {\"duration\": \"an hour and a half\"}}\n",
+        "prompt_tokens": 3306,
+        "reused_tokens": 3286,
+        "generated": 22,
+        "ms_prompt": 36.356,
+        "ms_first": 72.6778,
+        "ms": 950.7292
+      }
+    },
+    {
+      "ms": 269283.7214,
+      "what": "tool",
+      "data": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "an hour and a half"
+        }
+      }
+    },
+    {
+      "ms": 269284.33489999996,
+      "what": "result",
+      "data": {
+        "value": {
+          "ends": "23:15",
+          "id": "timer:3",
+          "seconds": 5400,
+          "say": "Timer set for 1 hour and 30 minutes.",
+          "ok": true
+        }
+      }
+    },
+    {
+      "ms": 269576.65880000003,
+      "what": "first_audio",
+      "data": {
+        "turn": 58
+      }
+    },
+    {
+      "ms": 269576.661,
+      "what": "say",
+      "data": {
+        "text": "Timer set for 1 hour and 30 minutes.",
+        "seconds": 2.9605442176870747
+      }
+    },
+    {
+      "ms": 272561.1609,
+      "what": "said",
+      "data": {
+        "text": "Timer set for 1 hour and 30 minutes."
+      }
+    },
+    {
+      "ms": 272561.1638,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 277582.29569999996,
+      "what": "asleep"
+    },
+    {
+      "ms": 281144.79189999995,
+      "what": "wake_given",
+      "data": {
+        "ms_audio": 281143.5
+      }
+    },
+    {
+      "ms": 281144.7938,
+      "what": "wake"
+    },
+    {
+      "ms": 281144.7952,
+      "what": "listening",
+      "data": {
+        "follow_up": false
+      }
+    },
+    {
+      "ms": 281314.07560000004,
+      "what": "transcript",
+      "data": {
+        "job": 59,
+        "text": "You",
+        "ms": 52.7977
+      }
+    },
+    {
+      "ms": 283029.0704,
+      "what": "transcript",
+      "data": {
+        "job": 60,
+        "text": "Will it rain on Saturday?",
+        "ms": 284.8681
+      }
+    },
+    {
+      "ms": 283029.5658,
+      "what": "speculating",
+      "data": {
+        "text": "Will it rain on Saturday?"
+      }
+    },
+    {
+      "ms": 283063.79270000005,
+      "what": "end_of_speech",
+      "data": {
+        "speech_end_ms": 282624.0,
+        "confirmed_ms": 283104.0
+      }
+    },
+    {
+      "ms": 283063.7956,
+      "what": "heard",
+      "data": {
+        "text": "Will it rain on Saturday?"
+      }
+    },
+    {
+      "ms": 283063.7963,
+      "what": "speculation_kept"
+    },
+    {
+      "ms": 283149.4499,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "<tool_call>"
+      }
+    },
+    {
+      "ms": 283177.9778,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\n"
+      }
+    },
+    {
+      "ms": 283205.0586,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "{\""
+      }
+    },
+    {
+      "ms": 283227.81149999995,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "name"
+      }
+    },
+    {
+      "ms": 283252.24100000004,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 283278.2504,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 283305.92439999996,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "get"
+      }
+    },
+    {
+      "ms": 283336.96479999996,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "_weather"
+      }
+    },
+    {
+      "ms": 283361.0475,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 283385.4228,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 283411.0612,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "arguments"
+      }
+    },
+    {
+      "ms": 283436.6334,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 283458.2616,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " {\""
+      }
+    },
+    {
+      "ms": 283479.50179999997,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "place"
+      }
+    },
+    {
+      "ms": 283501.8904,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 283521.5263,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 283544.8697,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "B"
+      }
+    },
+    {
+      "ms": 283571.1048,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "uch"
+      }
+    },
+    {
+      "ms": 283594.8483,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "arest"
+      }
+    },
+    {
+      "ms": 283623.8933,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\","
+      }
+    },
+    {
+      "ms": 283646.05460000003,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 283670.23219999997,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "date"
+      }
+    },
+    {
+      "ms": 283693.08280000003,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\":"
+      }
+    },
+    {
+      "ms": 283716.9569,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " \""
+      }
+    },
+    {
+      "ms": 283738.4056,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "s"
+      }
+    },
+    {
+      "ms": 283762.3124,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "aturday"
+      }
+    },
+    {
+      "ms": 283789.5161,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "\"}}\n"
+      }
+    },
+    {
+      "ms": 283789.6032,
+      "what": "generated",
+      "data": {
+        "turn": 61,
+        "stop": "tool",
+        "text": "<tool_call>\n{\"name\": \"get_weather\", \"arguments\": {\"place\": \"Bucharest\", \"date\": \"saturday\"}}\n",
+        "prompt_tokens": 3423,
+        "reused_tokens": 3327,
+        "generated": 27,
+        "ms_prompt": 35.2567,
+        "ms_first": 119.0503,
+        "ms": 759.1425
+      }
+    },
+    {
+      "ms": 283789.6483,
+      "what": "tool",
+      "data": {
+        "name": "get_weather",
+        "arguments": {
+          "place": "Bucharest",
+          "date": "saturday"
+        }
+      }
+    },
+    {
+      "ms": 283789.7693,
+      "what": "result",
+      "data": {
+        "value": {
+          "error": "the network is off (network = false in courier.toml)"
+        }
+      }
+    },
+    {
+      "ms": 283858.1825,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "It"
+      }
+    },
+    {
+      "ms": 283886.4704,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " seems"
+      }
+    },
+    {
+      "ms": 283911.51769999997,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " there"
+      }
+    },
+    {
+      "ms": 283936.6863,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "'s"
+      }
+    },
+    {
+      "ms": 283958.5892,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " an"
+      }
+    },
+    {
+      "ms": 283982.4381,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " issue"
+      }
+    },
+    {
+      "ms": 284006.7031,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " with"
+      }
+    },
+    {
+      "ms": 284028.1998,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " the"
+      }
+    },
+    {
+      "ms": 284052.0897,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " network"
+      }
+    },
+    {
+      "ms": 284078.9454,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "."
+      }
+    },
+    {
+      "ms": 284103.9339,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " Could"
+      }
+    },
+    {
+      "ms": 284126.1699,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " you"
+      }
+    },
+    {
+      "ms": 284150.562,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " please"
+      }
+    },
+    {
+      "ms": 284172.5305,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " check"
+      }
+    },
+    {
+      "ms": 284192.5135,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " your"
+      }
+    },
+    {
+      "ms": 284219.7267,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " internet"
+      }
+    },
+    {
+      "ms": 284243.79449999996,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " connection"
+      }
+    },
+    {
+      "ms": 284269.0556,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " and"
+      }
+    },
+    {
+      "ms": 284289.52249999996,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " try"
+      }
+    },
+    {
+      "ms": 284311.5527,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": " again"
+      }
+    },
+    {
+      "ms": 284334.9951,
+      "what": "piece",
+      "data": {
+        "turn": 61,
+        "text": "?"
+      }
+    },
+    {
+      "ms": 284355.66490000003,
+      "what": "generated",
+      "data": {
+        "turn": 61,
+        "stop": "end",
+        "text": "It seems there's an issue with the network. Could you please check your internet connection and try again?",
+        "prompt_tokens": 3487,
+        "reused_tokens": 3449,
+        "generated": 21,
+        "ms_prompt": 29.1983,
+        "ms_first": 67.8542,
+        "ms": 565.2684
+      }
+    },
+    {
+      "ms": 284399.223,
+      "what": "first_audio",
+      "data": {
+        "turn": 61
+      }
+    },
+    {
+      "ms": 284399.2262,
+      "what": "say",
+      "data": {
+        "text": "It seems there's an issue with the network.",
+        "seconds": 2.5658049886621317
+      }
+    },
+    {
+      "ms": 284822.12470000004,
+      "what": "say",
+      "data": {
+        "text": "Could you please check your internet connection and try again?",
+        "seconds": 3.517823129251701
+      }
+    },
+    {
+      "ms": 286984.2729,
+      "what": "said",
+      "data": {
+        "text": "Could you please check your internet connection and try again?"
+      }
+    },
+    {
+      "ms": 290503.6785,
+      "what": "said",
+      "data": {
+        "text": "Could you please check your internet connection and try again?"
+      }
+    },
+    {
+      "ms": 290503.6812,
+      "what": "listening",
+      "data": {
+        "follow_up": true
+      }
+    },
+    {
+      "ms": 295501.2127,
+      "what": "asleep"
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "model": "hey_courier.onnx",
+  "threshold": 0.89,
+  "voices": {
+    "en_GB-vctk-medium": {
+      "speakers": 109,
+      "clean": {
+        "phrases": 872,
+        "recall": 0.37844036697247707,
+        "latency_ms_median": -8.09375
+      },
+      "noisy": {
+        "phrases": 872,
+        "recall": 0.3704128440366973,
+        "latency_ms_median": -5.5
+      },
+      "look_alikes": 436,
+      "look_alike_wakes": 2,
+      "requests": 654,
+      "request_wakes": 1
+    },
+    "en_US-l2arctic-medium": {
+      "speakers": 24,
+      "clean": {
+        "phrases": 192,
+        "recall": 0.5572916666666666,
+        "latency_ms_median": 71.75
+      },
+      "noisy": {
+        "phrases": 192,
+        "recall": 0.46875,
+        "latency_ms_median": 114.375
+      },
+      "look_alikes": 96,
+      "look_alike_wakes": 2,
+      "requests": 144,
+      "request_wakes": 0
+    },
+    "en_US-arctic-medium": {
+      "speakers": 18,
+      "clean": {
+        "phrases": 144,
+        "recall": 0.8125,
+        "latency_ms_median": 39.25
+      },
+      "noisy": {
+        "phrases": 144,
+        "recall": 0.75,
+        "latency_ms_median": 54.84375
+      },
+      "look_alikes": 72,
+      "look_alike_wakes": 0,
+      "requests": 108,
+      "request_wakes": 0
+    },
+    "en_US-joe-medium": {
+      "speakers": 1,
+      "clean": {
+        "phrases": 40,
+        "recall": 0.95,
+        "latency_ms_median": 132.3125
+      },
+      "noisy": {
+        "phrases": 40,
+        "recall": 0.775,
+        "latency_ms_median": 162.9375
+      },
+      "look_alikes": 20,
+      "look_alike_wakes": 1,
+      "requests": 30,
+      "request_wakes": 0
+    },
+    "en_US-kristin-medium": {
+      "speakers": 1,
+      "clean": {
+        "phrases": 40,
+        "recall": 0.375,
+        "latency_ms_median": 54.25
+      },
+      "noisy": {
+        "phrases": 40,
+        "recall": 0.475,
+        "latency_ms_median": 63.4375
+      },
+      "look_alikes": 20,
+      "look_alike_wakes": 0,
+      "requests": 30,
+      "request_wakes": 0
+    },
+    "en_US-bryce-medium": {
+      "speakers": 1,
+      "clean": {
+        "phrases": 40,
+        "recall": 0.2,
+        "latency_ms_median": 0.90625
+      },
+      "noisy": {
+        "phrases": 40,
+        "recall": 0.275,
+        "latency_ms_median": -2.75
+      },
+      "look_alikes": 20,
+      "look_alike_wakes": 0,
+      "requests": 30,
+      "request_wakes": 0
+    },
+    "en_US-norman-medium": {
+      "speakers": 1,
+      "clean": {
+        "phrases": 40,
+        "recall": 0.125,
+        "latency_ms_median": 136.25
+      },
+      "noisy": {
+        "phrases": 40,
+        "recall": 0.2,
+        "latency_ms_median": 107.3125
+      },
+      "look_alikes": 20,
+      "look_alike_wakes": 0,
+      "requests": 30,
+      "request_wakes": 0
+    },
+    "en_US-john-medium": {
+      "speakers": 1,
+      "clean": {
+        "phrases": 40,
+        "recall": 0.225,
+        "latency_ms_median": 138.5625
+      },
+      "noisy": {
+        "phrases": 40,
+        "recall": 0.225,
+        "latency_ms_median": 223.3125
+      },
+      "look_alikes": 20,
+      "look_alike_wakes": 1,
+      "requests": 30,
+      "request_wakes": 0
+    },
+    "en_GB-cori-medium": {
+      "speakers": 1,
+      "clean": {
+        "phrases": 40,
+        "recall": 0.05,
+        "latency_ms_median": -20.125
+      },
+      "noisy": {
+        "phrases": 40,
+        "recall": 0.125,
+        "latency_ms_median": 117.75
+      },
+      "look_alikes": 20,
+      "look_alike_wakes": 0,
+      "requests": 30,
+      "request_wakes": 0
+    }
+  },
+  "false_wakes": {
+    "librispeech_test_clean_hours": 5.403466840277778,
+    "clean": 1,
+    "clean_per_hour": 0.18506637119449643,
+    "noisy": 12,
+    "noisy_per_hour": 2.220796454333957
+  },
+  "total": {
+    "phrases": 1448,
+    "recall_clean": 0.43577348066298344,
+    "recall_noisy": 0.4171270718232044,
+    "look_alikes": 724,
+    "look_alike_wakes": 6,
+    "requests": 1086,
+    "request_wakes": 1
+  },
+  "per_speaker_recall": {
+    "en_GB-vctk-medium#0": 0.5,
+    "en_GB-vctk-medium#1": 0.125,
+    "en_GB-vctk-medium#2": 0.375,
+    "en_GB-vctk-medium#3": 0.0,
+    "en_GB-vctk-medium#4": 0.25,
+    "en_GB-vctk-medium#5": 0.875,
+    "en_GB-vctk-medium#6": 0.125,
+    "en_GB-vctk-medium#7": 0.25,
+    "en_GB-vctk-medium#8": 0.125,
+    "en_GB-vctk-medium#9": 0.25,
+    "en_GB-vctk-medium#10": 0.25,
+    "en_GB-vctk-medium#11": 0.5,
+    "en_GB-vctk-medium#12": 0.5,
+    "en_GB-vctk-medium#13": 0.75,
+    "en_GB-vctk-medium#14": 0.25,
+    "en_GB-vctk-medium#15": 0.0,
+    "en_GB-vctk-medium#16": 0.25,
+    "en_GB-vctk-medium#17": 0.0,
+    "en_GB-vctk-medium#18": 0.375,
+    "en_GB-vctk-medium#19": 0.625,
+    "en_GB-vctk-medium#20": 0.25,
+    "en_GB-vctk-medium#21": 0.625,
+    "en_GB-vctk-medium#22": 0.5,
+    "en_GB-vctk-medium#23": 0.25,
+    "en_GB-vctk-medium#24": 0.75,
+    "en_GB-vctk-medium#25": 0.25,
+    "en_GB-vctk-medium#26": 0.625,
+    "en_GB-vctk-medium#27": 0.375,
+    "en_GB-vctk-medium#28": 0.5,
+    "en_GB-vctk-medium#29": 0.375,
+    "en_GB-vctk-medium#30": 0.625,
+    "en_GB-vctk-medium#31": 0.375,
+    "en_GB-vctk-medium#32": 0.375,
+    "en_GB-vctk-medium#33": 0.625,
+    "en_GB-vctk-medium#34": 0.125,
+    "en_GB-vctk-medium#35": 0.125,
+    "en_GB-vctk-medium#36": 0.375,
+    "en_GB-vctk-medium#37": 0.375,
+    "en_GB-vctk-medium#38": 0.375,
+    "en_GB-vctk-medium#39": 0.25,
+    "en_GB-vctk-medium#40": 0.375,
+    "en_GB-vctk-medium#41": 0.0,
+    "en_GB-vctk-medium#42": 0.25,
+    "en_GB-vctk-medium#43": 0.25,
+    "en_GB-vctk-medium#44": 0.375,
+    "en_GB-vctk-medium#45": 0.625,
+    "en_GB-vctk-medium#46": 0.375,
+    "en_GB-vctk-medium#47": 0.75,
+    "en_GB-vctk-medium#48": 0.25,
+    "en_GB-vctk-medium#49": 0.5,
+    "en_GB-vctk-medium#50": 1.0,
+    "en_GB-vctk-medium#51": 0.5,
+    "en_GB-vctk-medium#52": 0.25,
+    "en_GB-vctk-medium#53": 0.375,
+    "en_GB-vctk-medium#54": 0.5,
+    "en_GB-vctk-medium#55": 0.625,
+    "en_GB-vctk-medium#56": 0.25,
+    "en_GB-vctk-medium#57": 0.0,
+    "en_GB-vctk-medium#58": 0.5,
+    "en_GB-vctk-medium#59": 0.375,
+    "en_GB-vctk-medium#60": 0.25,
+    "en_GB-vctk-medium#61": 0.75,
+    "en_GB-vctk-medium#62": 0.75,
+    "en_GB-vctk-medium#63": 0.375,
+    "en_GB-vctk-medium#64": 0.5,
+    "en_GB-vctk-medium#65": 0.375,
+    "en_GB-vctk-medium#66": 0.125,
+    "en_GB-vctk-medium#67": 0.5,
+    "en_GB-vctk-medium#68": 0.25,
+    "en_GB-vctk-medium#69": 0.5,
+    "en_GB-vctk-medium#70": 0.625,
+    "en_GB-vctk-medium#71": 0.0,
+    "en_GB-vctk-medium#72": 0.5,
+    "en_GB-vctk-medium#73": 0.375,
+    "en_GB-vctk-medium#74": 0.25,
+    "en_GB-vctk-medium#75": 0.625,
+    "en_GB-vctk-medium#76": 0.375,
+    "en_GB-vctk-medium#77": 0.75,
+    "en_GB-vctk-medium#78": 0.25,
+    "en_GB-vctk-medium#79": 0.25,
+    "en_GB-vctk-medium#80": 0.375,
+    "en_GB-vctk-medium#81": 0.5,
+    "en_GB-vctk-medium#82": 0.25,
+    "en_GB-vctk-medium#83": 0.125,
+    "en_GB-vctk-medium#84": 0.5,
+    "en_GB-vctk-medium#85": 0.5,
+    "en_GB-vctk-medium#86": 0.25,
+    "en_GB-vctk-medium#87": 0.25,
+    "en_GB-vctk-medium#88": 0.0,
+    "en_GB-vctk-medium#89": 0.25,
+    "en_GB-vctk-medium#90": 0.5,
+    "en_GB-vctk-medium#91": 0.125,
+    "en_GB-vctk-medium#92": 0.625,
+    "en_GB-vctk-medium#93": 0.25,
+    "en_GB-vctk-medium#94": 0.0,
+    "en_GB-vctk-medium#95": 0.25,
+    "en_GB-vctk-medium#96": 0.875,
+    "en_GB-vctk-medium#97": 0.125,
+    "en_GB-vctk-medium#98": 0.625,
+    "en_GB-vctk-medium#99": 0.5,
+    "en_GB-vctk-medium#100": 0.375,
+    "en_GB-vctk-medium#101": 0.375,
+    "en_GB-vctk-medium#102": 0.875,
+    "en_GB-vctk-medium#103": 0.625,
+    "en_GB-vctk-medium#104": 0.0,
+    "en_GB-vctk-medium#105": 0.375,
+    "en_GB-vctk-medium#106": 0.25,
+    "en_GB-vctk-medium#107": 0.25,
+    "en_GB-vctk-medium#108": 0.25,
+    "en_US-l2arctic-medium#0": 0.75,
+    "en_US-l2arctic-medium#1": 0.625,
+    "en_US-l2arctic-medium#2": 0.125,
+    "en_US-l2arctic-medium#3": 0.5,
+    "en_US-l2arctic-medium#4": 0.625,
+    "en_US-l2arctic-medium#5": 0.875,
+    "en_US-l2arctic-medium#6": 0.75,
+    "en_US-l2arctic-medium#7": 0.375,
+    "en_US-l2arctic-medium#8": 0.625,
+    "en_US-l2arctic-medium#9": 0.5,
+    "en_US-l2arctic-medium#10": 0.625,
+    "en_US-l2arctic-medium#11": 0.5,
+    "en_US-l2arctic-medium#12": 0.25,
+    "en_US-l2arctic-medium#13": 0.75,
+    "en_US-l2arctic-medium#14": 0.75,
+    "en_US-l2arctic-medium#15": 0.375,
+    "en_US-l2arctic-medium#16": 0.75,
+    "en_US-l2arctic-medium#17": 0.75,
+    "en_US-l2arctic-medium#18": 0.0,
+    "en_US-l2arctic-medium#19": 0.5,
+    "en_US-l2arctic-medium#20": 0.75,
+    "en_US-l2arctic-medium#21": 0.25,
+    "en_US-l2arctic-medium#22": 0.625,
+    "en_US-l2arctic-medium#23": 0.75,
+    "en_US-arctic-medium#0": 0.75,
+    "en_US-arctic-medium#1": 1.0,
+    "en_US-arctic-medium#2": 0.875,
+    "en_US-arctic-medium#3": 0.75,
+    "en_US-arctic-medium#4": 0.875,
+    "en_US-arctic-medium#5": 1.0,
+    "en_US-arctic-medium#6": 0.875,
+    "en_US-arctic-medium#7": 1.0,
+    "en_US-arctic-medium#8": 0.875,
+    "en_US-arctic-medium#9": 1.0,
+    "en_US-arctic-medium#10": 1.0,
+    "en_US-arctic-medium#11": 0.875,
+    "en_US-arctic-medium#12": 0.375,
+    "en_US-arctic-medium#13": 0.5,
+    "en_US-arctic-medium#14": 1.0,
+    "en_US-arctic-medium#15": 0.5,
+    "en_US-arctic-medium#16": 0.875,
+    "en_US-arctic-medium#17": 0.5,
+    "en_US-joe-medium#0": 0.95,
+    "en_US-kristin-medium#0": 0.375,
+    "en_US-bryce-medium#0": 0.2,
+    "en_US-norman-medium#0": 0.125,
+    "en_US-john-medium#0": 0.225,
+    "en_GB-cori-medium#0": 0.05
+  },
+  "sweep": [
+    {
+      "threshold": 0.3,
+      "recall": 0.6968232044198895,
+      "false_per_hour": 2.4058628255284535
+    },
+    {
+      "threshold": 0.32,
+      "recall": 0.6843922651933702,
+      "false_per_hour": 2.0357300831394607
+    },
+    {
+      "threshold": 0.34,
+      "recall": 0.6740331491712708,
+      "false_per_hour": 2.0357300831394607
+    },
+    {
+      "threshold": 0.36,
+      "recall": 0.662292817679558,
+      "false_per_hour": 1.8506637119449643
+    },
+    {
+      "threshold": 0.38,
+      "recall": 0.6546961325966851,
+      "false_per_hour": 1.6655973407504678
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.6505524861878453,
+      "false_per_hour": 1.6655973407504678
+    },
+    {
+      "threshold": 0.42,
+      "recall": 0.6443370165745856,
+      "false_per_hour": 1.6655973407504678
+    },
+    {
+      "threshold": 0.44,
+      "recall": 0.638121546961326,
+      "false_per_hour": 1.6655973407504678
+    },
+    {
+      "threshold": 0.46,
+      "recall": 0.6298342541436464,
+      "false_per_hour": 1.6655973407504678
+    },
+    {
+      "threshold": 0.48,
+      "recall": 0.6236187845303868,
+      "false_per_hour": 1.6655973407504678
+    },
+    {
+      "threshold": 0.5,
+      "recall": 0.6132596685082873,
+      "false_per_hour": 1.4805309695559714
+    },
+    {
+      "threshold": 0.52,
+      "recall": 0.6070441988950276,
+      "false_per_hour": 1.4805309695559714
+    },
+    {
+      "threshold": 0.54,
+      "recall": 0.6001381215469613,
+      "false_per_hour": 1.4805309695559714
+    },
+    {
+      "threshold": 0.56,
+      "recall": 0.5939226519337016,
+      "false_per_hour": 1.4805309695559714
+    },
+    {
+      "threshold": 0.58,
+      "recall": 0.587707182320442,
+      "false_per_hour": 1.4805309695559714
+    },
+    {
+      "threshold": 0.6,
+      "recall": 0.5828729281767956,
+      "false_per_hour": 1.295464598361475
+    },
+    {
+      "threshold": 0.62,
+      "recall": 0.5766574585635359,
+      "false_per_hour": 1.295464598361475
+    },
+    {
+      "threshold": 0.64,
+      "recall": 0.5683701657458563,
+      "false_per_hour": 1.295464598361475
+    },
+    {
+      "threshold": 0.66,
+      "recall": 0.5600828729281768,
+      "false_per_hour": 1.295464598361475
+    },
+    {
+      "threshold": 0.68,
+      "recall": 0.5524861878453039,
+      "false_per_hour": 1.1103982271669786
+    },
+    {
+      "threshold": 0.7,
+      "recall": 0.5462707182320442,
+      "false_per_hour": 0.9253318559724821
+    },
+    {
+      "threshold": 0.72,
+      "recall": 0.5414364640883977,
+      "false_per_hour": 0.9253318559724821
+    },
+    {
+      "threshold": 0.74,
+      "recall": 0.537292817679558,
+      "false_per_hour": 0.9253318559724821
+    },
+    {
+      "threshold": 0.76,
+      "recall": 0.5283149171270718,
+      "false_per_hour": 0.7402654847779857
+    },
+    {
+      "threshold": 0.78,
+      "recall": 0.5151933701657458,
+      "false_per_hour": 0.5551991135834893
+    },
+    {
+      "threshold": 0.8,
+      "recall": 0.5048342541436464,
+      "false_per_hour": 0.37013274238899285
+    },
+    {
+      "threshold": 0.82,
+      "recall": 0.4924033149171271,
+      "false_per_hour": 0.18506637119449643
+    },
+    {
+      "threshold": 0.84,
+      "recall": 0.481353591160221,
+      "false_per_hour": 0.18506637119449643
+    },
+    {
+      "threshold": 0.86,
+      "recall": 0.4675414364640884,
+      "false_per_hour": 0.18506637119449643
+    },
+    {
+      "threshold": 0.88,
+      "recall": 0.44613259668508287,
+      "false_per_hour": 0.18506637119449643
+    },
+    {
+      "threshold": 0.9,
+      "recall": 0.42265193370165743,
+      "false_per_hour": 0.0
+    },
+    {
+      "threshold": 0.92,
+      "recall": 0.39157458563535913,
+      "false_per_hour": 0.0
+    },
+    {
+      "threshold": 0.94,
+      "recall": 0.35497237569060774,
+      "false_per_hour": 0.0
+    },
+    {
+      "threshold": 0.96,
+      "recall": 0.300414364640884,
+      "false_per_hour": 0.0
+    },
+    {
+      "threshold": 0.98,
+      "recall": 0.08632596685082873,
+      "false_per_hour": 0.0
+    }
+  ]
+}

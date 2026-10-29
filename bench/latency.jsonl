@@ -1,0 +1,20 @@
+{"id": "l01", "text": "Set a timer for ten minutes.", "tool": "set_timer", "speaker": 56}
+{"id": "l02", "text": "What's the weather like tomorrow?", "tool": "get_weather", "speaker": 17}
+{"id": "l03", "text": "Remind me to call my mother at six.", "tool": "add_reminder", "speaker": 46}
+{"id": "l04", "text": "Play some jazz.", "tool": "play_music", "speaker": 12}
+{"id": "l05", "text": "What's on my calendar today?", "tool": "calendar_events", "speaker": 4}
+{"id": "l06", "text": "Turn the volume down.", "tool": "volume", "speaker": 17}
+{"id": "l07", "text": "Flip a coin.", "tool": "flip_coin", "speaker": 63}
+{"id": "l08", "text": "What's the capital of Portugal?", "tool": null, "speaker": 27}
+{"id": "l09", "text": "Open the calculator.", "tool": "open_app", "speaker": 33}
+{"id": "l10", "text": "Find my notes about the boiler.", "tool": "search_files", "speaker": 86}
+{"id": "l11", "text": "How many days are in a leap year?", "tool": null, "speaker": 55}
+{"id": "l12", "text": "Pause the music.", "tool": "music_control", "speaker": 99}
+{"id": "l13", "text": "Roll two dice.", "tool": "roll_dice", "speaker": 80}
+{"id": "l14", "text": "Tell me a joke.", "tool": null, "speaker": 38}
+{"id": "l15", "text": "Cancel the timer.", "tool": "cancel_timer", "speaker": 53}
+{"id": "l16", "text": "What reminders do I have?", "tool": "list_reminders", "speaker": 64}
+{"id": "l17", "text": "Add lunch with Mark tomorrow at noon.", "tool": "add_event", "speaker": 106}
+{"id": "l18", "text": "Good morning!", "tool": null, "speaker": 49}
+{"id": "l19", "text": "Set a timer for an hour and a half.", "tool": "set_timer", "speaker": 73}
+{"id": "l20", "text": "Will it rain on Saturday?", "tool": "get_weather", "speaker": 44}

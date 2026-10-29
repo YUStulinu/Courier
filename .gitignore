@@ -1,0 +1,20 @@
+# Downloaded and built
+/third_party/
+engine/build*/
+courier/target/
+wakeword/.venv/
+wakeword/data/
+__pycache__/
+*.pyc
+
+# Language models are downloaded (scripts/fetch-deps.sh --llm); the wake word model is ours and kept.
+/models/*.gguf
+/models/wake/personal.*
+/models/wake/_experiment.*
+
+# Local settings
+/courier.local.toml
+
+# Evaluation logs (the JSON results are kept)
+results/*.log
+results/*.done

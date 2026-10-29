@@ -1,0 +1,2444 @@
+{
+  "results": [
+    {
+      "config": "fixed 300 ms",
+      "cases": 30,
+      "with_pauses": 15,
+      "cut_early": 15,
+      "cut_early_rate": 0.5,
+      "delay_ms_median": 204.375,
+      "delay_ms_p90": 252.0,
+      "rows": [
+        {
+          "id": "p01",
+          "end_ms": 1728.0,
+          "speech_end_ms": 3905.125,
+          "cut_early": true,
+          "pauses": [
+            2279.75
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me too.",
+              "asr_ms": 317.0052
+            }
+          ]
+        },
+        {
+          "id": "p02",
+          "end_ms": 1888.0,
+          "speech_end_ms": 3577.75,
+          "cut_early": true,
+          "pauses": [
+            2440.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Set a time of 4.",
+              "asr_ms": 174.4306
+            }
+          ]
+        },
+        {
+          "id": "p03",
+          "end_ms": 2080.0,
+          "speech_end_ms": 3700.0625,
+          "cut_early": true,
+          "pauses": [
+            2690.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1760.0,
+              "text": "What's the weather like in?",
+              "asr_ms": 181.0418
+            }
+          ]
+        },
+        {
+          "id": "p04",
+          "end_ms": 2016.0,
+          "speech_end_ms": 3658.6875,
+          "cut_early": true,
+          "pauses": [
+            2370.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Play some music, bye.",
+              "asr_ms": 167.673
+            }
+          ]
+        },
+        {
+          "id": "p05",
+          "end_ms": 1760.0,
+          "speech_end_ms": 3846.0625,
+          "cut_early": true,
+          "pauses": [
+            2270.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Add a meeting with",
+              "asr_ms": 137.2529
+            }
+          ]
+        },
+        {
+          "id": "p06",
+          "end_ms": 2400.0,
+          "speech_end_ms": 4476.625,
+          "cut_early": true,
+          "pauses": [
+            3071.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2080.0,
+              "text": "Find my notes about the",
+              "asr_ms": 154.5354
+            }
+          ]
+        },
+        {
+          "id": "p07",
+          "end_ms": 2016.0,
+          "speech_end_ms": 4141.9375,
+          "cut_early": true,
+          "pauses": [
+            2511.9375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Can you remind me too?",
+              "asr_ms": 167.6496
+            }
+          ]
+        },
+        {
+          "id": "p08",
+          "end_ms": 1504.0,
+          "speech_end_ms": 2922.6875,
+          "cut_early": true,
+          "pauses": [
+            2120.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1184.0,
+              "text": "Turn the volume",
+              "asr_ms": 128.8261
+            }
+          ]
+        },
+        {
+          "id": "p09",
+          "end_ms": 1408.0,
+          "speech_end_ms": 3003.8125,
+          "cut_early": true,
+          "pauses": [
+            2121.4375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1088.0,
+              "text": "Open the",
+              "asr_ms": 117.8829
+            }
+          ]
+        },
+        {
+          "id": "p10",
+          "end_ms": 2336.0,
+          "speech_end_ms": 3830.0,
+          "cut_early": true,
+          "pauses": [
+            2890.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 2016.0,
+              "text": "What do I have on my calendar for?",
+              "asr_ms": 184.5522
+            }
+          ]
+        },
+        {
+          "id": "p11",
+          "end_ms": 1728.0,
+          "speech_end_ms": 4226.625,
+          "cut_early": true,
+          "pauses": [
+            2218.125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me in.",
+              "asr_ms": 149.6373
+            }
+          ]
+        },
+        {
+          "id": "p12",
+          "end_ms": 2528.0,
+          "speech_end_ms": 4302.5,
+          "cut_early": true,
+          "pauses": [
+            3280.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2208.0,
+              "text": "Set a time before the pastor.",
+              "asr_ms": 170.7665
+            }
+          ]
+        },
+        {
+          "id": "p13",
+          "end_ms": 2272.0,
+          "speech_end_ms": 3936.0625,
+          "cut_early": true,
+          "pauses": [
+            2717.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1952.0,
+              "text": "Sash my documents for",
+              "asr_ms": 150.9245
+            }
+          ]
+        },
+        {
+          "id": "p14",
+          "end_ms": 1728.0,
+          "speech_end_ms": 3133.3125,
+          "cut_early": true,
+          "pauses": [
+            2133.3125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "I'd like to hear.",
+              "asr_ms": 168.6791
+            }
+          ]
+        },
+        {
+          "id": "p15",
+          "end_ms": 1920.0,
+          "speech_end_ms": 3388.6875,
+          "cut_early": true,
+          "pauses": [
+            2378.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1600.0,
+              "text": "What's on my schedule?",
+              "asr_ms": 165.6908
+            }
+          ]
+        },
+        {
+          "id": "n01",
+          "end_ms": 2944.0,
+          "speech_end_ms": 2891.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2624.0,
+              "text": "Set a timer for five minutes.",
+              "asr_ms": 176.781
+            }
+          ]
+        },
+        {
+          "id": "n02",
+          "end_ms": 1856.0,
+          "speech_end_ms": 1687.4375,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1536.0,
+              "text": "What's the weather like today?",
+              "asr_ms": 172.3379
+            }
+          ]
+        },
+        {
+          "id": "n03",
+          "end_ms": 1600.0,
+          "speech_end_ms": 1417.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1280.0,
+              "text": "Pause the music.",
+              "asr_ms": 160.2417
+            }
+          ]
+        },
+        {
+          "id": "n04",
+          "end_ms": 2432.0,
+          "speech_end_ms": 2264.6875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2112.0,
+              "text": "Remind me to call Anout 7.",
+              "asr_ms": 206.038
+            }
+          ]
+        },
+        {
+          "id": "n05",
+          "end_ms": 1888.0,
+          "speech_end_ms": 1672.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Lock the computer",
+              "asr_ms": 120.6703
+            }
+          ]
+        },
+        {
+          "id": "n06",
+          "end_ms": 2912.0,
+          "speech_end_ms": 2660.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2592.0,
+              "text": "What time is it?",
+              "asr_ms": 165.5214
+            }
+          ]
+        },
+        {
+          "id": "n07",
+          "end_ms": 1728.0,
+          "speech_end_ms": 1544.875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Play the Beatles",
+              "asr_ms": 129.1981
+            }
+          ]
+        },
+        {
+          "id": "n08",
+          "end_ms": 1728.0,
+          "speech_end_ms": 1510.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Flip a coin.",
+              "asr_ms": 142.0731
+            }
+          ]
+        },
+        {
+          "id": "n09",
+          "end_ms": 2496.0,
+          "speech_end_ms": 2276.3125,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2176.0,
+              "text": "What's on my calendar tomorrow?",
+              "asr_ms": 175.2823
+            }
+          ]
+        },
+        {
+          "id": "n10",
+          "end_ms": 2144.0,
+          "speech_end_ms": 1939.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1824.0,
+              "text": "Turn the volume up",
+              "asr_ms": 135.9606
+            }
+          ]
+        },
+        {
+          "id": "n11",
+          "end_ms": 2368.0,
+          "speech_end_ms": 2190.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2048.0,
+              "text": "How many days are Inelie Pier?",
+              "asr_ms": 200.5305
+            }
+          ]
+        },
+        {
+          "id": "n12",
+          "end_ms": 1792.0,
+          "speech_end_ms": 1674.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1472.0,
+              "text": "Openopad",
+              "asr_ms": 128.4182
+            }
+          ]
+        },
+        {
+          "id": "n13",
+          "end_ms": 1824.0,
+          "speech_end_ms": 1590.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1504.0,
+              "text": "Next song",
+              "asr_ms": 119.8441
+            }
+          ]
+        },
+        {
+          "id": "n14",
+          "end_ms": 1760.0,
+          "speech_end_ms": 1540.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Cancel the timer.",
+              "asr_ms": 139.5357
+            }
+          ]
+        },
+        {
+          "id": "n15",
+          "end_ms": 1728.0,
+          "speech_end_ms": 1440.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Tell me a joke.",
+              "asr_ms": 146.5009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "config": "fixed 500 ms",
+      "cases": 30,
+      "with_pauses": 15,
+      "cut_early": 15,
+      "cut_early_rate": 0.5,
+      "delay_ms_median": 396.375,
+      "delay_ms_p90": 444.0,
+      "rows": [
+        {
+          "id": "p01",
+          "end_ms": 1920.0,
+          "speech_end_ms": 3905.125,
+          "cut_early": true,
+          "pauses": [
+            2279.75
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me too.",
+              "asr_ms": 317.0052
+            }
+          ]
+        },
+        {
+          "id": "p02",
+          "end_ms": 2080.0,
+          "speech_end_ms": 3577.75,
+          "cut_early": true,
+          "pauses": [
+            2440.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Set a time of 4.",
+              "asr_ms": 174.4306
+            }
+          ]
+        },
+        {
+          "id": "p03",
+          "end_ms": 2272.0,
+          "speech_end_ms": 3700.0625,
+          "cut_early": true,
+          "pauses": [
+            2690.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1760.0,
+              "text": "What's the weather like in?",
+              "asr_ms": 181.0418
+            }
+          ]
+        },
+        {
+          "id": "p04",
+          "end_ms": 2208.0,
+          "speech_end_ms": 3658.6875,
+          "cut_early": true,
+          "pauses": [
+            2370.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Play some music, bye.",
+              "asr_ms": 167.673
+            }
+          ]
+        },
+        {
+          "id": "p05",
+          "end_ms": 1952.0,
+          "speech_end_ms": 3846.0625,
+          "cut_early": true,
+          "pauses": [
+            2270.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Add a meeting with",
+              "asr_ms": 137.2529
+            }
+          ]
+        },
+        {
+          "id": "p06",
+          "end_ms": 2592.0,
+          "speech_end_ms": 4476.625,
+          "cut_early": true,
+          "pauses": [
+            3071.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2080.0,
+              "text": "Find my notes about the",
+              "asr_ms": 154.5354
+            }
+          ]
+        },
+        {
+          "id": "p07",
+          "end_ms": 2208.0,
+          "speech_end_ms": 4141.9375,
+          "cut_early": true,
+          "pauses": [
+            2511.9375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Can you remind me too?",
+              "asr_ms": 167.6496
+            }
+          ]
+        },
+        {
+          "id": "p08",
+          "end_ms": 1696.0,
+          "speech_end_ms": 2922.6875,
+          "cut_early": true,
+          "pauses": [
+            2120.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1184.0,
+              "text": "Turn the volume",
+              "asr_ms": 128.8261
+            }
+          ]
+        },
+        {
+          "id": "p09",
+          "end_ms": 1600.0,
+          "speech_end_ms": 3003.8125,
+          "cut_early": true,
+          "pauses": [
+            2121.4375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1088.0,
+              "text": "Open the",
+              "asr_ms": 117.8829
+            }
+          ]
+        },
+        {
+          "id": "p10",
+          "end_ms": 2528.0,
+          "speech_end_ms": 3830.0,
+          "cut_early": true,
+          "pauses": [
+            2890.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 2016.0,
+              "text": "What do I have on my calendar for?",
+              "asr_ms": 184.5522
+            }
+          ]
+        },
+        {
+          "id": "p11",
+          "end_ms": 1920.0,
+          "speech_end_ms": 4226.625,
+          "cut_early": true,
+          "pauses": [
+            2218.125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me in.",
+              "asr_ms": 149.6373
+            }
+          ]
+        },
+        {
+          "id": "p12",
+          "end_ms": 2720.0,
+          "speech_end_ms": 4302.5,
+          "cut_early": true,
+          "pauses": [
+            3280.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2208.0,
+              "text": "Set a time before the pastor.",
+              "asr_ms": 170.7665
+            }
+          ]
+        },
+        {
+          "id": "p13",
+          "end_ms": 2464.0,
+          "speech_end_ms": 3936.0625,
+          "cut_early": true,
+          "pauses": [
+            2717.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1952.0,
+              "text": "Sash my documents for",
+              "asr_ms": 150.9245
+            }
+          ]
+        },
+        {
+          "id": "p14",
+          "end_ms": 1920.0,
+          "speech_end_ms": 3133.3125,
+          "cut_early": true,
+          "pauses": [
+            2133.3125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "I'd like to hear.",
+              "asr_ms": 168.6791
+            }
+          ]
+        },
+        {
+          "id": "p15",
+          "end_ms": 2112.0,
+          "speech_end_ms": 3388.6875,
+          "cut_early": true,
+          "pauses": [
+            2378.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1600.0,
+              "text": "What's on my schedule?",
+              "asr_ms": 165.6908
+            }
+          ]
+        },
+        {
+          "id": "n01",
+          "end_ms": 3136.0,
+          "speech_end_ms": 2891.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2624.0,
+              "text": "Set a timer for five minutes.",
+              "asr_ms": 176.781
+            }
+          ]
+        },
+        {
+          "id": "n02",
+          "end_ms": 2048.0,
+          "speech_end_ms": 1687.4375,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1536.0,
+              "text": "What's the weather like today?",
+              "asr_ms": 172.3379
+            }
+          ]
+        },
+        {
+          "id": "n03",
+          "end_ms": 1792.0,
+          "speech_end_ms": 1417.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1280.0,
+              "text": "Pause the music.",
+              "asr_ms": 160.2417
+            }
+          ]
+        },
+        {
+          "id": "n04",
+          "end_ms": 2624.0,
+          "speech_end_ms": 2264.6875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2112.0,
+              "text": "Remind me to call Anout 7.",
+              "asr_ms": 206.038
+            }
+          ]
+        },
+        {
+          "id": "n05",
+          "end_ms": 2080.0,
+          "speech_end_ms": 1672.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Lock the computer",
+              "asr_ms": 120.6703
+            }
+          ]
+        },
+        {
+          "id": "n06",
+          "end_ms": 3104.0,
+          "speech_end_ms": 2660.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2592.0,
+              "text": "What time is it?",
+              "asr_ms": 165.5214
+            }
+          ]
+        },
+        {
+          "id": "n07",
+          "end_ms": 1920.0,
+          "speech_end_ms": 1544.875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Play the Beatles",
+              "asr_ms": 129.1981
+            }
+          ]
+        },
+        {
+          "id": "n08",
+          "end_ms": 1920.0,
+          "speech_end_ms": 1510.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Flip a coin.",
+              "asr_ms": 142.0731
+            }
+          ]
+        },
+        {
+          "id": "n09",
+          "end_ms": 2688.0,
+          "speech_end_ms": 2276.3125,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2176.0,
+              "text": "What's on my calendar tomorrow?",
+              "asr_ms": 175.2823
+            }
+          ]
+        },
+        {
+          "id": "n10",
+          "end_ms": 2336.0,
+          "speech_end_ms": 1939.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1824.0,
+              "text": "Turn the volume up",
+              "asr_ms": 135.9606
+            }
+          ]
+        },
+        {
+          "id": "n11",
+          "end_ms": 2560.0,
+          "speech_end_ms": 2190.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2048.0,
+              "text": "How many days are Inelie Pier?",
+              "asr_ms": 200.5305
+            }
+          ]
+        },
+        {
+          "id": "n12",
+          "end_ms": 1984.0,
+          "speech_end_ms": 1674.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1472.0,
+              "text": "Openopad",
+              "asr_ms": 128.4182
+            }
+          ]
+        },
+        {
+          "id": "n13",
+          "end_ms": 2016.0,
+          "speech_end_ms": 1590.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1504.0,
+              "text": "Next song",
+              "asr_ms": 119.8441
+            }
+          ]
+        },
+        {
+          "id": "n14",
+          "end_ms": 1952.0,
+          "speech_end_ms": 1540.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Cancel the timer.",
+              "asr_ms": 139.5357
+            }
+          ]
+        },
+        {
+          "id": "n15",
+          "end_ms": 1920.0,
+          "speech_end_ms": 1440.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Tell me a joke.",
+              "asr_ms": 146.5009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "config": "fixed 800 ms",
+      "cases": 30,
+      "with_pauses": 15,
+      "cut_early": 13,
+      "cut_early_rate": 0.43333333333333335,
+      "delay_ms_median": 684.375,
+      "delay_ms_p90": 732.0,
+      "rows": [
+        {
+          "id": "p01",
+          "end_ms": 2208.0,
+          "speech_end_ms": 3905.125,
+          "cut_early": true,
+          "pauses": [
+            2279.75
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me too.",
+              "asr_ms": 317.0052
+            }
+          ]
+        },
+        {
+          "id": "p02",
+          "end_ms": 2368.0,
+          "speech_end_ms": 3577.75,
+          "cut_early": true,
+          "pauses": [
+            2440.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Set a time of 4.",
+              "asr_ms": 174.4306
+            }
+          ]
+        },
+        {
+          "id": "p03",
+          "end_ms": 2560.0,
+          "speech_end_ms": 3700.0625,
+          "cut_early": true,
+          "pauses": [
+            2690.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1760.0,
+              "text": "What's the weather like in?",
+              "asr_ms": 181.0418
+            }
+          ]
+        },
+        {
+          "id": "p04",
+          "end_ms": 4320.0,
+          "speech_end_ms": 3658.6875,
+          "cut_early": false,
+          "pauses": [
+            2370.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Play some music, bye.",
+              "asr_ms": 167.673
+            },
+            {
+              "pause_ms": 3520.0,
+              "text": "Play some music by Miles Davis",
+              "asr_ms": 158.7916
+            }
+          ]
+        },
+        {
+          "id": "p05",
+          "end_ms": 2240.0,
+          "speech_end_ms": 3846.0625,
+          "cut_early": true,
+          "pauses": [
+            2270.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Add a meeting with",
+              "asr_ms": 137.2529
+            }
+          ]
+        },
+        {
+          "id": "p06",
+          "end_ms": 2880.0,
+          "speech_end_ms": 4476.625,
+          "cut_early": true,
+          "pauses": [
+            3071.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2080.0,
+              "text": "Find my notes about the",
+              "asr_ms": 154.5354
+            }
+          ]
+        },
+        {
+          "id": "p07",
+          "end_ms": 2496.0,
+          "speech_end_ms": 4141.9375,
+          "cut_early": true,
+          "pauses": [
+            2511.9375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Can you remind me too?",
+              "asr_ms": 167.6496
+            }
+          ]
+        },
+        {
+          "id": "p08",
+          "end_ms": 1984.0,
+          "speech_end_ms": 2922.6875,
+          "cut_early": true,
+          "pauses": [
+            2120.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1184.0,
+              "text": "Turn the volume",
+              "asr_ms": 128.8261
+            }
+          ]
+        },
+        {
+          "id": "p09",
+          "end_ms": 1888.0,
+          "speech_end_ms": 3003.8125,
+          "cut_early": true,
+          "pauses": [
+            2121.4375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1088.0,
+              "text": "Open the",
+              "asr_ms": 117.8829
+            }
+          ]
+        },
+        {
+          "id": "p10",
+          "end_ms": 2816.0,
+          "speech_end_ms": 3830.0,
+          "cut_early": true,
+          "pauses": [
+            2890.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 2016.0,
+              "text": "What do I have on my calendar for?",
+              "asr_ms": 184.5522
+            }
+          ]
+        },
+        {
+          "id": "p11",
+          "end_ms": 2208.0,
+          "speech_end_ms": 4226.625,
+          "cut_early": true,
+          "pauses": [
+            2218.125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me in.",
+              "asr_ms": 149.6373
+            }
+          ]
+        },
+        {
+          "id": "p12",
+          "end_ms": 3008.0,
+          "speech_end_ms": 4302.5,
+          "cut_early": true,
+          "pauses": [
+            3280.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2208.0,
+              "text": "Set a time before the pastor.",
+              "asr_ms": 170.7665
+            }
+          ]
+        },
+        {
+          "id": "p13",
+          "end_ms": 2752.0,
+          "speech_end_ms": 3936.0625,
+          "cut_early": true,
+          "pauses": [
+            2717.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1952.0,
+              "text": "Sash my documents for",
+              "asr_ms": 150.9245
+            }
+          ]
+        },
+        {
+          "id": "p14",
+          "end_ms": 3872.0,
+          "speech_end_ms": 3133.3125,
+          "cut_early": false,
+          "pauses": [
+            2133.3125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "I'd like to hear.",
+              "asr_ms": 168.6791
+            },
+            {
+              "pause_ms": 3072.0,
+              "text": "I'd like to hear some jazz",
+              "asr_ms": 177.0471
+            }
+          ]
+        },
+        {
+          "id": "p15",
+          "end_ms": 2400.0,
+          "speech_end_ms": 3388.6875,
+          "cut_early": true,
+          "pauses": [
+            2378.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1600.0,
+              "text": "What's on my schedule?",
+              "asr_ms": 165.6908
+            }
+          ]
+        },
+        {
+          "id": "n01",
+          "end_ms": 3424.0,
+          "speech_end_ms": 2891.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2624.0,
+              "text": "Set a timer for five minutes.",
+              "asr_ms": 176.781
+            }
+          ]
+        },
+        {
+          "id": "n02",
+          "end_ms": 2336.0,
+          "speech_end_ms": 1687.4375,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1536.0,
+              "text": "What's the weather like today?",
+              "asr_ms": 172.3379
+            }
+          ]
+        },
+        {
+          "id": "n03",
+          "end_ms": 2080.0,
+          "speech_end_ms": 1417.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1280.0,
+              "text": "Pause the music.",
+              "asr_ms": 160.2417
+            }
+          ]
+        },
+        {
+          "id": "n04",
+          "end_ms": 2912.0,
+          "speech_end_ms": 2264.6875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2112.0,
+              "text": "Remind me to call Anout 7.",
+              "asr_ms": 206.038
+            }
+          ]
+        },
+        {
+          "id": "n05",
+          "end_ms": 2368.0,
+          "speech_end_ms": 1672.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Lock the computer",
+              "asr_ms": 120.6703
+            }
+          ]
+        },
+        {
+          "id": "n06",
+          "end_ms": 3392.0,
+          "speech_end_ms": 2660.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2592.0,
+              "text": "What time is it?",
+              "asr_ms": 165.5214
+            }
+          ]
+        },
+        {
+          "id": "n07",
+          "end_ms": 2208.0,
+          "speech_end_ms": 1544.875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Play the Beatles",
+              "asr_ms": 129.1981
+            }
+          ]
+        },
+        {
+          "id": "n08",
+          "end_ms": 2208.0,
+          "speech_end_ms": 1510.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Flip a coin.",
+              "asr_ms": 142.0731
+            }
+          ]
+        },
+        {
+          "id": "n09",
+          "end_ms": 2976.0,
+          "speech_end_ms": 2276.3125,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2176.0,
+              "text": "What's on my calendar tomorrow?",
+              "asr_ms": 175.2823
+            }
+          ]
+        },
+        {
+          "id": "n10",
+          "end_ms": 2624.0,
+          "speech_end_ms": 1939.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1824.0,
+              "text": "Turn the volume up",
+              "asr_ms": 135.9606
+            }
+          ]
+        },
+        {
+          "id": "n11",
+          "end_ms": 2848.0,
+          "speech_end_ms": 2190.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2048.0,
+              "text": "How many days are Inelie Pier?",
+              "asr_ms": 200.5305
+            }
+          ]
+        },
+        {
+          "id": "n12",
+          "end_ms": 2272.0,
+          "speech_end_ms": 1674.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1472.0,
+              "text": "Openopad",
+              "asr_ms": 128.4182
+            }
+          ]
+        },
+        {
+          "id": "n13",
+          "end_ms": 2304.0,
+          "speech_end_ms": 1590.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1504.0,
+              "text": "Next song",
+              "asr_ms": 119.8441
+            }
+          ]
+        },
+        {
+          "id": "n14",
+          "end_ms": 2240.0,
+          "speech_end_ms": 1540.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Cancel the timer.",
+              "asr_ms": 139.5357
+            }
+          ]
+        },
+        {
+          "id": "n15",
+          "end_ms": 2208.0,
+          "speech_end_ms": 1440.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Tell me a joke.",
+              "asr_ms": 146.5009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "config": "fixed 1200 ms",
+      "cases": 30,
+      "with_pauses": 15,
+      "cut_early": 0,
+      "cut_early_rate": 0.0,
+      "delay_ms_median": 1087.9375,
+      "delay_ms_p90": 1138.0625,
+      "rows": [
+        {
+          "id": "p01",
+          "end_ms": 4960.0,
+          "speech_end_ms": 3905.125,
+          "cut_early": false,
+          "pauses": [
+            2279.75
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me too.",
+              "asr_ms": 317.0052
+            },
+            {
+              "pause_ms": 3744.0,
+              "text": "Remind me too. Call my sister at 6.",
+              "asr_ms": 205.7825
+            }
+          ]
+        },
+        {
+          "id": "p02",
+          "end_ms": 4608.0,
+          "speech_end_ms": 3577.75,
+          "cut_early": false,
+          "pauses": [
+            2440.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Set a time of 4.",
+              "asr_ms": 174.4306
+            },
+            {
+              "pause_ms": 3392.0,
+              "text": "Set a time of 4. 20 minutes.",
+              "asr_ms": 186.5211
+            }
+          ]
+        },
+        {
+          "id": "p03",
+          "end_ms": 4800.0,
+          "speech_end_ms": 3700.0625,
+          "cut_early": false,
+          "pauses": [
+            2690.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1760.0,
+              "text": "What's the weather like in?",
+              "asr_ms": 181.0418
+            },
+            {
+              "pause_ms": 3584.0,
+              "text": "What's the weather like in... Rome tomorrow?",
+              "asr_ms": 207.1805
+            }
+          ]
+        },
+        {
+          "id": "p04",
+          "end_ms": 4736.0,
+          "speech_end_ms": 3658.6875,
+          "cut_early": false,
+          "pauses": [
+            2370.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Play some music, bye.",
+              "asr_ms": 167.673
+            },
+            {
+              "pause_ms": 3520.0,
+              "text": "Play some music by Miles Davis",
+              "asr_ms": 158.7916
+            }
+          ]
+        },
+        {
+          "id": "p05",
+          "end_ms": 4864.0,
+          "speech_end_ms": 3846.0625,
+          "cut_early": false,
+          "pauses": [
+            2270.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Add a meeting with",
+              "asr_ms": 137.2529
+            },
+            {
+              "pause_ms": 3648.0,
+              "text": "Add a meeting with Anna on Friday at 3",
+              "asr_ms": 190.829
+            }
+          ]
+        },
+        {
+          "id": "p06",
+          "end_ms": 5504.0,
+          "speech_end_ms": 4476.625,
+          "cut_early": false,
+          "pauses": [
+            3071.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2080.0,
+              "text": "Find my notes about the",
+              "asr_ms": 154.5354
+            },
+            {
+              "pause_ms": 4288.0,
+              "text": "Find my notes about the boiler repair.",
+              "asr_ms": 177.1422
+            }
+          ]
+        },
+        {
+          "id": "p07",
+          "end_ms": 5280.0,
+          "speech_end_ms": 4141.9375,
+          "cut_early": false,
+          "pauses": [
+            2511.9375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Can you remind me too?",
+              "asr_ms": 167.6496
+            },
+            {
+              "pause_ms": 4064.0,
+              "text": "Can you remind me too? What are the plans tomorrow morning?",
+              "asr_ms": 231.1961
+            }
+          ]
+        },
+        {
+          "id": "p08",
+          "end_ms": 3904.0,
+          "speech_end_ms": 2922.6875,
+          "cut_early": false,
+          "pauses": [
+            2120.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1184.0,
+              "text": "Turn the volume",
+              "asr_ms": 128.8261
+            },
+            {
+              "pause_ms": 2688.0,
+              "text": "Turn the volume down a little.",
+              "asr_ms": 166.293
+            }
+          ]
+        },
+        {
+          "id": "p09",
+          "end_ms": 4128.0,
+          "speech_end_ms": 3003.8125,
+          "cut_early": false,
+          "pauses": [
+            2121.4375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1088.0,
+              "text": "Open the",
+              "asr_ms": 117.8829
+            },
+            {
+              "pause_ms": 2912.0,
+              "text": "Open the calculator",
+              "asr_ms": 130.6969
+            }
+          ]
+        },
+        {
+          "id": "p10",
+          "end_ms": 4928.0,
+          "speech_end_ms": 3830.0,
+          "cut_early": false,
+          "pauses": [
+            2890.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 2016.0,
+              "text": "What do I have on my calendar for?",
+              "asr_ms": 184.5522
+            },
+            {
+              "pause_ms": 3712.0,
+              "text": "What do I have on my calendar for? Next Monday.",
+              "asr_ms": 222.7883
+            }
+          ]
+        },
+        {
+          "id": "p11",
+          "end_ms": 5312.0,
+          "speech_end_ms": 4226.625,
+          "cut_early": false,
+          "pauses": [
+            2218.125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me in.",
+              "asr_ms": 149.6373
+            },
+            {
+              "pause_ms": 4096.0,
+              "text": "We mine me in. Half an hour to check, Darwin.",
+              "asr_ms": 236.0966
+            }
+          ]
+        },
+        {
+          "id": "p12",
+          "end_ms": 5440.0,
+          "speech_end_ms": 4302.5,
+          "cut_early": false,
+          "pauses": [
+            3280.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2208.0,
+              "text": "Set a time before the pastor.",
+              "asr_ms": 170.7665
+            },
+            {
+              "pause_ms": 4224.0,
+              "text": "Set a time before the pastor. Ten minutes.",
+              "asr_ms": 197.7399
+            }
+          ]
+        },
+        {
+          "id": "p13",
+          "end_ms": 5024.0,
+          "speech_end_ms": 3936.0625,
+          "cut_early": false,
+          "pauses": [
+            2717.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1952.0,
+              "text": "Sash my documents for",
+              "asr_ms": 150.9245
+            },
+            {
+              "pause_ms": 3808.0,
+              "text": "Search my documents for the tax return",
+              "asr_ms": 165.3826
+            }
+          ]
+        },
+        {
+          "id": "p14",
+          "end_ms": 4288.0,
+          "speech_end_ms": 3133.3125,
+          "cut_early": false,
+          "pauses": [
+            2133.3125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "I'd like to hear.",
+              "asr_ms": 168.6791
+            },
+            {
+              "pause_ms": 3072.0,
+              "text": "I'd like to hear some jazz",
+              "asr_ms": 177.0471
+            }
+          ]
+        },
+        {
+          "id": "p15",
+          "end_ms": 4416.0,
+          "speech_end_ms": 3388.6875,
+          "cut_early": false,
+          "pauses": [
+            2378.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1600.0,
+              "text": "What's on my schedule?",
+              "asr_ms": 165.6908
+            },
+            {
+              "pause_ms": 3200.0,
+              "text": "What's on my schedule? For tomorrow!",
+              "asr_ms": 190.2263
+            }
+          ]
+        },
+        {
+          "id": "n01",
+          "end_ms": 3840.0,
+          "speech_end_ms": 2891.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2624.0,
+              "text": "Set a timer for five minutes.",
+              "asr_ms": 176.781
+            }
+          ]
+        },
+        {
+          "id": "n02",
+          "end_ms": 2752.0,
+          "speech_end_ms": 1687.4375,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1536.0,
+              "text": "What's the weather like today?",
+              "asr_ms": 172.3379
+            }
+          ]
+        },
+        {
+          "id": "n03",
+          "end_ms": 2496.0,
+          "speech_end_ms": 1417.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1280.0,
+              "text": "Pause the music.",
+              "asr_ms": 160.2417
+            }
+          ]
+        },
+        {
+          "id": "n04",
+          "end_ms": 3328.0,
+          "speech_end_ms": 2264.6875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2112.0,
+              "text": "Remind me to call Anout 7.",
+              "asr_ms": 206.038
+            }
+          ]
+        },
+        {
+          "id": "n05",
+          "end_ms": 2784.0,
+          "speech_end_ms": 1672.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Lock the computer",
+              "asr_ms": 120.6703
+            }
+          ]
+        },
+        {
+          "id": "n06",
+          "end_ms": 3808.0,
+          "speech_end_ms": 2660.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2592.0,
+              "text": "What time is it?",
+              "asr_ms": 165.5214
+            }
+          ]
+        },
+        {
+          "id": "n07",
+          "end_ms": 2624.0,
+          "speech_end_ms": 1544.875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Play the Beatles",
+              "asr_ms": 129.1981
+            }
+          ]
+        },
+        {
+          "id": "n08",
+          "end_ms": 2624.0,
+          "speech_end_ms": 1510.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Flip a coin.",
+              "asr_ms": 142.0731
+            }
+          ]
+        },
+        {
+          "id": "n09",
+          "end_ms": 3392.0,
+          "speech_end_ms": 2276.3125,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2176.0,
+              "text": "What's on my calendar tomorrow?",
+              "asr_ms": 175.2823
+            }
+          ]
+        },
+        {
+          "id": "n10",
+          "end_ms": 3040.0,
+          "speech_end_ms": 1939.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1824.0,
+              "text": "Turn the volume up",
+              "asr_ms": 135.9606
+            }
+          ]
+        },
+        {
+          "id": "n11",
+          "end_ms": 3264.0,
+          "speech_end_ms": 2190.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2048.0,
+              "text": "How many days are Inelie Pier?",
+              "asr_ms": 200.5305
+            }
+          ]
+        },
+        {
+          "id": "n12",
+          "end_ms": 2688.0,
+          "speech_end_ms": 1674.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1472.0,
+              "text": "Openopad",
+              "asr_ms": 128.4182
+            }
+          ]
+        },
+        {
+          "id": "n13",
+          "end_ms": 2720.0,
+          "speech_end_ms": 1590.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1504.0,
+              "text": "Next song",
+              "asr_ms": 119.8441
+            }
+          ]
+        },
+        {
+          "id": "n14",
+          "end_ms": 2656.0,
+          "speech_end_ms": 1540.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Cancel the timer.",
+              "asr_ms": 139.5357
+            }
+          ]
+        },
+        {
+          "id": "n15",
+          "end_ms": 2624.0,
+          "speech_end_ms": 1440.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Tell me a joke.",
+              "asr_ms": 146.5009
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "config": "transcript-aware (Courier)",
+      "cases": 30,
+      "with_pauses": 15,
+      "cut_early": 5,
+      "cut_early_rate": 0.16666666666666666,
+      "delay_ms_median": 285.375,
+      "delay_ms_p90": 708.1875,
+      "rows": [
+        {
+          "id": "p01",
+          "end_ms": 4128.0,
+          "speech_end_ms": 3905.125,
+          "cut_early": false,
+          "pauses": [
+            2279.75
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me too.",
+              "asr_ms": 317.0052
+            },
+            {
+              "pause_ms": 3744.0,
+              "text": "Remind me too. Call my sister at 6.",
+              "asr_ms": 205.7825
+            }
+          ]
+        },
+        {
+          "id": "p02",
+          "end_ms": 1952.0,
+          "speech_end_ms": 3577.75,
+          "cut_early": true,
+          "pauses": [
+            2440.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Set a time of 4.",
+              "asr_ms": 174.4306
+            }
+          ]
+        },
+        {
+          "id": "p03",
+          "end_ms": 3968.0,
+          "speech_end_ms": 3700.0625,
+          "cut_early": false,
+          "pauses": [
+            2690.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1760.0,
+              "text": "What's the weather like in?",
+              "asr_ms": 181.0418
+            },
+            {
+              "pause_ms": 3584.0,
+              "text": "What's the weather like in... Rome tomorrow?",
+              "asr_ms": 207.1805
+            }
+          ]
+        },
+        {
+          "id": "p04",
+          "end_ms": 2080.0,
+          "speech_end_ms": 3658.6875,
+          "cut_early": true,
+          "pauses": [
+            2370.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Play some music, bye.",
+              "asr_ms": 167.673
+            }
+          ]
+        },
+        {
+          "id": "p05",
+          "end_ms": 4448.0,
+          "speech_end_ms": 3846.0625,
+          "cut_early": false,
+          "pauses": [
+            2270.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Add a meeting with",
+              "asr_ms": 137.2529
+            },
+            {
+              "pause_ms": 3648.0,
+              "text": "Add a meeting with Anna on Friday at 3",
+              "asr_ms": 190.829
+            }
+          ]
+        },
+        {
+          "id": "p06",
+          "end_ms": 4672.0,
+          "speech_end_ms": 4476.625,
+          "cut_early": false,
+          "pauses": [
+            3071.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2080.0,
+              "text": "Find my notes about the",
+              "asr_ms": 154.5354
+            },
+            {
+              "pause_ms": 4288.0,
+              "text": "Find my notes about the boiler repair.",
+              "asr_ms": 177.1422
+            }
+          ]
+        },
+        {
+          "id": "p07",
+          "end_ms": 4480.0,
+          "speech_end_ms": 4141.9375,
+          "cut_early": false,
+          "pauses": [
+            2511.9375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1696.0,
+              "text": "Can you remind me too?",
+              "asr_ms": 167.6496
+            },
+            {
+              "pause_ms": 4064.0,
+              "text": "Can you remind me too? What are the plans tomorrow morning?",
+              "asr_ms": 231.1961
+            }
+          ]
+        },
+        {
+          "id": "p08",
+          "end_ms": 1984.0,
+          "speech_end_ms": 2922.6875,
+          "cut_early": true,
+          "pauses": [
+            2120.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1184.0,
+              "text": "Turn the volume",
+              "asr_ms": 128.8261
+            }
+          ]
+        },
+        {
+          "id": "p09",
+          "end_ms": 3712.0,
+          "speech_end_ms": 3003.8125,
+          "cut_early": false,
+          "pauses": [
+            2121.4375
+          ],
+          "heard": [
+            {
+              "pause_ms": 1088.0,
+              "text": "Open the",
+              "asr_ms": 117.8829
+            },
+            {
+              "pause_ms": 2912.0,
+              "text": "Open the calculator",
+              "asr_ms": 130.6969
+            }
+          ]
+        },
+        {
+          "id": "p10",
+          "end_ms": 4096.0,
+          "speech_end_ms": 3830.0,
+          "cut_early": false,
+          "pauses": [
+            2890.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 2016.0,
+              "text": "What do I have on my calendar for?",
+              "asr_ms": 184.5522
+            },
+            {
+              "pause_ms": 3712.0,
+              "text": "What do I have on my calendar for? Next Monday.",
+              "asr_ms": 222.7883
+            }
+          ]
+        },
+        {
+          "id": "p11",
+          "end_ms": 4512.0,
+          "speech_end_ms": 4226.625,
+          "cut_early": false,
+          "pauses": [
+            2218.125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Remind me in.",
+              "asr_ms": 149.6373
+            },
+            {
+              "pause_ms": 4096.0,
+              "text": "We mine me in. Half an hour to check, Darwin.",
+              "asr_ms": 236.0966
+            }
+          ]
+        },
+        {
+          "id": "p12",
+          "end_ms": 2592.0,
+          "speech_end_ms": 4302.5,
+          "cut_early": true,
+          "pauses": [
+            3280.8125
+          ],
+          "heard": [
+            {
+              "pause_ms": 2208.0,
+              "text": "Set a time before the pastor.",
+              "asr_ms": 170.7665
+            }
+          ]
+        },
+        {
+          "id": "p13",
+          "end_ms": 4608.0,
+          "speech_end_ms": 3936.0625,
+          "cut_early": false,
+          "pauses": [
+            2717.0
+          ],
+          "heard": [
+            {
+              "pause_ms": 1952.0,
+              "text": "Sash my documents for",
+              "asr_ms": 150.9245
+            },
+            {
+              "pause_ms": 3808.0,
+              "text": "Search my documents for the tax return",
+              "asr_ms": 165.3826
+            }
+          ]
+        },
+        {
+          "id": "p14",
+          "end_ms": 3872.0,
+          "speech_end_ms": 3133.3125,
+          "cut_early": false,
+          "pauses": [
+            2133.3125
+          ],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "I'd like to hear.",
+              "asr_ms": 168.6791
+            },
+            {
+              "pause_ms": 3072.0,
+              "text": "I'd like to hear some jazz",
+              "asr_ms": 177.0471
+            }
+          ]
+        },
+        {
+          "id": "p15",
+          "end_ms": 1984.0,
+          "speech_end_ms": 3388.6875,
+          "cut_early": true,
+          "pauses": [
+            2378.6875
+          ],
+          "heard": [
+            {
+              "pause_ms": 1600.0,
+              "text": "What's on my schedule?",
+              "asr_ms": 165.6908
+            }
+          ]
+        },
+        {
+          "id": "n01",
+          "end_ms": 3008.0,
+          "speech_end_ms": 2891.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2624.0,
+              "text": "Set a timer for five minutes.",
+              "asr_ms": 176.781
+            }
+          ]
+        },
+        {
+          "id": "n02",
+          "end_ms": 1920.0,
+          "speech_end_ms": 1687.4375,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1536.0,
+              "text": "What's the weather like today?",
+              "asr_ms": 172.3379
+            }
+          ]
+        },
+        {
+          "id": "n03",
+          "end_ms": 1664.0,
+          "speech_end_ms": 1417.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1280.0,
+              "text": "Pause the music.",
+              "asr_ms": 160.2417
+            }
+          ]
+        },
+        {
+          "id": "n04",
+          "end_ms": 2496.0,
+          "speech_end_ms": 2264.6875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2112.0,
+              "text": "Remind me to call Anout 7.",
+              "asr_ms": 206.038
+            }
+          ]
+        },
+        {
+          "id": "n05",
+          "end_ms": 2368.0,
+          "speech_end_ms": 1672.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1568.0,
+              "text": "Lock the computer",
+              "asr_ms": 120.6703
+            }
+          ]
+        },
+        {
+          "id": "n06",
+          "end_ms": 2976.0,
+          "speech_end_ms": 2660.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2592.0,
+              "text": "What time is it?",
+              "asr_ms": 165.5214
+            }
+          ]
+        },
+        {
+          "id": "n07",
+          "end_ms": 2208.0,
+          "speech_end_ms": 1544.875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Play the Beatles",
+              "asr_ms": 129.1981
+            }
+          ]
+        },
+        {
+          "id": "n08",
+          "end_ms": 1792.0,
+          "speech_end_ms": 1510.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Flip a coin.",
+              "asr_ms": 142.0731
+            }
+          ]
+        },
+        {
+          "id": "n09",
+          "end_ms": 2560.0,
+          "speech_end_ms": 2276.3125,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2176.0,
+              "text": "What's on my calendar tomorrow?",
+              "asr_ms": 175.2823
+            }
+          ]
+        },
+        {
+          "id": "n10",
+          "end_ms": 2624.0,
+          "speech_end_ms": 1939.625,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1824.0,
+              "text": "Turn the volume up",
+              "asr_ms": 135.9606
+            }
+          ]
+        },
+        {
+          "id": "n11",
+          "end_ms": 2432.0,
+          "speech_end_ms": 2190.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 2048.0,
+              "text": "How many days are Inelie Pier?",
+              "asr_ms": 200.5305
+            }
+          ]
+        },
+        {
+          "id": "n12",
+          "end_ms": 2272.0,
+          "speech_end_ms": 1674.1875,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1472.0,
+              "text": "Openopad",
+              "asr_ms": 128.4182
+            }
+          ]
+        },
+        {
+          "id": "n13",
+          "end_ms": 2304.0,
+          "speech_end_ms": 1590.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1504.0,
+              "text": "Next song",
+              "asr_ms": 119.8441
+            }
+          ]
+        },
+        {
+          "id": "n14",
+          "end_ms": 1824.0,
+          "speech_end_ms": 1540.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1440.0,
+              "text": "Cancel the timer.",
+              "asr_ms": 139.5357
+            }
+          ]
+        },
+        {
+          "id": "n15",
+          "end_ms": 1792.0,
+          "speech_end_ms": 1440.0,
+          "cut_early": false,
+          "pauses": [],
+          "heard": [
+            {
+              "pause_ms": 1408.0,
+              "text": "Tell me a joke.",
+              "asr_ms": 146.5009
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

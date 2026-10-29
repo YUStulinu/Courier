@@ -1,0 +1,1866 @@
+{
+  "summary": {
+    "model": "Qwen2.5-3B-Instruct-Q4_K_M.gguf",
+    "grammar": false,
+    "cases": 40,
+    "fully_correct": 0.775,
+    "model_alone_correct": 0.775,
+    "right_tool_or_none": 0.9,
+    "calls_correct": 0.7272727272727273,
+    "no_tool_correct": 1.0,
+    "grounding_changed": 2,
+    "fixed_after_tool_error": 0,
+    "invalid_calls": 0,
+    "ms_call_median": 535.7676,
+    "ms_call_p90": 799.5297,
+    "ms_first_word_median": 50.503
+  },
+  "cases": [
+    {
+      "id": "h01",
+      "text": "could you count down fifteen minutes for me",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "fifteen minutes"
+        }
+      },
+      "call": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "fifteen minutes"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "set_timer",
+            "arguments": {
+              "duration": "fifteen minutes"
+            }
+          },
+          "call": {
+            "name": "set_timer",
+            "arguments": {
+              "duration": "fifteen minutes"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "seconds": 900,
+            "id": "timer:1",
+            "say": "Timer set for 15 minutes.",
+            "ok": true,
+            "ends": "22:14"
+          },
+          "text": "",
+          "ms": 2322.4178,
+          "ms_first": 1844.4525,
+          "prompt_tokens": 2050,
+          "reused_tokens": 0,
+          "generated": 21
+        }
+      ],
+      "reply": "Timer set for 15 minutes."
+    },
+    {
+      "id": "h02",
+      "text": "egg timer, four minutes",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "four minutes"
+        }
+      },
+      "call": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "four minutes"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "set_timer",
+            "arguments": {
+              "duration": "four minutes"
+            }
+          },
+          "call": {
+            "name": "set_timer",
+            "arguments": {
+              "duration": "four minutes"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "seconds": 240,
+            "id": "timer:2",
+            "say": "Timer set for 4 minutes.",
+            "ok": true,
+            "ends": "22:03"
+          },
+          "text": "",
+          "ms": 502.9102,
+          "ms_first": 48.5062,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 19
+        }
+      ],
+      "reply": "Timer set for 4 minutes."
+    },
+    {
+      "id": "h03",
+      "text": "give me a twenty minute timer for the laundry",
+      "tool_ok": true,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "twenty minutes"
+        }
+      },
+      "call": {
+        "name": "set_timer",
+        "arguments": {
+          "duration": "twenty minutes"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "set_timer",
+            "arguments": {
+              "duration": "twenty minutes"
+            }
+          },
+          "call": {
+            "name": "set_timer",
+            "arguments": {
+              "duration": "twenty minutes"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "seconds": 1200,
+            "id": "timer:3",
+            "say": "Timer set for 20 minutes.",
+            "ok": true,
+            "ends": "22:20"
+          },
+          "text": "",
+          "ms": 495.8265,
+          "ms_first": 46.9943,
+          "prompt_tokens": 2051,
+          "reused_tokens": 2037,
+          "generated": 19
+        }
+      ],
+      "reply": "Timer set for 20 minutes."
+    },
+    {
+      "id": "h04",
+      "text": "how long until my timer goes off",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "list_timers",
+        "arguments": {}
+      },
+      "call": {
+        "name": "list_timers",
+        "arguments": {}
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "list_timers",
+            "arguments": {}
+          },
+          "call": {
+            "name": "list_timers",
+            "arguments": {}
+          },
+          "grounded": [],
+          "result": {
+            "say": "3 timers: 3 minutes and 59 seconds left; 14 minutes and 59 seconds left; 20 minutes left.",
+            "timers": [
+              {
+                "kind": "timer",
+                "text": "Your timer for 4 minutes is done.",
+                "at": 1793304239,
+                "id": "timer:2"
+              },
+              {
+                "kind": "timer",
+                "text": "Your timer for 15 minutes is done.",
+                "at": 1793304899,
+                "id": "timer:1"
+              },
+              {
+                "kind": "timer",
+                "text": "Your timer for 20 minutes is done.",
+                "at": 1793305200,
+                "id": "timer:3"
+              }
+            ]
+          },
+          "text": "",
+          "ms": 391.7743,
+          "ms_first": 46.5568,
+          "prompt_tokens": 2049,
+          "reused_tokens": 2037,
+          "generated": 15
+        }
+      ],
+      "reply": "3 timers: 3 minutes and 59 seconds left; 14 minutes and 59 seconds left; 20 minutes left."
+    },
+    {
+      "id": "h05",
+      "text": "get rid of the laundry timer",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "cancel_timer",
+        "arguments": {
+          "all": false,
+          "label": "laundry"
+        }
+      },
+      "call": {
+        "name": "cancel_timer",
+        "arguments": {
+          "all": false,
+          "label": "laundry"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "cancel_timer",
+            "arguments": {
+              "all": false,
+              "label": "laundry"
+            }
+          },
+          "call": {
+            "name": "cancel_timer",
+            "arguments": {
+              "all": false,
+              "label": "laundry"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": false,
+            "say": "There is no laundry timer."
+          },
+          "text": "",
+          "ms": 623.7136,
+          "ms_first": 43.6279,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 24
+        }
+      ],
+      "reply": "There is no laundry timer."
+    },
+    {
+      "id": "h06",
+      "text": "don't let me forget to pay the rent on monday at nine",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "pay the rent",
+          "date": "monday",
+          "time": "09:00"
+        }
+      },
+      "call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "pay the rent",
+          "date": "monday",
+          "time": "09:00"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "pay the rent",
+              "date": "monday",
+              "time": "09:00"
+            }
+          },
+          "call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "pay the rent",
+              "date": "monday",
+              "time": "09:00"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "in_seconds": 298798,
+            "id": "reminder:4",
+            "say": "I'll remind you to pay the rent on Monday at 9 AM.",
+            "ok": true,
+            "at": "2026-11-02 09:00"
+          },
+          "text": "",
+          "ms": 974.7539,
+          "ms_first": 54.4296,
+          "prompt_tokens": 2055,
+          "reused_tokens": 2037,
+          "generated": 38
+        }
+      ],
+      "reply": "I'll remind you to pay the rent on Monday at 9 AM."
+    },
+    {
+      "id": "h07",
+      "text": "in two hours remind me to take my medicine",
+      "tool_ok": true,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "take my medicine",
+          "time": "16:00"
+        }
+      },
+      "call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "take my medicine"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "take my medicine",
+              "time": "16:00"
+            }
+          },
+          "call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "take my medicine"
+            }
+          },
+          "grounded": [
+            "time: dropped \"16:00\" (not said)"
+          ],
+          "result": {
+            "error": "when should I remind you? Ask the user for a time"
+          },
+          "text": "",
+          "ms": 799.5297,
+          "ms_first": 49.0532,
+          "prompt_tokens": 2051,
+          "reused_tokens": 2037,
+          "generated": 31
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "Could you please tell me what time you want me to remind you in two hours?",
+          "ms": 504.4297,
+          "ms_first": 69.2198,
+          "prompt_tokens": 2108,
+          "reused_tokens": 2071,
+          "generated": 17
+        }
+      ],
+      "reply": "Could you please tell me what time you want me to remind you in two hours?"
+    },
+    {
+      "id": "h08",
+      "text": "ping me at half past four to leave for the station",
+      "tool_ok": true,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "leave for the station",
+          "time": "14:30"
+        }
+      },
+      "call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "leave for the station"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "leave for the station",
+              "time": "14:30"
+            }
+          },
+          "call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "leave for the station"
+            }
+          },
+          "grounded": [
+            "time: dropped \"14:30\" (not said)"
+          ],
+          "result": {
+            "error": "when should I remind you? Ask the user for a time"
+          },
+          "text": "",
+          "ms": 779.5964,
+          "ms_first": 49.8092,
+          "prompt_tokens": 2053,
+          "reused_tokens": 2037,
+          "generated": 32
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "Could you please tell me what time you want me to remind you? It should be in the format \"HH:MM\".",
+          "ms": 738.1489,
+          "ms_first": 65.7992,
+          "prompt_tokens": 2111,
+          "reused_tokens": 2074,
+          "generated": 25
+        }
+      ],
+      "reply": "Could you please tell me what time you want me to remind you? It should be in the format \"HH:MM\"."
+    },
+    {
+      "id": "h09",
+      "text": "which reminders are coming up",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "list_reminders",
+        "arguments": {}
+      },
+      "call": {
+        "name": "list_reminders",
+        "arguments": {}
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "list_reminders",
+            "arguments": {}
+          },
+          "call": {
+            "name": "list_reminders",
+            "arguments": {}
+          },
+          "grounded": [],
+          "result": {
+            "say": "One reminder: pay the rent on Monday at 9 AM.",
+            "reminders": [
+              {
+                "kind": "reminder",
+                "text": "Reminder: pay the rent.",
+                "at": 1793602800,
+                "id": "reminder:4"
+              }
+            ]
+          },
+          "text": "",
+          "ms": 459.8932,
+          "ms_first": 51.2817,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 15
+        }
+      ],
+      "reply": "One reminder: pay the rent on Monday at 9 AM."
+    },
+    {
+      "id": "h10",
+      "text": "forget the reminder about the rent",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "delete_reminder",
+        "arguments": {
+          "text": "rent reminder"
+        }
+      },
+      "call": {
+        "name": "delete_reminder",
+        "arguments": {
+          "text": "rent reminder"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "delete_reminder",
+            "arguments": {
+              "text": "rent reminder"
+            }
+          },
+          "call": {
+            "name": "delete_reminder",
+            "arguments": {
+              "text": "rent reminder"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": false,
+            "say": "I found no reminder about rent reminder."
+          },
+          "text": "",
+          "ms": 531.6014,
+          "ms_first": 42.5764,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 20
+        }
+      ],
+      "reply": "I found no reminder about rent reminder."
+    },
+    {
+      "id": "h11",
+      "text": "am I free on wednesday",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "calendar_events",
+        "arguments": {
+          "date": "wednesday"
+        }
+      },
+      "call": {
+        "name": "calendar_events",
+        "arguments": {
+          "date": "wednesday"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "calendar_events",
+            "arguments": {
+              "date": "wednesday"
+            }
+          },
+          "call": {
+            "name": "calendar_events",
+            "arguments": {
+              "date": "wednesday"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "say": "Nothing in your calendar on Wednesday.",
+            "events": {}
+          },
+          "text": "",
+          "ms": 550.247,
+          "ms_first": 43.5321,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 19
+        }
+      ],
+      "reply": "Nothing in your calendar on Wednesday."
+    },
+    {
+      "id": "h12",
+      "text": "what does my day look like",
+      "tool_ok": false,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I can check your calendar for today. Please tell me if there are any specific events or reminders you want to include.",
+          "ms": 614.693,
+          "ms_first": 44.4426,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 24
+        }
+      ],
+      "reply": "I can check your calendar for today. Please tell me if there are any specific events or reminders you want to include."
+    },
+    {
+      "id": "h13",
+      "text": "book a call with the bank on tuesday at eleven",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "add_event",
+        "arguments": {
+          "date": "tuesday",
+          "title": "bank call",
+          "time": "11:00",
+          "duration_minutes": 30
+        }
+      },
+      "call": {
+        "name": "add_event",
+        "arguments": {
+          "date": "tuesday",
+          "title": "bank call",
+          "time": "11:00",
+          "duration_minutes": 30
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "add_event",
+            "arguments": {
+              "date": "tuesday",
+              "title": "bank call",
+              "time": "11:00",
+              "duration_minutes": 30
+            }
+          },
+          "call": {
+            "name": "add_event",
+            "arguments": {
+              "date": "tuesday",
+              "title": "bank call",
+              "time": "11:00",
+              "duration_minutes": 30
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Added bank call on Tuesday at 11 AM."
+          },
+          "text": "",
+          "ms": 989.116,
+          "ms_first": 49.1431,
+          "prompt_tokens": 2053,
+          "reused_tokens": 2037,
+          "generated": 44
+        }
+      ],
+      "reply": "Added bank call on Tuesday at 11 AM."
+    },
+    {
+      "id": "h14",
+      "text": "add my sister's birthday on december 2",
+      "tool_ok": false,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "my sister's birthday",
+          "date": "december 2"
+        }
+      },
+      "call": {
+        "name": "add_reminder",
+        "arguments": {
+          "text": "my sister's birthday",
+          "date": "december 2"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "my sister's birthday",
+              "date": "december 2"
+            }
+          },
+          "call": {
+            "name": "add_reminder",
+            "arguments": {
+              "text": "my sister's birthday",
+              "date": "december 2"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "when should I remind you? Ask the user for a time"
+          },
+          "text": "",
+          "ms": 693.2444,
+          "ms_first": 47.4401,
+          "prompt_tokens": 2051,
+          "reused_tokens": 2037,
+          "generated": 31
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "Could you please tell me at what time you would like to be reminded?",
+          "ms": 382.8024,
+          "ms_first": 55.4189,
+          "prompt_tokens": 2118,
+          "reused_tokens": 2081,
+          "generated": 15
+        }
+      ],
+      "reply": "Could you please tell me at what time you would like to be reminded?"
+    },
+    {
+      "id": "h15",
+      "text": "look for the contract with the landlord",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "search_files",
+        "arguments": {
+          "query": "contract with landlord",
+          "kind": "document"
+        }
+      },
+      "call": {
+        "name": "search_files",
+        "arguments": {
+          "query": "contract with landlord",
+          "kind": "document"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "search_files",
+            "arguments": {
+              "query": "contract with landlord",
+              "kind": "document"
+            }
+          },
+          "call": {
+            "name": "search_files",
+            "arguments": {
+              "query": "contract with landlord",
+              "kind": "document"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "say": "I found no files about contract with landlord.",
+            "files": {}
+          },
+          "text": "",
+          "ms": 580.7556,
+          "ms_first": 44.4159,
+          "prompt_tokens": 2049,
+          "reused_tokens": 2037,
+          "generated": 26
+        }
+      ],
+      "reply": "I found no files about contract with landlord."
+    },
+    {
+      "id": "h16",
+      "text": "I need the spreadsheet with last year's expenses",
+      "tool_ok": false,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I can help you find it. Could you please tell me the name of the file?",
+          "ms": 427.5383,
+          "ms_first": 44.7597,
+          "prompt_tokens": 2051,
+          "reused_tokens": 2037,
+          "generated": 18
+        }
+      ],
+      "reply": "I can help you find it. Could you please tell me the name of the file?"
+    },
+    {
+      "id": "h17",
+      "text": "show me pictures of the dog",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "search_files",
+        "arguments": {
+          "query": "dog",
+          "kind": "image"
+        }
+      },
+      "call": {
+        "name": "search_files",
+        "arguments": {
+          "query": "dog",
+          "kind": "image"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "search_files",
+            "arguments": {
+              "query": "dog",
+              "kind": "image"
+            }
+          },
+          "call": {
+            "name": "search_files",
+            "arguments": {
+              "query": "dog",
+              "kind": "image"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "say": "I found no files about dog.",
+            "files": {}
+          },
+          "text": "",
+          "ms": 534.5363,
+          "ms_first": 40.8984,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 24
+        }
+      ],
+      "reply": "I found no files about dog."
+    },
+    {
+      "id": "h18",
+      "text": "louder please",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "volume",
+        "arguments": {
+          "action": "up",
+          "steps": 5
+        }
+      },
+      "call": {
+        "name": "volume",
+        "arguments": {
+          "action": "up",
+          "steps": 5
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "volume",
+            "arguments": {
+              "action": "up",
+              "steps": 5
+            }
+          },
+          "call": {
+            "name": "volume",
+            "arguments": {
+              "action": "up",
+              "steps": 5
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Louder."
+          },
+          "text": "",
+          "ms": 618.7839,
+          "ms_first": 41.9774,
+          "prompt_tokens": 2046,
+          "reused_tokens": 2037,
+          "generated": 23
+        }
+      ],
+      "reply": "Louder."
+    },
+    {
+      "id": "h19",
+      "text": "turn the sound down a little",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "volume",
+        "arguments": {
+          "action": "down",
+          "steps": 1
+        }
+      },
+      "call": {
+        "name": "volume",
+        "arguments": {
+          "action": "down",
+          "steps": 1
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "volume",
+            "arguments": {
+              "action": "down",
+              "steps": 1
+            }
+          },
+          "call": {
+            "name": "volume",
+            "arguments": {
+              "action": "down",
+              "steps": 1
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Quieter."
+          },
+          "text": "",
+          "ms": 658.5781,
+          "ms_first": 48.4528,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 23
+        }
+      ],
+      "reply": "Quieter."
+    },
+    {
+      "id": "h20",
+      "text": "silence",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "volume",
+        "arguments": {
+          "action": "mute"
+        }
+      },
+      "call": {
+        "name": "volume",
+        "arguments": {
+          "action": "mute"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "volume",
+            "arguments": {
+              "action": "mute"
+            }
+          },
+          "call": {
+            "name": "volume",
+            "arguments": {
+              "action": "mute"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Muted."
+          },
+          "text": "",
+          "ms": 510.7389,
+          "ms_first": 63.5125,
+          "prompt_tokens": 2044,
+          "reused_tokens": 2037,
+          "generated": 17
+        }
+      ],
+      "reply": "Muted."
+    },
+    {
+      "id": "h21",
+      "text": "bring up the file explorer",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "open_app",
+        "arguments": {
+          "name": "file explorer"
+        }
+      },
+      "call": {
+        "name": "open_app",
+        "arguments": {
+          "name": "file explorer"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "open_app",
+            "arguments": {
+              "name": "file explorer"
+            }
+          },
+          "call": {
+            "name": "open_app",
+            "arguments": {
+              "name": "file explorer"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Opening File explorer."
+          },
+          "text": "",
+          "ms": 495.4867,
+          "ms_first": 52.0686,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 19
+        }
+      ],
+      "reply": "Opening File explorer."
+    },
+    {
+      "id": "h22",
+      "text": "start visual studio code",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "open_app",
+        "arguments": {
+          "name": "visual studio code"
+        }
+      },
+      "call": {
+        "name": "open_app",
+        "arguments": {
+          "name": "visual studio code"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "open_app",
+            "arguments": {
+              "name": "visual studio code"
+            }
+          },
+          "call": {
+            "name": "open_app",
+            "arguments": {
+              "name": "visual studio code"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Opening Visual studio code."
+          },
+          "text": "",
+          "ms": 512.2177,
+          "ms_first": 37.8238,
+          "prompt_tokens": 2046,
+          "reused_tokens": 2037,
+          "generated": 20
+        }
+      ],
+      "reply": "Opening Visual studio code."
+    },
+    {
+      "id": "h23",
+      "text": "I'm stepping away, lock the screen",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "lock_screen",
+        "arguments": {}
+      },
+      "call": {
+        "name": "lock_screen",
+        "arguments": {}
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "lock_screen",
+            "arguments": {}
+          },
+          "call": {
+            "name": "lock_screen",
+            "arguments": {}
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Locking the screen."
+          },
+          "text": "",
+          "ms": 416.8034,
+          "ms_first": 44.7164,
+          "prompt_tokens": 2050,
+          "reused_tokens": 2037,
+          "generated": 14
+        }
+      ],
+      "reply": "Locking the screen."
+    },
+    {
+      "id": "h24",
+      "text": "put on some classical music",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "play_music",
+        "arguments": {
+          "query": "classical"
+        }
+      },
+      "call": {
+        "name": "play_music",
+        "arguments": {
+          "query": "classical"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "play_music",
+            "arguments": {
+              "query": "classical"
+            }
+          },
+          "call": {
+            "name": "play_music",
+            "arguments": {
+              "query": "classical"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "the music folder is empty or not set ([plugins.music] dir)"
+          },
+          "text": "",
+          "ms": 535.7676,
+          "ms_first": 51.0692,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 19
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I couldn't find any classical music in your music folder. Let's try searching for it.",
+          "ms": 533.4379,
+          "ms_first": 62.492,
+          "prompt_tokens": 2104,
+          "reused_tokens": 2065,
+          "generated": 19
+        }
+      ],
+      "reply": "I couldn't find any classical music in your music folder. Let's try searching for it."
+    },
+    {
+      "id": "h25",
+      "text": "I want to hear Daft Punk",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "play_music",
+        "arguments": {
+          "query": "Daft Punk"
+        }
+      },
+      "call": {
+        "name": "play_music",
+        "arguments": {
+          "query": "Daft Punk"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "play_music",
+            "arguments": {
+              "query": "Daft Punk"
+            }
+          },
+          "call": {
+            "name": "play_music",
+            "arguments": {
+              "query": "Daft Punk"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "the music folder is empty or not set ([plugins.music] dir)"
+          },
+          "text": "",
+          "ms": 539.9027,
+          "ms_first": 48.0994,
+          "prompt_tokens": 2049,
+          "reused_tokens": 2037,
+          "generated": 20
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I'm sorry, it seems like there's no music set up or the folder is empty. Let's try searching for Daft Punk music instead.",
+          "ms": 789.2787,
+          "ms_first": 61.5041,
+          "prompt_tokens": 2107,
+          "reused_tokens": 2068,
+          "generated": 30
+        }
+      ],
+      "reply": "I'm sorry, it seems like there's no music set up or the folder is empty. Let's try searching for Daft Punk music instead."
+    },
+    {
+      "id": "h26",
+      "text": "hold the music",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "music_control",
+        "arguments": {
+          "action": "pause"
+        }
+      },
+      "call": {
+        "name": "music_control",
+        "arguments": {
+          "action": "pause"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "music_control",
+            "arguments": {
+              "action": "pause"
+            }
+          },
+          "call": {
+            "name": "music_control",
+            "arguments": {
+              "action": "pause"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Done."
+          },
+          "text": "",
+          "ms": 466.4767,
+          "ms_first": 65.3023,
+          "prompt_tokens": 2045,
+          "reused_tokens": 2037,
+          "generated": 18
+        }
+      ],
+      "reply": "Done."
+    },
+    {
+      "id": "h27",
+      "text": "carry on playing",
+      "tool_ok": true,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "music_control",
+        "arguments": {
+          "action": "next"
+        }
+      },
+      "call": {
+        "name": "music_control",
+        "arguments": {
+          "action": "next"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "music_control",
+            "arguments": {
+              "action": "next"
+            }
+          },
+          "call": {
+            "name": "music_control",
+            "arguments": {
+              "action": "next"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "ok": true,
+            "say": "Done."
+          },
+          "text": "",
+          "ms": 425.804,
+          "ms_first": 49.3426,
+          "prompt_tokens": 2045,
+          "reused_tokens": 2037,
+          "generated": 18
+        }
+      ],
+      "reply": "Done."
+    },
+    {
+      "id": "h28",
+      "text": "play the one before",
+      "tool_ok": false,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "play_music",
+        "arguments": {
+          "query": "one before"
+        }
+      },
+      "call": {
+        "name": "play_music",
+        "arguments": {
+          "query": "one before"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "play_music",
+            "arguments": {
+              "query": "one before"
+            }
+          },
+          "call": {
+            "name": "play_music",
+            "arguments": {
+              "query": "one before"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "the music folder is empty or not set ([plugins.music] dir)"
+          },
+          "text": "",
+          "ms": 474.0617,
+          "ms_first": 45.6188,
+          "prompt_tokens": 2046,
+          "reused_tokens": 2037,
+          "generated": 19
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I'm sorry, there's no music set up or the folder is empty. How can I play some music for you?",
+          "ms": 651.8033,
+          "ms_first": 56.5653,
+          "prompt_tokens": 2103,
+          "reused_tokens": 2064,
+          "generated": 25
+        }
+      ],
+      "reply": "I'm sorry, there's no music set up or the folder is empty. How can I play some music for you?"
+    },
+    {
+      "id": "h29",
+      "text": "what's the forecast for the weekend",
+      "tool_ok": true,
+      "ok": false,
+      "raw_ok": false,
+      "raw_call": {
+        "name": "get_weather",
+        "arguments": {
+          "date": "this week-end",
+          "place": "Bucharest"
+        }
+      },
+      "call": {
+        "name": "get_weather",
+        "arguments": {
+          "date": "this week-end",
+          "place": "Bucharest"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "get_weather",
+            "arguments": {
+              "date": "this week-end",
+              "place": "Bucharest"
+            }
+          },
+          "call": {
+            "name": "get_weather",
+            "arguments": {
+              "date": "this week-end",
+              "place": "Bucharest"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "I could not understand the date this week-end"
+          },
+          "text": "",
+          "ms": 680.8106,
+          "ms_first": 42.2657,
+          "prompt_tokens": 2049,
+          "reused_tokens": 2037,
+          "generated": 28
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "It seems there was a misunderstanding with the date. Could you please specify a particular weekend day?",
+          "ms": 506.6041,
+          "ms_first": 62.6964,
+          "prompt_tokens": 2110,
+          "reused_tokens": 2076,
+          "generated": 19
+        }
+      ],
+      "reply": "It seems there was a misunderstanding with the date. Could you please specify a particular weekend day?"
+    },
+    {
+      "id": "h30",
+      "text": "is it warm in Barcelona right now",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "get_weather",
+        "arguments": {
+          "place": "Barcelona"
+        }
+      },
+      "call": {
+        "name": "get_weather",
+        "arguments": {
+          "place": "Barcelona"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "get_weather",
+            "arguments": {
+              "place": "Barcelona"
+            }
+          },
+          "call": {
+            "name": "get_weather",
+            "arguments": {
+              "place": "Barcelona"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "no network in tests"
+          },
+          "text": "",
+          "ms": 512.7521,
+          "ms_first": 44.1924,
+          "prompt_tokens": 2049,
+          "reused_tokens": 2037,
+          "generated": 19
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I couldn't check the weather right now because there's no network connection. Let me know when you're online and I can check it for you.",
+          "ms": 861.2981,
+          "ms_first": 51.4829,
+          "prompt_tokens": 2096,
+          "reused_tokens": 2067,
+          "generated": 30
+        }
+      ],
+      "reply": "I couldn't check the weather right now because there's no network connection. Let me know when you're online and I can check it for you."
+    },
+    {
+      "id": "h31",
+      "text": "will I need a coat tomorrow",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "get_weather",
+        "arguments": {
+          "date": "tomorrow",
+          "place": "Bucharest"
+        }
+      },
+      "call": {
+        "name": "get_weather",
+        "arguments": {
+          "date": "tomorrow",
+          "place": "Bucharest"
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "get_weather",
+            "arguments": {
+              "date": "tomorrow",
+              "place": "Bucharest"
+            }
+          },
+          "call": {
+            "name": "get_weather",
+            "arguments": {
+              "date": "tomorrow",
+              "place": "Bucharest"
+            }
+          },
+          "grounded": [],
+          "result": {
+            "error": "no network in tests"
+          },
+          "text": "",
+          "ms": 688.0399,
+          "ms_first": 51.3332,
+          "prompt_tokens": 2048,
+          "reused_tokens": 2037,
+          "generated": 27
+        },
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I couldn't check the weather for tomorrow because there was a network issue. Let me know when you're ready to check again.",
+          "ms": 647.5581,
+          "ms_first": 50.1681,
+          "prompt_tokens": 2103,
+          "reused_tokens": 2074,
+          "generated": 26
+        }
+      ],
+      "reply": "I couldn't check the weather for tomorrow because there was a network issue. Let me know when you're ready to check again."
+    },
+    {
+      "id": "h32",
+      "text": "pick heads or tails",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "flip_coin",
+        "arguments": {}
+      },
+      "call": {
+        "name": "flip_coin",
+        "arguments": {}
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "flip_coin",
+            "arguments": {}
+          },
+          "call": {
+            "name": "flip_coin",
+            "arguments": {}
+          },
+          "grounded": [],
+          "result": {
+            "say": "Tails."
+          },
+          "text": "",
+          "ms": 429.5928,
+          "ms_first": 40.2216,
+          "prompt_tokens": 2046,
+          "reused_tokens": 2037,
+          "generated": 14
+        }
+      ],
+      "reply": "Tails."
+    },
+    {
+      "id": "h33",
+      "text": "roll three six sided dice",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": {
+        "name": "roll_dice",
+        "arguments": {
+          "sides": 6,
+          "count": 3
+        }
+      },
+      "call": {
+        "name": "roll_dice",
+        "arguments": {
+          "sides": 6,
+          "count": 3
+        }
+      },
+      "steps": [
+        {
+          "raw_call": {
+            "name": "roll_dice",
+            "arguments": {
+              "sides": 6,
+              "count": 3
+            }
+          },
+          "call": {
+            "name": "roll_dice",
+            "arguments": {
+              "sides": 6,
+              "count": 3
+            }
+          },
+          "grounded": [],
+          "result": {
+            "rolls": [
+              6,
+              4,
+              1
+            ],
+            "total": 11,
+            "say": "You rolled 6, 4, 1: 11 in all."
+          },
+          "text": "",
+          "ms": 682.5881,
+          "ms_first": 50.7596,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 25
+        }
+      ],
+      "reply": "You rolled 6, 4, 1: 11 in all."
+    },
+    {
+      "id": "h34",
+      "text": "what is the boiling point of water",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "The boiling point of water is 100 degrees Celsius at sea level.",
+          "ms": 430.4075,
+          "ms_first": 47.889,
+          "prompt_tokens": 2049,
+          "reused_tokens": 2037,
+          "generated": 16
+        }
+      ],
+      "reply": "The boiling point of water is 100 degrees Celsius at sea level."
+    },
+    {
+      "id": "h35",
+      "text": "how many minutes are there in a day",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "There are 1440 minutes in a day.",
+          "ms": 352.161,
+          "ms_first": 49.593,
+          "prompt_tokens": 2050,
+          "reused_tokens": 2037,
+          "generated": 12
+        }
+      ],
+      "reply": "There are 1440 minutes in a day."
+    },
+    {
+      "id": "h36",
+      "text": "say something nice",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "You have a great day ahead.",
+          "ms": 230.8299,
+          "ms_first": 56.4052,
+          "prompt_tokens": 2045,
+          "reused_tokens": 2037,
+          "generated": 7
+        }
+      ],
+      "reply": "You have a great day ahead."
+    },
+    {
+      "id": "h37",
+      "text": "what year did the first moon landing happen",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "The first moon landing happened in 1969.",
+          "ms": 334.1937,
+          "ms_first": 41.8482,
+          "prompt_tokens": 2050,
+          "reused_tokens": 2037,
+          "generated": 12
+        }
+      ],
+      "reply": "The first moon landing happened in 1969."
+    },
+    {
+      "id": "h38",
+      "text": "ok thanks that's all",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "You're welcome! If you need anything else, just ask.",
+          "ms": 408.7196,
+          "ms_first": 51.4433,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 13
+        }
+      ],
+      "reply": "You're welcome! If you need anything else, just ask."
+    },
+    {
+      "id": "h39",
+      "text": "translate good morning into Spanish",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "good morning in Spanish is buenos días.",
+          "ms": 303.9878,
+          "ms_first": 53.8325,
+          "prompt_tokens": 2047,
+          "reused_tokens": 2037,
+          "generated": 9
+        }
+      ],
+      "reply": "good morning in Spanish is buenos días."
+    },
+    {
+      "id": "h40",
+      "text": "how far is it from Paris to Berlin",
+      "tool_ok": true,
+      "ok": true,
+      "raw_ok": true,
+      "raw_call": null,
+      "call": null,
+      "steps": [
+        {
+          "raw_call": null,
+          "call": null,
+          "grounded": [],
+          "result": null,
+          "text": "I can find the distance between Paris and Berlin for you.",
+          "ms": 376.353,
+          "ms_first": 53.7527,
+          "prompt_tokens": 2050,
+          "reused_tokens": 2037,
+          "generated": 12
+        }
+      ],
+      "reply": "I can find the distance between Paris and Berlin for you."
+    }
+  ]
+}
