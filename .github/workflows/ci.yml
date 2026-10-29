@@ -27,7 +27,8 @@ jobs:
         run: bash scripts/fetch-deps.sh --ci
       - name: Build
         run: |
-          cmake -S engine -B engine/build -DCMAKE_BUILD_TYPE=Release
+          # Not for this runner's CPU only (GGML_NATIVE): the next job may run on another one.
+          cmake -S engine -B engine/build -DCMAKE_BUILD_TYPE=Release -DGGML_NATIVE=OFF -DGGML_AVX2=ON -DGGML_FMA=ON -DGGML_F16C=ON
           cmake --build engine/build --config Release --parallel 4
       - name: Tests
         env:
